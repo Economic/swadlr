@@ -6,13 +6,19 @@ swadlr_base_url <- function() {
 }
 
 # Throttle requests to avoid overwhelming the API
-# Delays if less than 2 seconds since last request
+# Delays if less than `swadlr.throttle_interval` seconds since last request
+# Set options(swadlr.throttle_interval = 0) to disable throttling (e.g., in tests)
 throttle_if_needed <- function() {
+  interval <- getOption("swadlr.throttle_interval", default = 2)
+  if (interval == 0) {
+    return(invisible(NULL))
+  }
+
   last_request <- cache_get("last_request")
   if (!is.null(last_request)) {
     elapsed <- as.numeric(difftime(Sys.time(), last_request, units = "secs"))
-    if (elapsed < 2) {
-      Sys.sleep(2 - elapsed)
+    if (elapsed < interval) {
+      Sys.sleep(interval - elapsed)
     }
   }
   cache_set("last_request", Sys.time())

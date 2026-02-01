@@ -1,4 +1,4 @@
-httptest2::with_mock_dir("fixtures", {
+httptest2::with_mock_dir(testthat::test_path("fixtures"), {
   test_that("get_swadl_series returns correct structure", {
     cache_clear_all()
     df <- get_swadl_series(
@@ -139,7 +139,7 @@ httptest2::with_mock_dir("fixtures", {
         "fake_measure",
         dimension = "overall"
       ),
-      "not available"
+      "Measure.*is not available for indicator"
     )
     cache_clear_all()
   })
@@ -153,7 +153,7 @@ httptest2::with_mock_dir("fixtures", {
         date_interval = "month",
         dimension = "overall"
       ),
-      "not available"
+      "monthly data is not available for indicator"
     )
     cache_clear_all()
   })
@@ -166,7 +166,7 @@ httptest2::with_mock_dir("fixtures", {
         "real_wage_2024",
         dimension = "nonexistent"
       ),
-      "not available"
+      "Dimension.*is not available for this indicator"
     )
     cache_clear_all()
   })

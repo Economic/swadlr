@@ -3,35 +3,38 @@ test_that("swadlr_base_url returns correct URL", {
 })
 
 test_that("throttle_if_needed delays when called rapidly", {
+  # Temporarily enable throttling with a short interval for this test
+  withr::local_options(swadlr.throttle_interval = 0.5)
   cache_clear_all()
 
   # First call should not delay
-
   start1 <- Sys.time()
   throttle_if_needed()
   elapsed1 <- as.numeric(difftime(Sys.time(), start1, units = "secs"))
-  expect_lt(elapsed1, 0.5)
+  expect_lt(elapsed1, 0.2)
 
-  # Immediate second call should delay ~2 seconds
+  # Immediate second call should delay ~0.5 seconds
   start2 <- Sys.time()
   throttle_if_needed()
   elapsed2 <- as.numeric(difftime(Sys.time(), start2, units = "secs"))
-  expect_gte(elapsed2, 1.5)
+  expect_gte(elapsed2, 0.3)
 
   cache_clear_all()
 })
 
-test_that("throttle_if_needed does not delay after 2 seconds", {
+test_that("throttle_if_needed does not delay after interval passes", {
+  # Temporarily enable throttling with a short interval for this test
+  withr::local_options(swadlr.throttle_interval = 0.3)
   cache_clear_all()
 
   throttle_if_needed()
-  Sys.sleep(2.1)
+  Sys.sleep(0.4)
 
-  # Should not delay since 2+ seconds have passed
+  # Should not delay since interval has passed
   start <- Sys.time()
   throttle_if_needed()
   elapsed <- as.numeric(difftime(Sys.time(), start, units = "secs"))
-  expect_lt(elapsed, 0.5)
+  expect_lt(elapsed, 0.2)
 
   cache_clear_all()
 })

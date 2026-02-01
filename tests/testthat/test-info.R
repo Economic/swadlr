@@ -1,4 +1,4 @@
-httptest2::with_mock_dir("fixtures", {
+httptest2::with_mock_dir(testthat::test_path("fixtures"), {
   test_that("get_swadl_info returns correct structure", {
     cache_clear_all()
     info <- get_swadl_info("hourly_wage_percentiles")

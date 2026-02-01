@@ -1,4 +1,4 @@
-httptest2::with_mock_dir("fixtures", {
+httptest2::with_mock_dir(testthat::test_path("fixtures"), {
   test_that("swadlr_topics returns expected structure", {
     cache_clear_all()
     result <- swadlr_topics()

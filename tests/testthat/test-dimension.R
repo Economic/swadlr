@@ -1,4 +1,4 @@
-httptest2::with_mock_dir("fixtures", {
+httptest2::with_mock_dir(testthat::test_path("fixtures"), {
   test_that("parse_dimension handles 'overall'", {
     cache_clear_all()
     result <- parse_dimension(
@@ -115,7 +115,7 @@ httptest2::with_mock_dir("fixtures", {
         "national",
         "national"
       ),
-      "not available"
+      "Dimension.*is not available for this indicator"
     )
     cache_clear_all()
   })
@@ -131,7 +131,7 @@ httptest2::with_mock_dir("fixtures", {
         "national",
         "national"
       ),
-      "not available"
+      "Dimension value\\(s\\) not available"
     )
     cache_clear_all()
   })
