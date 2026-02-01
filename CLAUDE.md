@@ -48,6 +48,7 @@ Key points:
 - Use `testthat::test_path("fixtures")` in `with_mock_dir()` calls to ensure correct path resolution with `devtools::test()`
 
 To update fixtures when the live API changes:
+
 ```r
 httptest2::start_capturing("tests/testthat/fixtures")
 devtools::test()
