@@ -8,7 +8,7 @@ Description: Provides functions to retrieve data from the Economic Policy
     users to explore available indicators, measures, and dimensions, and
     to fetch time series data at national, regional, and state levels.
 License: MIT + file LICENSE
-URL: https://benzipperer.github.io/swadlr/,
+URL: https://economic.github.com/swadlr/,
     https://github.com/benzipperer/swadlr
 BugReports: https://github.com/benzipperer/swadlr/issues
 Depends:

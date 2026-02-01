@@ -62,7 +62,7 @@ get_swadl_series(
 
 ## Documentation
 
-See the [package website](https://benzipperer.github.io/swadlr/) for full
+See the [package website](https://economic.github.com/swadlr/) for full
 documentation and the [Getting started
-vignette](https://benzipperer.github.io/swadlr/articles/swadlr.html) for more
+vignette](https://economic.github.com/swadlr/articles/swadlr.html) for more
 examples.
