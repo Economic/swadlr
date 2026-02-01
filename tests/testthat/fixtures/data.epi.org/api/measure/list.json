@@ -1,0 +1,29 @@
+[
+  {
+    "measure": {
+      "id": "real_wage_2024",
+      "name": "Real hourly wage (2024$)",
+      "format": "dollar",
+      "orderBy": 101
+    },
+    "measure_meta": []
+  },
+  {
+    "measure": {
+      "id": "percent_emp",
+      "name": "Employment-to-population ratio",
+      "format": "rate",
+      "orderBy": 200
+    },
+    "measure_meta": []
+  },
+  {
+    "measure": {
+      "id": "nominal_wage",
+      "name": "Nominal hourly wage",
+      "format": "dollar",
+      "orderBy": 102
+    },
+    "measure_meta": []
+  }
+]

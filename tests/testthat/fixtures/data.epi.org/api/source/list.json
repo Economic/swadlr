@@ -1,0 +1,10 @@
+[
+  {
+    "id": "hourly_wage_percentiles-real_wage_2024-source",
+    "fkIndicatorId": "hourly_wage_percentiles",
+    "fkMeasureId": "real_wage_2024",
+    "viewBy": null,
+    "source": "EPI analysis of CPS data",
+    "url": "https://www.epi.org"
+  }
+]

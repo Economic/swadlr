@@ -1,0 +1,58 @@
+[
+  {
+    "indicator": {
+      "id": "hourly_wage_percentiles",
+      "fkTopicId": "wages",
+      "name": "Hourly wage percentiles",
+      "orderBy": 0,
+      "updatedDate": "2025-11-26T19:16:55.362Z"
+    },
+    "indicator_meta": [],
+    "availability": [
+      {
+        "date_interval": "year",
+        "date_start": "1973-01-01",
+        "date_end": "2024-01-01",
+        "measure_id": "real_wage_2024",
+        "geo_level": "national",
+        "dimension_values": [
+          ["overall"],
+          ["wage_p10"],
+          ["wage_p50"],
+          ["wage_p10", "gender_female"],
+          ["wage_p50", "gender_male"]
+        ],
+        "geo_availability": []
+      }
+    ]
+  },
+  {
+    "indicator": {
+      "id": "labor_force_emp",
+      "fkTopicId": "labor_force",
+      "name": "Employment-to-population ratio",
+      "orderBy": 0,
+      "updatedDate": "2025-10-15T12:00:00.000Z"
+    },
+    "indicator_meta": [],
+    "availability": [
+      {
+        "date_interval": "month",
+        "date_start": "1976-01-01",
+        "date_end": "2024-10-01",
+        "measure_id": "percent_emp",
+        "geo_level": "national",
+        "dimension_values": [
+          ["overall"],
+          ["age_16_24"],
+          ["age_25_54"],
+          ["gender_male"],
+          ["gender_female"],
+          ["age_16_24", "gender_male"],
+          ["age_25_54", "gender_male"]
+        ],
+        "geo_availability": []
+      }
+    ]
+  }
+]

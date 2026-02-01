@@ -1,0 +1,28 @@
+Package: swadlr
+Title: Access the EPI State of Working America Data Library API
+Version: 0.0.0.9000
+Authors@R:
+    person("Ben", "Zipperer", , "benzipperer@gmail.com", role = c("aut", "cre"))
+Description: Provides functions to retrieve data from the Economic Policy
+    Institute's State of Working America Data Library (SWADL) API. Enables
+    users to explore available indicators, measures, and dimensions, and
+    to fetch time series data at national, regional, and state levels.
+License: MIT + file LICENSE
+URL: https://benzipperer.github.io/swadlr/,
+    https://github.com/benzipperer/swadlr
+BugReports: https://github.com/benzipperer/swadlr/issues
+Depends:
+    R (>= 4.1)
+Imports:
+    httr2,
+    jsonlite
+Suggests:
+    httptest2,
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3

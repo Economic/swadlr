@@ -1,0 +1,18 @@
+[
+  {
+    "topic": {
+      "id": "wages",
+      "name": "Wages",
+      "orderBy": 0
+    },
+    "topic_meta": []
+  },
+  {
+    "topic": {
+      "id": "labor_force",
+      "name": "Employment",
+      "orderBy": 1
+    },
+    "topic_meta": []
+  }
+]

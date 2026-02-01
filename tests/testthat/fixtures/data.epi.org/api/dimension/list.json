@@ -1,0 +1,109 @@
+[
+  {
+    "dimension": {
+      "id": "overall",
+      "name": "Overall",
+      "orderBy": -1,
+      "isVisible": false
+    },
+    "dimension_meta": [],
+    "dimension_values": [
+      {
+        "dimension_value": {
+          "id": "overall",
+          "fkDimensionId": "overall",
+          "name": "Overall",
+          "orderBy": 0
+        },
+        "dimension_value_meta": []
+      }
+    ]
+  },
+  {
+    "dimension": {
+      "id": "wage_percentile",
+      "name": "Wage percentile",
+      "orderBy": 0,
+      "isVisible": true
+    },
+    "dimension_meta": [],
+    "dimension_values": [
+      {
+        "dimension_value": {
+          "id": "wage_p10",
+          "fkDimensionId": "wage_percentile",
+          "name": "10th percentile",
+          "orderBy": 0
+        },
+        "dimension_value_meta": []
+      },
+      {
+        "dimension_value": {
+          "id": "wage_p50",
+          "fkDimensionId": "wage_percentile",
+          "name": "50th percentile (median)",
+          "orderBy": 4
+        },
+        "dimension_value_meta": []
+      }
+    ]
+  },
+  {
+    "dimension": {
+      "id": "gender",
+      "name": "Gender",
+      "orderBy": 1,
+      "isVisible": true
+    },
+    "dimension_meta": [],
+    "dimension_values": [
+      {
+        "dimension_value": {
+          "id": "gender_female",
+          "fkDimensionId": "gender",
+          "name": "Female",
+          "orderBy": 0
+        },
+        "dimension_value_meta": []
+      },
+      {
+        "dimension_value": {
+          "id": "gender_male",
+          "fkDimensionId": "gender",
+          "name": "Male",
+          "orderBy": 1
+        },
+        "dimension_value_meta": []
+      }
+    ]
+  },
+  {
+    "dimension": {
+      "id": "age_group",
+      "name": "Age",
+      "orderBy": 2,
+      "isVisible": true
+    },
+    "dimension_meta": [],
+    "dimension_values": [
+      {
+        "dimension_value": {
+          "id": "age_16_24",
+          "fkDimensionId": "age_group",
+          "name": "16-24 years",
+          "orderBy": 0
+        },
+        "dimension_value_meta": []
+      },
+      {
+        "dimension_value": {
+          "id": "age_25_54",
+          "fkDimensionId": "age_group",
+          "name": "25-54 years",
+          "orderBy": 1
+        },
+        "dimension_value_meta": []
+      }
+    ]
+  }
+]

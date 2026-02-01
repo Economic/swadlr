@@ -1,0 +1,34 @@
+url: https://benzipperer.github.io/swadlr/
+
+template:
+  bootstrap: 5
+
+articles:
+  - title: Getting started
+    navbar: ~
+    contents:
+      - swadlr
+
+reference:
+  - title: Data retrieval
+    desc: Fetch time series data from the SWADL API
+    contents:
+      - get_swadl_series
+  - title: Indicator information
+    desc: Get detailed information about a specific indicator
+    contents:
+      - get_swadl_info
+  - title: Explore available data
+    desc: Functions to explore what data is available in the SWADL API
+    contents:
+      - swadlr_topics
+      - swadlr_indicators
+      - swadlr_measures
+      - swadlr_dimensions
+      - swadlr_geographies
+  - title: Cache management
+    contents:
+      - swadlr_clear_cache
+  - title: Package
+    contents:
+      - swadlr-package
