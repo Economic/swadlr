@@ -1,29 +1,1355 @@
 [
-  {
-    "measure": {
-      "id": "real_wage_2024",
-      "name": "Real hourly wage (2024$)",
-      "format": "dollar",
-      "orderBy": 101
+    {
+        "measure": {
+            "id": "nominal_wage_payroll_prod_employees",
+            "name": "Production and nonsupervisory employees, average nominal wage",
+            "format": "dollar",
+            "orderBy": 86
+        },
+        "measure_meta": [
+
+        ]
     },
-    "measure_meta": []
-  },
-  {
-    "measure": {
-      "id": "percent_emp",
-      "name": "Employment-to-population ratio",
-      "format": "rate",
-      "orderBy": 200
+    {
+        "measure": {
+            "id": "c_cpi_u_no_base",
+            "name": "Annual inflation, chained CPI-U",
+            "format": "rate",
+            "orderBy": 302
+        },
+        "measure_meta": [
+
+        ]
     },
-    "measure_meta": []
-  },
-  {
-    "measure": {
-      "id": "nominal_wage",
-      "name": "Nominal hourly wage",
-      "format": "dollar",
-      "orderBy": 102
+    {
+        "measure": {
+            "id": "percent_pt_econ",
+            "name": "Part-time for economic reasons share of employed",
+            "format": "rate",
+            "orderBy": 191
+        },
+        "measure_meta": [
+
+        ]
     },
-    "measure_meta": []
-  }
+    {
+        "measure": {
+            "id": "percent_lt_unemp",
+            "name": "Long-term unemployment rate",
+            "format": "rate",
+            "orderBy": 151
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_under_emp_12_month",
+            "name": "Number of underemployed workers, 12-month average",
+            "format": "count",
+            "orderBy": 204
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_lf_12_month",
+            "name": "Number of labor force participants, 12-month average",
+            "format": "count",
+            "orderBy": 144
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_lf",
+            "name": "Labor force participation rate",
+            "format": "rate",
+            "orderBy": 141
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_population_working_age",
+            "name": "Count of working age population",
+            "format": "count",
+            "orderBy": 241
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_spm_2x_cps",
+            "name": "Number in twice supplemental poverty (CPS)",
+            "format": "count",
+            "orderBy": 284
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_emp_12_month",
+            "name": "Employment-to-population ratio, 12-month average",
+            "format": "rate",
+            "orderBy": 132
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_spm_2x_cps",
+            "name": "Twice supplemental poverty rate (CPS)",
+            "format": "rate",
+            "orderBy": 282
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "real_wage_payroll_prod_employees_2025m12",
+            "name": "Production and nonsupervisory employees, average real wage (December 2025$)",
+            "format": "dollar",
+            "orderBy": 84
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "dist_share_lf_12_month",
+            "name": "Share of labor force participants, 12-month average",
+            "format": "rate",
+            "orderBy": 146
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_spm_1x_cps",
+            "name": "Number in supplemental poverty (CPS)",
+            "format": "count",
+            "orderBy": 283
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "c_cpi_u_extended_base",
+            "name": "Extended chained CPI-U (Base = Dec 1999)",
+            "format": "index",
+            "orderBy": 291
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "wage_gap_mean_black_white",
+            "name": "Black-white wage gap, raw average",
+            "format": "rate",
+            "orderBy": 32
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_pt_econ_12_month",
+            "name": "Part-time for economic reasons share of employed, 12-month average",
+            "format": "rate",
+            "orderBy": 192
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_multjobs_12_month",
+            "name": "Number of multiple job holders, 12-month average",
+            "format": "count",
+            "orderBy": 164
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_poverty_2x_cps",
+            "name": "Twice poverty rate (CPS)",
+            "format": "rate",
+            "orderBy": 272
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "ceo_worker_realized",
+            "name": "CEO-to-worker pay ratio, realized",
+            "format": "ratio",
+            "orderBy": 21
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "wage_gap_mean_reg_teacher",
+            "name": "Teacher penalty, average weekly wage gap",
+            "format": "rate",
+            "orderBy": 361
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_population_econ_insecure_12_month",
+            "name": "Economically insecure share of working age population, 12-month average",
+            "format": "rate",
+            "orderBy": 246
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_pt_12_month",
+            "name": "Number of part-time workers, 12-month average",
+            "format": "count",
+            "orderBy": 184
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "wage_gap_mean_gender",
+            "name": "Gender wage gap, raw average",
+            "format": "rate",
+            "orderBy": 42
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_multjobs",
+            "name": "Multiple job holders as share of employed",
+            "format": "rate",
+            "orderBy": 161
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_population_working_age_12_month",
+            "name": "Count of working age population, 12-month average",
+            "format": "count",
+            "orderBy": 242
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_population_econ_insecure_12_month",
+            "name": "Count of economically insecure population, 12-month average",
+            "format": "count",
+            "orderBy": 242
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_union_covered",
+            "name": "Number represented by a union",
+            "format": "count",
+            "orderBy": 335
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "real_wage_mean_2025",
+            "name": "Average real hourly wage (2025$)",
+            "format": "dollar",
+            "orderBy": 61
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_union_covered",
+            "name": "Share represented by a union",
+            "format": "rate",
+            "orderBy": 331
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_unemp",
+            "name": "Number of unemployed",
+            "format": "count",
+            "orderBy": 213
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_annual_wage_ssa",
+            "name": "Share of total annual earnings",
+            "format": "rate",
+            "orderBy": 13
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "dist_share_unemp_12_month",
+            "name": "Share of unemployed, 12-month average",
+            "format": "rate",
+            "orderBy": 216
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "wage_ratio",
+            "name": "Wage ratio",
+            "format": "ratio",
+            "orderBy": 91
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_payroll_prod_employees",
+            "name": "Production and nonsupervisory employees",
+            "format": "count",
+            "orderBy": 172
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "hours_worked_week_asec",
+            "name": "Hours worked per week",
+            "format": "count",
+            "orderBy": 122
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "real_wage_2025",
+            "name": "Real hourly wage (2025$)",
+            "format": "dollar",
+            "orderBy": 101
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "real_wage_payroll_all_employees_2025m12",
+            "name": "All payroll employees, average real wage (Deceumber 2025$)",
+            "format": "dollar",
+            "orderBy": 83
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_lt_unemp_12_month",
+            "name": "Number of long-term unemployed, 12-month average",
+            "format": "count",
+            "orderBy": 154
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_poverty_1x_acs",
+            "name": "Number in poverty (ACS)",
+            "format": "count",
+            "orderBy": 263
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "wage_gap_mean_reg_gender",
+            "name": "Gender wage gap, average",
+            "format": "rate",
+            "orderBy": 41
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_poverty_2x_cps",
+            "name": "Number in twice poverty (CPS)",
+            "format": "count",
+            "orderBy": 274
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "nominal_annual_wage_ssa",
+            "name": "Average nominal annual wage",
+            "format": "dollar",
+            "orderBy": 12
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_population_civilian_12_month",
+            "name": "Count of civilian population, ages 16+, 12-month average",
+            "format": "count",
+            "orderBy": 232
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_unemp_12_month",
+            "name": "Unemployment rate, 12-month average",
+            "format": "rate",
+            "orderBy": 212
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "wage_gap_mean_reg_black_white",
+            "name": "Black-white wage gap, average",
+            "format": "rate",
+            "orderBy": 31
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "weeks_worked_annual_asec",
+            "name": "Annual weeks worked",
+            "format": "count",
+            "orderBy": 123
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "real_dollars_per_hour_2024",
+            "name": "Productivity and pay, real dollars per hour (2024$)",
+            "format": "dollar",
+            "orderBy": 321
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_union_members",
+            "name": "Share in a union",
+            "format": "rate",
+            "orderBy": 333
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_poverty_1x_acs",
+            "name": "Poverty rate (ACS)",
+            "format": "rate",
+            "orderBy": 261
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "nominal_wage_median",
+            "name": "Median nominal hourly wage",
+            "format": "dollar",
+            "orderBy": 72
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_union_members_historical",
+            "name": "Share in a union",
+            "format": "rate",
+            "orderBy": 351
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_lt_unemp",
+            "name": "Number of long-term unemployed",
+            "format": "count",
+            "orderBy": 153
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_population_econ_insecure",
+            "name": "Count of economically insecure population",
+            "format": "count",
+            "orderBy": 251
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "dist_share_unemp",
+            "name": "Share of unemployed",
+            "format": "rate",
+            "orderBy": 215
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "real_index_1948",
+            "name": "Productivity and pay real index, base = 1948",
+            "format": "index",
+            "orderBy": 311
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_lf_12_month",
+            "name": "Labor force participation rate, 12-month average",
+            "format": "rate",
+            "orderBy": 142
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "wage_gap_median_black_white",
+            "name": "Black-white wage gap, raw median",
+            "format": "rate",
+            "orderBy": 33
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "ceo_top_01",
+            "name": "Ratio of CEO compensation to top 0.1% wages",
+            "format": "ratio",
+            "orderBy": 23
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_multjobs_12_month",
+            "name": "Multiple job holders as share of employed, 12-month average",
+            "format": "rate",
+            "orderBy": 162
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_under_emp",
+            "name": "Underemployment rate",
+            "format": "rate",
+            "orderBy": 201
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "real_wage_payroll_all_employees_2025",
+            "name": "All payroll employees, average real wage (2025$)",
+            "format": "dollar",
+            "orderBy": 81
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_pt_econ",
+            "name": "Number of part-time for economic reasons workers",
+            "format": "count",
+            "orderBy": 193
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_multjobs",
+            "name": "Number of multiple job holders",
+            "format": "count",
+            "orderBy": 163
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_unemp_12_month",
+            "name": "Number of unemployed 12-month average",
+            "format": "count",
+            "orderBy": 214
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "wage_gap_median_gender",
+            "name": "Gender wage gap, raw median",
+            "format": "rate",
+            "orderBy": 43
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_population_econ_insecure",
+            "name": "Economically insecure share of working age population",
+            "format": "rate",
+            "orderBy": 245
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "dist_share_population_civilian_12_month",
+            "name": "Share of civilian population, 12-month average",
+            "format": "rate",
+            "orderBy": 234
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_union_members_12_month",
+            "name": "Number of union members, 12-month average",
+            "format": "count",
+            "orderBy": 338
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "dist_share_emp",
+            "name": "Share of employed",
+            "format": "rate",
+            "orderBy": 135
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_pt",
+            "name": "Number of part-time workers",
+            "format": "count",
+            "orderBy": 183
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_poverty_1x_cps",
+            "name": "Number in poverty (CPS)",
+            "format": "count",
+            "orderBy": 273
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_under_emp",
+            "name": "Number of underemployed workers",
+            "format": "count",
+            "orderBy": 203
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "real_dollars_per_hour_2025Q3",
+            "name": "Productivity and pay, real dollars per hour (2025q3$)",
+            "format": "dollar",
+            "orderBy": 322
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "dist_share_population_working_age",
+            "name": "Share of working age population",
+            "format": "rate",
+            "orderBy": 243
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "real_annual_wage_ssa_2023",
+            "name": "Average real annual wage (2023$)",
+            "format": "dollar",
+            "orderBy": 11
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_under_emp_12_month",
+            "name": "Underemployment rate, 12-month average",
+            "format": "rate",
+            "orderBy": 202
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_emp",
+            "name": "Number of employed",
+            "format": "count",
+            "orderBy": 133
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "nominal_wage_mean",
+            "name": "Average nominal hourly wage",
+            "format": "dollar",
+            "orderBy": 62
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_emp_12_month",
+            "name": "Number of employed, 12-month average",
+            "format": "count",
+            "orderBy": 134
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "wage_gap_mean_hispanic_white",
+            "name": "Hispanic-white wage gap, raw average",
+            "format": "rate",
+            "orderBy": 52
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_union_covered_12_month",
+            "name": "Number represented by a union, 12-month average",
+            "format": "count",
+            "orderBy": 336
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_pt_econ_12_month",
+            "name": "Number of part-time for economic reasons workers, 12-month average",
+            "format": "count",
+            "orderBy": 194
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "pce_no_base",
+            "name": "Annual inflation, personal consumption expenditures",
+            "format": "rate",
+            "orderBy": 303
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_emp",
+            "name": "Employment-to-population ratio",
+            "format": "rate",
+            "orderBy": 131
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_unemp",
+            "name": "Unemployment rate",
+            "format": "rate",
+            "orderBy": 211
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_union_members",
+            "name": "Number of union members",
+            "format": "count",
+            "orderBy": 337
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_union_premium",
+            "name": "Union wage premium, average (regression-based)",
+            "format": "rate",
+            "orderBy": 341
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_pt",
+            "name": "Part-time share of employed",
+            "format": "rate",
+            "orderBy": 181
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "dist_share_lf",
+            "name": "Share of labor force participants",
+            "format": "rate",
+            "orderBy": 145
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_payroll_all_employees",
+            "name": "All payroll employees",
+            "format": "count",
+            "orderBy": 171
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "dist_share_population_econ_insecure",
+            "name": "Share of economically insecure population",
+            "format": "rate",
+            "orderBy": 243
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_pt_12_month",
+            "name": "Part-time share of employed, 12-month average",
+            "format": "rate",
+            "orderBy": 182
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_poverty_2x_acs",
+            "name": "Twice poverty rate (ACS)",
+            "format": "rate",
+            "orderBy": 262
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "hours_worked_annual_asec",
+            "name": "Annual hours worked",
+            "format": "count",
+            "orderBy": 121
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "real_wage_median_2025",
+            "name": "Median real hourly wage (2025$)",
+            "format": "dollar",
+            "orderBy": 71
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "c_cpi_u_base",
+            "name": "Chained CPI-U (Base = Dec 1999)",
+            "format": "index",
+            "orderBy": 292
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_union_members_12_month",
+            "name": "Share in a union, 12-month average",
+            "format": "rate",
+            "orderBy": 334
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "dist_share_emp_12_month",
+            "name": "Share of employed, 12-month average",
+            "format": "rate",
+            "orderBy": 136
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "nominal_wage",
+            "name": "Nominal hourly wage",
+            "format": "dollar",
+            "orderBy": 102
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "c_cpi_u_extended_no_base",
+            "name": "Annual inflation, extended chained CPI-U",
+            "format": "rate",
+            "orderBy": 301
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "nominal_minimum_wage",
+            "name": "Nominal minimum wage",
+            "format": "dollar",
+            "orderBy": 223
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "nominal_wage_payroll_all_employees",
+            "name": "All payroll employees, average nominal wage",
+            "format": "dollar",
+            "orderBy": 85
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "real_minimum_wage_2025",
+            "name": "Real minimum wage (2025$)",
+            "format": "dollar",
+            "orderBy": 221
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "wage_premium_mean_reg_college",
+            "name": "College wage premium, average",
+            "format": "rate",
+            "orderBy": 111
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_poverty_2x_acs",
+            "name": "Number in twice poverty (ACS)",
+            "format": "count",
+            "orderBy": 264
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_spm_1x_cps",
+            "name": "Supplemental poverty rate (CPS)",
+            "format": "rate",
+            "orderBy": 281
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "real_index_1948Q1",
+            "name": "Productivity and pay real index, base = 1948q1",
+            "format": "index",
+            "orderBy": 312
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "dist_share_population_civilian",
+            "name": "Share of civilian population",
+            "format": "rate",
+            "orderBy": 233
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "wage_gap_median_hispanic_white",
+            "name": "Hispanic-white wage gap, raw median",
+            "format": "rate",
+            "orderBy": 53
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "dist_share_population_working_age_12_month",
+            "name": "Share of working age population, 12-month average",
+            "format": "rate",
+            "orderBy": 244
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "pce_base",
+            "name": "Personal consumption expenditures index (Base = 2017)",
+            "format": "count",
+            "orderBy": 293
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_poverty_1x_cps",
+            "name": "Poverty rate (CPS)",
+            "format": "rate",
+            "orderBy": 271
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "wage_gap_mean_reg_hispanic_white",
+            "name": "Hispanic-white wage gap, average",
+            "format": "rate",
+            "orderBy": 51
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "real_wage_payroll_prod_employees_2025",
+            "name": "Production and nonsupervisory employees, average real wage (2025$)",
+            "format": "dollar",
+            "orderBy": 82
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "ceo_worker_granted",
+            "name": "CEO-to-worker pay ratio, granted",
+            "format": "ratio",
+            "orderBy": 22
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_lf",
+            "name": "Number of labor force participants",
+            "format": "count",
+            "orderBy": 143
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "real_minimum_wage_2025m12",
+            "name": "Real minimum wage (December 2025$)",
+            "format": "dollar",
+            "orderBy": 222
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_union_covered_12_month",
+            "name": "Share represented by a union, 12-month average",
+            "format": "rate",
+            "orderBy": 332
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "percent_lt_unemp_12_month",
+            "name": "Long-term unemployment rate, 12-month average",
+            "format": "rate",
+            "orderBy": 152
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "nominal_dollars_per_hour",
+            "name": "Productivity and pay, nominal dollars per hour",
+            "format": "dollar",
+            "orderBy": 323
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "dist_share_population_econ_insecure_12_month",
+            "name": "Share of economically insecure population, 12-month average",
+            "format": "rate",
+            "orderBy": 244
+        },
+        "measure_meta": [
+
+        ]
+    },
+    {
+        "measure": {
+            "id": "count_population_civilian",
+            "name": "Count of civilian population, ages 16+",
+            "format": "count",
+            "orderBy": 231
+        },
+        "measure_meta": [
+
+        ]
+    }
 ]

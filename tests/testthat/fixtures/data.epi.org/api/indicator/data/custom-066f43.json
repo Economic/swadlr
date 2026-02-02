@@ -1,0 +1,1502 @@
+[
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1976-01-01",
+        "value": 0.6242012086712013
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1976-01-01",
+        "value": 0.4595382501531493
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1976-01-01",
+        "value": 0.8951461097346752
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1977-01-01",
+        "value": 0.6440516533217452
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1977-01-01",
+        "value": 0.45743496001497574
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1977-01-01",
+        "value": 0.9022013801256977
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1978-01-01",
+        "value": 0.46005523198799186
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1978-01-01",
+        "value": 0.9105649222770295
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1978-01-01",
+        "value": 0.663332553812425
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1979-01-01",
+        "value": 0.45560170022382496
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1979-01-01",
+        "value": 0.9121944310988662
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1979-01-01",
+        "value": 0.6688348607173832
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1980-01-01",
+        "value": 0.8932917968631361
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1980-01-01",
+        "value": 0.6377193356263321
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1980-01-01",
+        "value": 0.442267159866619
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1981-01-01",
+        "value": 0.6229043172070547
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1981-01-01",
+        "value": 0.4306135369196144
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1981-01-01",
+        "value": 0.8895756238491577
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1982-01-01",
+        "value": 0.591276264912372
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1982-01-01",
+        "value": 0.4172934548961862
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1982-01-01",
+        "value": 0.8653197965789424
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1983-01-01",
+        "value": 0.4074022243683299
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1983-01-01",
+        "value": 0.8618346491602602
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1983-01-01",
+        "value": 0.5943653435428445
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1984-01-01",
+        "value": 0.6252093572190407
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1984-01-01",
+        "value": 0.40008233347046535
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1984-01-01",
+        "value": 0.8838881598470116
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1985-01-01",
+        "value": 0.8871083924028575
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1985-01-01",
+        "value": 0.6280227909377468
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1985-01-01",
+        "value": 0.3945882799949586
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1986-01-01",
+        "value": 0.3885165376025476
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1986-01-01",
+        "value": 0.8855154391685875
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1986-01-01",
+        "value": 0.6310569790955494
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1987-01-01",
+        "value": 0.8900142185964596
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1987-01-01",
+        "value": 0.6324735963308386
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1987-01-01",
+        "value": 0.3902609796812777
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1988-01-01",
+        "value": 0.3859516185019198
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1988-01-01",
+        "value": 0.8950772728532697
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1988-01-01",
+        "value": 0.6413575676984797
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1989-01-01",
+        "value": 0.3833680734602363
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1989-01-01",
+        "value": 0.6470598607491067
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1989-01-01",
+        "value": 0.8989324901990577
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1990-01-01",
+        "value": 0.6340196792867178
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1990-01-01",
+        "value": 0.3803536271904157
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1990-01-01",
+        "value": 0.8912483279976973
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1991-01-01",
+        "value": 0.8749696265726095
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1991-01-01",
+        "value": 0.6040273868340392
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1991-01-01",
+        "value": 0.3681619365195365
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1992-01-01",
+        "value": 0.867720916294533
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1992-01-01",
+        "value": 0.5981550366478475
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1992-01-01",
+        "value": 0.36470068089569924
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1993-01-01",
+        "value": 0.8702962880005712
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1993-01-01",
+        "value": 0.35987161134662266
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1993-01-01",
+        "value": 0.6019934464310688
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1994-01-01",
+        "value": 0.8727108843436222
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1994-01-01",
+        "value": 0.6106473239659452
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1994-01-01",
+        "value": 0.3635135302231959
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1995-01-01",
+        "value": 0.8756215640733371
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1995-01-01",
+        "value": 0.3660663070262626
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1995-01-01",
+        "value": 0.6154261647744661
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1996-01-01",
+        "value": 0.6022002834462639
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1996-01-01",
+        "value": 0.8794630259774188
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1996-01-01",
+        "value": 0.37133317471736615
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1997-01-01",
+        "value": 0.6029701062343359
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1997-01-01",
+        "value": 0.8842623460451291
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1997-01-01",
+        "value": 0.37886512240622144
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1998-01-01",
+        "value": 0.8882590677218902
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1998-01-01",
+        "value": 0.38013444666797486
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1998-01-01",
+        "value": 0.6079396262681261
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1999-01-01",
+        "value": 0.3847436508687469
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1999-01-01",
+        "value": 0.6102203677834872
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1999-01-01",
+        "value": 0.8898588537851053
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2000-01-01",
+        "value": 0.8900284437519773
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2000-01-01",
+        "value": 0.619218809263178
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2000-01-01",
+        "value": 0.39078408717599844
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2001-01-01",
+        "value": 0.8793945658531787
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2001-01-01",
+        "value": 0.5937286414296237
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2001-01-01",
+        "value": 0.39563871437803
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2002-01-01",
+        "value": 0.8662632254915497
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2002-01-01",
+        "value": 0.5709324361326994
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2002-01-01",
+        "value": 0.4031165010748746
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2003-01-01",
+        "value": 0.5533333686955527
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2003-01-01",
+        "value": 0.8586977139755544
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2003-01-01",
+        "value": 0.40709407291668065
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2004-01-01",
+        "value": 0.8633448977041949
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2004-01-01",
+        "value": 0.5554913434795696
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2004-01-01",
+        "value": 0.4149241699860058
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2005-01-01",
+        "value": 0.86918493911337
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2005-01-01",
+        "value": 0.5515026012775858
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2005-01-01",
+        "value": 0.4269037170418826
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2006-01-01",
+        "value": 0.8731138645234814
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2006-01-01",
+        "value": 0.56206043723784
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2006-01-01",
+        "value": 0.43543715378610837
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2007-01-01",
+        "value": 0.4372795666227818
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2007-01-01",
+        "value": 0.8751062249149678
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2007-01-01",
+        "value": 0.5442521978824358
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2008-01-01",
+        "value": 0.860268269493135
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2008-01-01",
+        "value": 0.5225442256688031
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2008-01-01",
+        "value": 0.4420638407365586
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2009-01-01",
+        "value": 0.4302774914427592
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2009-01-01",
+        "value": 0.4669812288854576
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2009-01-01",
+        "value": 0.8145930625347504
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2010-01-01",
+        "value": 0.8096295774229633
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2010-01-01",
+        "value": 0.42803911884097534
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2010-01-01",
+        "value": 0.4493196522862909
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2011-01-01",
+        "value": 0.4307161330264961
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2011-01-01",
+        "value": 0.8141697554701642
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2011-01-01",
+        "value": 0.45994283572218153
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2012-01-01",
+        "value": 0.465580801955346
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2012-01-01",
+        "value": 0.8252795746114656
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2012-01-01",
+        "value": 0.43835031875657154
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2013-01-01",
+        "value": 0.43842175805634415
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2013-01-01",
+        "value": 0.8278586441907502
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2013-01-01",
+        "value": 0.4694320198899925
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2014-01-01",
+        "value": 0.8364916527756034
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2014-01-01",
+        "value": 0.438440906547507
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2014-01-01",
+        "value": 0.48208666928001387
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2015-01-01",
+        "value": 0.8441169712675074
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2015-01-01",
+        "value": 0.49003163219106916
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2015-01-01",
+        "value": 0.4412990151710709
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2016-01-01",
+        "value": 0.44437073565841434
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2016-01-01",
+        "value": 0.5005203816263716
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2016-01-01",
+        "value": 0.8496144642050305
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2017-01-01",
+        "value": 0.5080222016518856
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2017-01-01",
+        "value": 0.44608209326892556
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2017-01-01",
+        "value": 0.8538519376387822
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2018-01-01",
+        "value": 0.5057965721934987
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2018-01-01",
+        "value": 0.8615741379683073
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2018-01-01",
+        "value": 0.4474393499076103
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2019-01-01",
+        "value": 0.5127603767648206
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2019-01-01",
+        "value": 0.451274406261909
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2019-01-01",
+        "value": 0.8642107008261367
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2020-01-01",
+        "value": 0.8178505559321707
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2020-01-01",
+        "value": 0.46407314587056997
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2020-01-01",
+        "value": 0.42205084574379903
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2021-01-01",
+        "value": 0.4236490268919188
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2021-01-01",
+        "value": 0.8363429187871153
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2021-01-01",
+        "value": 0.5055854310168111
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2022-01-01",
+        "value": 0.5153666232984425
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2022-01-01",
+        "value": 0.8583837531141912
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2022-01-01",
+        "value": 0.4349488232386987
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2023-01-01",
+        "value": 0.5162365470770892
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2023-01-01",
+        "value": 0.4303404198440281
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2023-01-01",
+        "value": 0.8627551320728717
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2024-01-01",
+        "value": 0.4259009483413475
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2024-01-01",
+        "value": 0.5090163006164765
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2024-01-01",
+        "value": 0.8626557116253328
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_16_24",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2025-01-01",
+        "value": 0.50137331351692
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_55_plus",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2025-01-01",
+        "value": 0.42139569874502436
+    },
+    {
+        "fkDimensionValueIds": [
+            "age_25_54",
+            "gender_male"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2025-01-01",
+        "value": 0.8621028464577438
+    }
+]

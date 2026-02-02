@@ -4,26 +4,23 @@
 #   Rscript data-raw/geography-lookup.R
 
 # National
-national <- data.frame(
+national <- tibble::tibble(
   id = "national",
   level = "national",
-
   name = "United States",
-  abbr = "US",
-  stringsAsFactors = FALSE
+  abbr = "US"
 )
 
 # Regions (4)
-regions <- data.frame(
+regions <- tibble::tibble(
   id = c("regionMidwest", "regionNortheast", "regionSouth", "regionWest"),
   level = "region",
   name = c("Midwest", "Northeast", "South", "West"),
-  abbr = NA_character_,
-  stringsAsFactors = FALSE
+  abbr = NA_character_
 )
 
 # Census Divisions (9)
-divisions <- data.frame(
+divisions <- tibble::tibble(
   id = c(
     "division01",
     "division02",
@@ -47,13 +44,12 @@ divisions <- data.frame(
     "Mountain",
     "Pacific"
   ),
-  abbr = NA_character_,
-  stringsAsFactors = FALSE
+  abbr = NA_character_
 )
 
 # States + DC (51)
 # FIPS codes: https://www.census.gov/library/reference/code-lists/ansi.html
-states <- data.frame(
+states <- tibble::tibble(
   id = c(
     "state01",
     "state02",
@@ -213,8 +209,7 @@ states <- data.frame(
     "WV",
     "WI",
     "WY"
-  ),
-  stringsAsFactors = FALSE
+  )
 )
 
 # Combine all geographies

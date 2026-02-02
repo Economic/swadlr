@@ -1,40 +1,40 @@
 httptest2::with_mock_dir(testthat::test_path("fixtures"), {
-  test_that("get_swadl_series returns correct structure", {
+  test_that("get_swadl returns correct structure", {
     cache_clear_all()
-    df <- get_swadl_series(
+    df <- get_swadl(
       "hourly_wage_percentiles",
-      "real_wage_2024",
-      dimension = "overall"
+      "nominal_wage",
+      dimension = list("wage_percentile" = "wage_p50")
     )
 
     expect_s3_class(df, "data.frame")
     expect_true("date" %in% names(df))
     expect_true("value" %in% names(df))
     expect_true("geography" %in% names(df))
-    expect_true("overall" %in% names(df))
+    expect_true("wage_percentile" %in% names(df))
     cache_clear_all()
   })
 
-  test_that("get_swadl_series with overall dimension", {
+  test_that("get_swadl with specific dimension value", {
     cache_clear_all()
-    df <- get_swadl_series(
+    df <- get_swadl(
       "hourly_wage_percentiles",
-      "real_wage_2024",
-      dimension = "overall"
+      "nominal_wage",
+      dimension = list("wage_percentile" = "wage_p50")
     )
 
     expect_s3_class(df$date, "Date")
     expect_type(df$value, "double")
-    expect_equal(df$geography, rep("national", nrow(df)))
-    expect_equal(df$overall, rep("overall", nrow(df)))
+    expect_equal(unique(df$geography), "national")
+    expect_equal(unique(df$wage_percentile), "wage_p50")
     cache_clear_all()
   })
 
-  test_that("get_swadl_series with single dimension", {
+  test_that("get_swadl with single dimension", {
     cache_clear_all()
-    df <- get_swadl_series(
+    df <- get_swadl(
       "hourly_wage_percentiles",
-      "real_wage_2024",
+      "nominal_wage",
       dimension = "wage_percentile"
     )
 
@@ -44,25 +44,12 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
     cache_clear_all()
   })
 
-  test_that("get_swadl_series with specific dimension value", {
+  test_that("get_swadl with cross-dimensional query", {
     cache_clear_all()
-    df <- get_swadl_series(
-      "hourly_wage_percentiles",
-      "real_wage_2024",
-      dimension = list("wage_percentile" = "wage_p50")
-    )
-
-    expect_true("wage_percentile" %in% names(df))
-    expect_equal(unique(df$wage_percentile), "wage_p50")
-    cache_clear_all()
-  })
-
-  test_that("get_swadl_series with cross-dimensional query", {
-    cache_clear_all()
-    df <- get_swadl_series(
+    df <- get_swadl(
       "labor_force_emp",
       "percent_emp",
-      date_interval = "month",
+      date_interval = "year",
       dimension = list("gender" = "gender_male", "age_group")
     )
 
@@ -74,17 +61,17 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
     cache_clear_all()
   })
 
-  test_that("get_swadl_series date filtering with single date", {
+  test_that("get_swadl date filtering with single date", {
     cache_clear_all()
-    df_all <- get_swadl_series(
+    df_all <- get_swadl(
       "hourly_wage_percentiles",
-      "real_wage_2024",
-      dimension = "overall"
+      "nominal_wage",
+      dimension = list("wage_percentile" = "wage_p50")
     )
-    df_filtered <- get_swadl_series(
+    df_filtered <- get_swadl(
       "hourly_wage_percentiles",
-      "real_wage_2024",
-      dimension = "overall",
+      "nominal_wage",
+      dimension = list("wage_percentile" = "wage_p50"),
       date = "2024-01-01"
     )
 
@@ -93,12 +80,12 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
     cache_clear_all()
   })
 
-  test_that("get_swadl_series date filtering with range", {
+  test_that("get_swadl date filtering with range", {
     cache_clear_all()
-    df <- get_swadl_series(
+    df <- get_swadl(
       "hourly_wage_percentiles",
-      "real_wage_2024",
-      dimension = "overall",
+      "nominal_wage",
+      dimension = list("wage_percentile" = "wage_p50"),
       date = c("2020-01-01", "2024-01-01")
     )
 
@@ -107,63 +94,63 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
     cache_clear_all()
   })
 
-  test_that("get_swadl_series accepts geography as name", {
+  test_that("get_swadl accepts geography as name", {
     cache_clear_all()
-    df <- get_swadl_series(
+    df <- get_swadl(
       "hourly_wage_percentiles",
-      "real_wage_2024",
+      "nominal_wage",
       geography = "national",
-      dimension = "overall"
+      dimension = list("wage_percentile" = "wage_p50")
     )
 
     expect_equal(unique(df$geography), "national")
     cache_clear_all()
   })
 
-  test_that("get_swadl_series validates indicator", {
+  test_that("get_swadl validates indicator", {
     expect_error(
-      get_swadl_series(
+      get_swadl(
         "nonexistent",
-        "real_wage_2024",
-        dimension = "overall"
+        "nominal_wage",
+        dimension = list("wage_percentile" = "wage_p50")
       ),
       "Unknown indicator"
     )
   })
 
-  test_that("get_swadl_series validates measure", {
+  test_that("get_swadl validates measure", {
     cache_clear_all()
     expect_error(
-      get_swadl_series(
+      get_swadl(
         "hourly_wage_percentiles",
         "fake_measure",
-        dimension = "overall"
+        dimension = list("wage_percentile" = "wage_p50")
       ),
       "Measure.*is not available for indicator"
     )
     cache_clear_all()
   })
 
-  test_that("get_swadl_series validates date_interval", {
+  test_that("get_swadl validates date_interval", {
     cache_clear_all()
     expect_error(
-      get_swadl_series(
+      get_swadl(
         "hourly_wage_percentiles",
-        "real_wage_2024",
+        "nominal_wage",
         date_interval = "month",
-        dimension = "overall"
+        dimension = list("wage_percentile" = "wage_p50")
       ),
       "monthly data is not available for indicator"
     )
     cache_clear_all()
   })
 
-  test_that("get_swadl_series validates dimension", {
+  test_that("get_swadl validates dimension", {
     cache_clear_all()
     expect_error(
-      get_swadl_series(
+      get_swadl(
         "hourly_wage_percentiles",
-        "real_wage_2024",
+        "nominal_wage",
         dimension = "nonexistent"
       ),
       "Dimension.*is not available for this indicator"

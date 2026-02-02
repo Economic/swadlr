@@ -1,34 +1,17 @@
 httptest2::with_mock_dir(testthat::test_path("fixtures"), {
-  test_that("parse_dimension handles 'overall'", {
-    cache_clear_all()
-    result <- parse_dimension(
-      "overall",
-      "hourly_wage_percentiles",
-      "real_wage_2024",
-      "year",
-      "national",
-      "national"
-    )
-
-    expect_equal(result$endpoint, "list")
-    expect_equal(result$params$dimensionValueIds, "overall")
-    expect_equal(result$dim_ids, "overall")
-    cache_clear_all()
-  })
-
   test_that("parse_dimension handles single dimension ID", {
     cache_clear_all()
     result <- parse_dimension(
       "wage_percentile",
       "hourly_wage_percentiles",
-      "real_wage_2024",
+      "nominal_wage",
       "year",
       "national",
       "national"
     )
 
-    expect_equal(result$endpoint, "list")
-    expect_equal(result$params$dimensionId, "wage_percentile")
+    expect_equal(result$endpoint, "custom")
+    expect_true("datumns" %in% names(result$params))
     expect_equal(result$dim_ids, "wage_percentile")
     cache_clear_all()
   })
@@ -38,14 +21,14 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
     result <- parse_dimension(
       list("wage_percentile"),
       "hourly_wage_percentiles",
-      "real_wage_2024",
+      "nominal_wage",
       "year",
       "national",
       "national"
     )
 
-    expect_equal(result$endpoint, "list")
-    expect_equal(result$params$dimensionId, "wage_percentile")
+    expect_equal(result$endpoint, "custom")
+    expect_true("datumns" %in% names(result$params))
     cache_clear_all()
   })
 
@@ -54,14 +37,14 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
     result <- parse_dimension(
       list("wage_percentile" = "wage_p50"),
       "hourly_wage_percentiles",
-      "real_wage_2024",
+      "nominal_wage",
       "year",
       "national",
       "national"
     )
 
-    expect_equal(result$endpoint, "list")
-    expect_equal(result$params$dimensionValueIds, "wage_p50")
+    expect_equal(result$endpoint, "custom")
+    expect_true("datumns" %in% names(result$params))
     expect_equal(result$dim_value_filter$wage_percentile, "wage_p50")
     cache_clear_all()
   })
@@ -71,14 +54,14 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
     result <- parse_dimension(
       list("wage_percentile" = c("wage_p10", "wage_p50")),
       "hourly_wage_percentiles",
-      "real_wage_2024",
+      "nominal_wage",
       "year",
       "national",
       "national"
     )
 
-    expect_equal(result$endpoint, "list")
-    expect_equal(result$params$dimensionId, "wage_percentile")
+    expect_equal(result$endpoint, "custom")
+    expect_true("datumns" %in% names(result$params))
     expect_equal(
       result$dim_value_filter$wage_percentile,
       c("wage_p10", "wage_p50")
@@ -92,7 +75,7 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
       list("gender" = "gender_male", "age_group"),
       "labor_force_emp",
       "percent_emp",
-      "month",
+      "year",
       "national",
       "national"
     )
@@ -110,7 +93,7 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
       parse_dimension(
         "nonexistent",
         "hourly_wage_percentiles",
-        "real_wage_2024",
+        "nominal_wage",
         "year",
         "national",
         "national"
@@ -126,7 +109,7 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
       parse_dimension(
         list("wage_percentile" = "wage_p99"),
         "hourly_wage_percentiles",
-        "real_wage_2024",
+        "nominal_wage",
         "year",
         "national",
         "national"
@@ -141,7 +124,7 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
       parse_dimension(
         list(),
         "hourly_wage_percentiles",
-        "real_wage_2024",
+        "nominal_wage",
         "year",
         "national",
         "national"
@@ -155,13 +138,29 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
       parse_dimension(
         123,
         "hourly_wage_percentiles",
-        "real_wage_2024",
+        "nominal_wage",
         "year",
         "national",
         "national"
       ),
       "must be"
     )
+  })
+
+  test_that("parse_dimension rejects multiple dimensions requesting all values", {
+    cache_clear_all()
+    expect_error(
+      parse_dimension(
+        list("gender", "age_group"),
+        "labor_force_emp",
+        "percent_emp",
+        "year",
+        "national",
+        "national"
+      ),
+      "Only one dimension can request all values"
+    )
+    cache_clear_all()
   })
 
   test_that("build_datumns creates correct structure", {

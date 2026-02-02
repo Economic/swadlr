@@ -1,4 +1,4 @@
-url: https://economic.github.com/swadlr/
+url: https://economic.github.io/swadlr/
 
 template:
   bootstrap: 5
@@ -13,22 +13,19 @@ reference:
   - title: Data retrieval
     desc: Fetch time series data from the SWADL API
     contents:
-      - get_swadl_series
+      - get_swadl
   - title: Indicator information
     desc: Get detailed information about a specific indicator
     contents:
-      - get_swadl_info
+      - swadl_indicator
   - title: Explore available data
     desc: Functions to explore what data is available in the SWADL API
     contents:
-      - swadlr_topics
-      - swadlr_indicators
-      - swadlr_measures
-      - swadlr_dimensions
-      - swadlr_geographies
+      - swadl_id_names
+      - swadl_availability
   - title: Cache management
     contents:
-      - swadlr_clear_cache
+      - clear_swadlr_cache
   - title: Package
     contents:
       - swadlr-package

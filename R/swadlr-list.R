@@ -1,65 +1,99 @@
 # Public functions for exploring available SWADL data
 
-#' List available topics
+#' List ID-name mappings for SWADL metadata
 #'
-#' Returns a data frame of available topics in the SWADL API. Topics are broad
-#' categories that group related indicators.
+#' Returns a tibble of ID-name mappings for SWADL metadata. Use this to
+#' understand what each ID represents.
 #'
-#' @return A data frame with columns:
+#' @param what The type of metadata to list. One of:
 #'   \describe{
-#'     \item{id}{Topic identifier (used for filtering indicators)}
-#'     \item{name}{Human-readable topic name}
+#'     \item{`"topics"`}{Broad categories that group related indicators}
+#'     \item{`"indicators"`}{Specific data series that can be retrieved with
+#'       [get_swadl()]}
+#'     \item{`"measures"`}{Ways of presenting indicator data (e.g., nominal vs
+#'       real wages)}
+#'     \item{`"dimensions"`}{Demographic categories for subsetting data (e.g.,
+#'       gender, race)}
+#'     \item{`"geographies"`}{Geographic units (national, regions, divisions,
+#'       states)}
 #'   }
+#' @param topic For `what = "indicators"`, optionally filter to a specific
+#'   topic ID.
+#' @param indicator For `what = "measures"` or `what = "dimensions"`, optionally
+#'   filter to those available for a specific indicator ID.
+#'
+#' @return A tibble. The columns depend on `what`:
+#'   \describe{
+#'     \item{topics}{`id`, `name`}
+#'     \item{indicators}{`id`, `name`, `topic_id`, `updated_date`}
+#'     \item{measures}{`id`, `name`, `format`}
+#'     \item{dimensions}{`dimension_id`, `dimension_name`, `value_id`,
+#'       `value_name`}
+#'     \item{geographies}{`id`, `level`, `name`, `abbr`}
+#'   }
+#'
+#' @seealso [swadl_indicator()] for detailed information about a single
+#'   indicator, [get_swadl()] for fetching time series data.
 #'
 #' @export
 #' @examples
-#' \dontrun{
-#' swadlr_topics()
+#' \donttest{
+#' # List all topics
+#' swadl_id_names("topics")
+#'
+#' # List all indicators
+#' swadl_id_names("indicators")
+#'
+#' # List indicators for a specific topic
+#' swadl_id_names("indicators", topic = "wages")
+#'
+#' # List measures for a specific indicator
+#' swadl_id_names("measures", indicator = "hourly_wage_percentiles")
+#'
+#' # List dimensions
+#' swadl_id_names("dimensions")
+#'
+#' # List geographies
+#' swadl_id_names("geographies")
 #' }
-swadlr_topics <- function() {
-  raw <- fetch_topics()
+swadl_id_names <- function(
+  what = c("topics", "indicators", "measures", "dimensions", "geographies"),
+  topic = NULL,
+  indicator = NULL
+) {
+  what <- match.arg(what)
 
-  data.frame(
-    id = raw$topic$id,
-    name = raw$topic$name,
-    stringsAsFactors = FALSE
+  switch(
+    what,
+    topics = list_topics(),
+    indicators = list_indicators(topic),
+    measures = list_measures(indicator),
+    dimensions = list_dimensions(indicator),
+    geographies = list_geographies()
   )
 }
 
-#' List available indicators
-#'
-#' Returns a data frame of available indicators in the SWADL API. Indicators
-#' are specific data series that can be retrieved with `get_swadl_series()`.
-#'
-#' @param topic Optional topic ID to filter indicators. Use [swadlr_topics()]
-#'   to see available topics.
-#'
-#' @return A data frame with columns:
-#'   \describe{
-#'     \item{id}{Indicator identifier (used in `get_swadl_series()`)}
-#'     \item{name}{Human-readable indicator name}
-#'     \item{topic_id}{ID of the topic this indicator belongs to}
-#'     \item{updated_date}{Date the indicator was last updated}
-#'   }
-#'
-#' @export
-#' @examples
-#' \dontrun{
-#' # List all indicators
-#' swadlr_indicators()
-#'
-#' # List indicators for a specific topic
-#' swadlr_indicators(topic = "wages")
-#' }
-swadlr_indicators <- function(topic = NULL) {
+
+# Internal: list topics
+list_topics <- function() {
+  raw <- fetch_topics()
+
+  tibble::tibble(
+    id = raw$topic$id,
+    name = raw$topic$name
+  )
+}
+
+
+# Internal: list indicators
+list_indicators <- function(topic = NULL) {
   raw <- fetch_indicators()
 
-  result <- data.frame(
+  result <- tibble::tibble(
     id = raw$indicator$id,
     name = raw$indicator$name,
     topic_id = raw$indicator$fkTopicId,
-    updated_date = as.character(as.Date(raw$indicator$updatedDate)),
-    stringsAsFactors = FALSE
+    updated_date = as.character(as.Date(raw$indicator$updatedDate))
   )
 
   if (!is.null(topic)) {
@@ -68,7 +102,7 @@ swadlr_indicators <- function(topic = NULL) {
     }
     result <- result[result$topic_id == topic, ]
     if (nrow(result) == 0) {
-      available <- paste(unique(swadlr_topics()$id), collapse = ", ")
+      available <- paste(unique(list_topics()$id), collapse = ", ")
       stop(
         "Unknown topic: \"",
         topic,
@@ -83,40 +117,15 @@ swadlr_indicators <- function(topic = NULL) {
   result
 }
 
-#' List available measures
-#'
-#' Returns a data frame of available measures in the SWADL API. Measures are
-#' specific ways of presenting indicator data (e.g., nominal vs real wages,
-#' counts vs rates).
-#'
-#' @param indicator Optional indicator ID to filter measures to only those
-#'   available for a specific indicator. Use [swadlr_indicators()] to see
-#'   available indicators.
-#'
-#' @return A data frame with columns:
-#'   \describe{
-#'     \item{id}{Measure identifier (used in `get_swadl_series()`)}
-#'     \item{name}{Human-readable measure name}
-#'     \item{format}{Display format (e.g., "dollar", "rate", "count")}
-#'   }
-#'
-#' @export
-#' @examples
-#' \dontrun{
-#' # List all measures
-#' swadlr_measures()
-#'
-#' # List measures for a specific indicator
-#' swadlr_measures(indicator = "hourly_wage_percentiles")
-#' }
-swadlr_measures <- function(indicator = NULL) {
+
+# Internal: list measures
+list_measures <- function(indicator = NULL) {
   raw <- fetch_measures()
 
-  result <- data.frame(
+  result <- tibble::tibble(
     id = raw$measure$id,
     name = raw$measure$name,
-    format = raw$measure$format,
-    stringsAsFactors = FALSE
+    format = raw$measure$format
   )
 
   if (!is.null(indicator)) {
@@ -142,38 +151,12 @@ swadlr_measures <- function(indicator = NULL) {
   result
 }
 
-#' List available dimensions
-#'
-#' Returns a data frame of available dimensions and their values in the SWADL
-#' API. Dimensions allow subsetting data by demographic or other categories
-#' (e.g., gender, race, education).
-#'
-#' @param indicator Optional indicator ID to filter dimensions to only those
-#'   available for a specific indicator. Use [swadlr_indicators()] to see
-#'   available indicators.
-#'
-#' @return A data frame with columns:
-#'   \describe{
-#'     \item{dimension_id}{Dimension identifier}
-#'     \item{dimension_name}{Human-readable dimension name}
-#'     \item{value_id}{Dimension value identifier (used in `get_swadl_series()`
-#'       with the `dimension` argument)}
-#'     \item{value_name}{Human-readable dimension value name}
-#'   }
-#'
-#' @export
-#' @examples
-#' \dontrun{
-#' # List all dimensions
-#' swadlr_dimensions()
-#'
-#' # List dimensions for a specific indicator
-#' swadlr_dimensions(indicator = "hourly_wage_percentiles")
-#' }
-swadlr_dimensions <- function(indicator = NULL) {
+
+# Internal: list dimensions
+list_dimensions <- function(indicator = NULL) {
   raw <- fetch_dimensions()
 
-  # Build a data frame with all dimension values
+  # Build a tibble with all dimension values
   rows <- list()
   n_dims <- length(raw$dimension$id)
 
@@ -184,12 +167,11 @@ swadlr_dimensions <- function(indicator = NULL) {
 
     n_vals <- length(dim_values$dimension_value$id)
     for (j in seq_len(n_vals)) {
-      rows[[length(rows) + 1]] <- data.frame(
+      rows[[length(rows) + 1]] <- tibble::tibble(
         dimension_id = dim_id,
         dimension_name = dim_name,
         value_id = dim_values$dimension_value$id[j],
-        value_name = dim_values$dimension_value$name[j],
-        stringsAsFactors = FALSE
+        value_name = dim_values$dimension_value$name[j]
       )
     }
   }
@@ -219,29 +201,8 @@ swadlr_dimensions <- function(indicator = NULL) {
   result
 }
 
-#' List available geographies
-#'
-#' Returns a data frame of available geographic units in the SWADL API. This
-#' includes the national level, census regions, census divisions, and all
-#' states plus the District of Columbia.
-#'
-#' @return A data frame with columns:
-#'   \describe{
-#'     \item{id}{Geography identifier (used in `get_swadl_series()`)}
-#'     \item{level}{Geographic level ("national", "region", "division", or
-#'       "state")}
-#'     \item{name}{Human-readable geography name}
-#'     \item{abbr}{Abbreviation (state postal code, "US" for national, or NA
-#'       for regions/divisions)}
-#'   }
-#'
-#' @export
-#' @examples
-#' swadlr_geographies()
-#'
-#' # Filter to just states
-#' geographies <- swadlr_geographies()
-#' geographies[geographies$level == "state", ]
-swadlr_geographies <- function() {
+
+# Internal: list geographies
+list_geographies <- function() {
   swadlr_geography_lookup
 }

@@ -1,18 +1,128 @@
 [
-  {
-    "topic": {
-      "id": "wages",
-      "name": "Wages",
-      "orderBy": 0
+    {
+        "topic": {
+            "id": "labor_force",
+            "name": "Employment",
+            "orderBy": 0
+        },
+        "topic_meta": [
+            {
+                "fkTopicId": "labor_force",
+                "key": "description",
+                "value": "Data on the labor force are compiled from EPI analysis of basic monthly <a href='https://microdata.epi.org/'>Current Population Survey microdata<\/a>"
+            }
+        ]
     },
-    "topic_meta": []
-  },
-  {
-    "topic": {
-      "id": "labor_force",
-      "name": "Employment",
-      "orderBy": 1
+    {
+        "topic": {
+            "id": "minimum_wage",
+            "name": "Minimum wages",
+            "orderBy": 0
+        },
+        "topic_meta": [
+            {
+                "fkTopicId": "minimum_wage",
+                "key": "description",
+                "value": "Minimum wage rates in real and nominal dollars."
+            }
+        ]
     },
-    "topic_meta": []
-  }
+    {
+        "topic": {
+            "id": "population",
+            "name": "Population",
+            "orderBy": 0
+        },
+        "topic_meta": [
+            {
+                "fkTopicId": "population",
+                "key": "description",
+                "value": "Civilian population levels and shares by demographic groups and geographic region."
+            }
+        ]
+    },
+    {
+        "topic": {
+            "id": "poverty",
+            "name": "Poverty",
+            "orderBy": 0
+        },
+        "topic_meta": [
+            {
+                "fkTopicId": "poverty",
+                "key": "description",
+                "value": "Market poverty and supplemental poverty rates and levels, by poverty thresholds."
+            }
+        ]
+    },
+    {
+        "topic": {
+            "id": "prices",
+            "name": "Prices",
+            "orderBy": 0
+        },
+        "topic_meta": [
+            {
+                "fkTopicId": "prices",
+                "key": "description",
+                "value": "Inflation rates and price indexes using the chained CPI-U and PCE."
+            }
+        ]
+    },
+    {
+        "topic": {
+            "id": "productivity",
+            "name": "Productivity",
+            "orderBy": 0
+        },
+        "topic_meta": [
+            {
+                "fkTopicId": "productivity",
+                "key": "description",
+                "value": "Productivity and pay levels in real and nominal dollars and growth since 1948. Productivity measures economy-wide output net of depreciation per hour of work. Pay is defined as the average compensation of production and non-supervisory workers."
+            }
+        ]
+    },
+    {
+        "topic": {
+            "id": "unions",
+            "name": "Unions",
+            "orderBy": 0
+        },
+        "topic_meta": [
+            {
+                "fkTopicId": "unions",
+                "key": "description",
+                "value": "Union membership and union wage premium data, by demographic groups and geographic region."
+            }
+        ]
+    },
+    {
+        "topic": {
+            "id": "wage_gaps",
+            "name": "Wage disparities",
+            "orderBy": 0
+        },
+        "topic_meta": [
+            {
+                "fkTopicId": "wage_gaps",
+                "key": "description",
+                "value": "Racial and gender wage gaps, college wage premiums, and CEO-to-worker pay ratios."
+            }
+        ]
+    },
+    {
+        "topic": {
+            "id": "wages",
+            "name": "Wages",
+            "orderBy": 0
+        },
+        "topic_meta": [
+            {
+                "fkTopicId": "wages",
+                "key": "description",
+                "value": "Measures of hourly and annual wages, by demographic groups, industry, and geographic region from household and establishment surveys and administrative data."
+            }
+        ]
+    }
 ]

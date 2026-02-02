@@ -10,14 +10,14 @@ This project will be an R package called `swadlr` that retrieves data from the u
 
 The main users of this package want to grab a time series or value from EPI SWADL, either to use directly or as a benchmark for another calculation.
 
-## Possible functions
+## Main functions
 
-### get_swadl_series
+### get_swadl
 
 Returns a tibble (data frame in long format).
 
 ```r
-get_swadl_series(
+get_swadl(
     indicator,
     measure,
     date_interval = c("year", "month"),
@@ -27,15 +27,39 @@ get_swadl_series(
 )
 ```
 
-### get_swadl_info
+### swadl_indicator
 
 Return structured summary for an indicator.
 
 ```r
-get_swadl_info(indicator)
+swadl_indicator(indicator)
 ```
 
-Returns an S3 object of class `swadlr_indicator_info` with a nice print method.
+Returns an S3 object of class `swadl_indicator_info` with a nice print method.
+
+### swadl_id_names
+
+List ID-name mappings for topics, indicators, measures, dimensions, or geographies.
+
+```r
+swadl_id_names(what = c("topics", "indicators", "measures", "dimensions", "geographies"))
+```
+
+### swadl_availability
+
+Search for data availability across all indicators.
+
+```r
+swadl_availability(indicator, measure, date_interval, geo_level, dimensions, dimensions_match)
+```
+
+### clear_swadlr_cache
+
+Clear the cached metadata.
+
+```r
+clear_swadlr_cache()
+```
 
 ## Testing
 

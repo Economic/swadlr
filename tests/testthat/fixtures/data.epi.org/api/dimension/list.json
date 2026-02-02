@@ -1,109 +1,1332 @@
 [
-  {
-    "dimension": {
-      "id": "overall",
-      "name": "Overall",
-      "orderBy": -1,
-      "isVisible": false
+    {
+        "dimension": {
+            "id": "age_group",
+            "name": "Age",
+            "orderBy": 0,
+            "isVisible": true
+        },
+        "dimension_meta": [
+            {
+                "fkDimensionId": "age_group",
+                "key": "category",
+                "value": "Demographics"
+            }
+        ],
+        "dimension_values": [
+            {
+                "dimension_value": {
+                    "id": "age_16_24",
+                    "fkDimensionId": "age_group",
+                    "name": "16–24 years",
+                    "orderBy": 0
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "age_25_54",
+                    "fkDimensionId": "age_group",
+                    "name": "25–54 years",
+                    "orderBy": 1
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "age_55_64",
+                    "fkDimensionId": "age_group",
+                    "name": "55–64 years",
+                    "orderBy": 2
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "age_55_plus",
+                    "fkDimensionId": "age_group",
+                    "name": "55+ years",
+                    "orderBy": 3
+                },
+                "dimension_value_meta": [
+
+                ]
+            }
+        ]
     },
-    "dimension_meta": [],
-    "dimension_values": [
-      {
-        "dimension_value": {
-          "id": "overall",
-          "fkDimensionId": "overall",
-          "name": "Overall",
-          "orderBy": 0
+    {
+        "dimension": {
+            "id": "ces_industry",
+            "name": "All sectors",
+            "orderBy": 0,
+            "isVisible": true
         },
-        "dimension_value_meta": []
-      }
-    ]
-  },
-  {
-    "dimension": {
-      "id": "wage_percentile",
-      "name": "Wage percentile",
-      "orderBy": 0,
-      "isVisible": true
+        "dimension_meta": [
+            {
+                "fkDimensionId": "ces_industry",
+                "key": "category",
+                "value": "Industry"
+            }
+        ],
+        "dimension_values": [
+            {
+                "dimension_value": {
+                    "id": "ces_nonfarm",
+                    "fkDimensionId": "ces_industry",
+                    "name": "Total nonfarm",
+                    "orderBy": 0
+                },
+                "dimension_value_meta": [
+
+                ]
+            }
+        ]
     },
-    "dimension_meta": [],
-    "dimension_values": [
-      {
-        "dimension_value": {
-          "id": "wage_p10",
-          "fkDimensionId": "wage_percentile",
-          "name": "10th percentile",
-          "orderBy": 0
+    {
+        "dimension": {
+            "id": "ces_government",
+            "name": "Government",
+            "orderBy": 2,
+            "isVisible": true
         },
-        "dimension_value_meta": []
-      },
-      {
-        "dimension_value": {
-          "id": "wage_p50",
-          "fkDimensionId": "wage_percentile",
-          "name": "50th percentile (median)",
-          "orderBy": 4
-        },
-        "dimension_value_meta": []
-      }
-    ]
-  },
-  {
-    "dimension": {
-      "id": "gender",
-      "name": "Gender",
-      "orderBy": 1,
-      "isVisible": true
+        "dimension_meta": [
+            {
+                "fkDimensionId": "ces_government",
+                "key": "category",
+                "value": "Industry"
+            },
+            {
+                "fkDimensionId": "ces_government",
+                "key": "parent_dimension_id",
+                "value": "ces_industry"
+            }
+        ],
+        "dimension_values": [
+            {
+                "dimension_value": {
+                    "id": "ces_fed",
+                    "fkDimensionId": "ces_government",
+                    "name": "Federal government",
+                    "orderBy": 26
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_fed",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_government"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_government",
+                    "fkDimensionId": "ces_government",
+                    "name": "Government",
+                    "orderBy": 25
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_government",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_nonfarm"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_local",
+                    "fkDimensionId": "ces_government",
+                    "name": "Local government",
+                    "orderBy": 30
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_local",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_government"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_local_ed",
+                    "fkDimensionId": "ces_government",
+                    "name": "Local government educational services",
+                    "orderBy": 31
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_local_ed",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_local"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_local_noed",
+                    "fkDimensionId": "ces_government",
+                    "name": "Local government, excluding education",
+                    "orderBy": 32
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_local_noed",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_local"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_state",
+                    "fkDimensionId": "ces_government",
+                    "name": "State government",
+                    "orderBy": 27
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_state",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_government"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_state_ed",
+                    "fkDimensionId": "ces_government",
+                    "name": "State government educational services",
+                    "orderBy": 28
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_state_ed",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_state"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_state_no_ed",
+                    "fkDimensionId": "ces_government",
+                    "name": "State government, excluding education",
+                    "orderBy": 29
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_state_no_ed",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_state"
+                    }
+                ]
+            }
+        ]
     },
-    "dimension_meta": [],
-    "dimension_values": [
-      {
-        "dimension_value": {
-          "id": "gender_female",
-          "fkDimensionId": "gender",
-          "name": "Female",
-          "orderBy": 0
+    {
+        "dimension": {
+            "id": "ces_private",
+            "name": "Total private sector",
+            "orderBy": 1,
+            "isVisible": true
         },
-        "dimension_value_meta": []
-      },
-      {
-        "dimension_value": {
-          "id": "gender_male",
-          "fkDimensionId": "gender",
-          "name": "Male",
-          "orderBy": 1
-        },
-        "dimension_value_meta": []
-      }
-    ]
-  },
-  {
-    "dimension": {
-      "id": "age_group",
-      "name": "Age",
-      "orderBy": 2,
-      "isVisible": true
+        "dimension_meta": [
+            {
+                "fkDimensionId": "ces_private",
+                "key": "category",
+                "value": "Industry"
+            },
+            {
+                "fkDimensionId": "ces_private",
+                "key": "parent_dimension_id",
+                "value": "ces_industry"
+            }
+        ],
+        "dimension_values": [
+            {
+                "dimension_value": {
+                    "id": "ces_aer",
+                    "fkDimensionId": "ces_private",
+                    "name": "Arts, entertainment, and recreation",
+                    "orderBy": 22
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_aer",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_lh"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_afs",
+                    "fkDimensionId": "ces_private",
+                    "name": "Accommodation and food services",
+                    "orderBy": 23
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_afs",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_lh"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_construction",
+                    "fkDimensionId": "ces_private",
+                    "name": "Construction",
+                    "orderBy": 4
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_construction",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_goods"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_durable",
+                    "fkDimensionId": "ces_private",
+                    "name": "Durable goods",
+                    "orderBy": 6
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_durable",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_manufacturing"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_fi",
+                    "fkDimensionId": "ces_private",
+                    "name": "Finance and insurance",
+                    "orderBy": 15
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_fi",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_finance"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_finance",
+                    "fkDimensionId": "ces_private",
+                    "name": "Financial activities",
+                    "orderBy": 14
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_finance",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_services"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_goods",
+                    "fkDimensionId": "ces_private",
+                    "name": "Goods producing, private sector",
+                    "orderBy": 2
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_goods",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_private"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_hcsa",
+                    "fkDimensionId": "ces_private",
+                    "name": "Health care and social assistance",
+                    "orderBy": 20
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_hcsa",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_pehs"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_information",
+                    "fkDimensionId": "ces_private",
+                    "name": "Information",
+                    "orderBy": 13
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_information",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_services"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_lh",
+                    "fkDimensionId": "ces_private",
+                    "name": "Leisure and hospitality",
+                    "orderBy": 21
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_lh",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_services"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_manufacturing",
+                    "fkDimensionId": "ces_private",
+                    "name": "Manufacturing",
+                    "orderBy": 5
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_manufacturing",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_goods"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_ml",
+                    "fkDimensionId": "ces_private",
+                    "name": "Mining and logging",
+                    "orderBy": 3
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_ml",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_goods"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_nondurable",
+                    "fkDimensionId": "ces_private",
+                    "name": "Non-durable goods",
+                    "orderBy": 7
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_nondurable",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_manufacturing"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_other",
+                    "fkDimensionId": "ces_private",
+                    "name": "Other services",
+                    "orderBy": 24
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_other",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_services"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_pbs",
+                    "fkDimensionId": "ces_private",
+                    "name": "Professional and business services",
+                    "orderBy": 17
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_pbs",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_services"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_pehs",
+                    "fkDimensionId": "ces_private",
+                    "name": "Private education and health services",
+                    "orderBy": 18
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_pehs",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_services"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_pes",
+                    "fkDimensionId": "ces_private",
+                    "name": "Private educational services",
+                    "orderBy": 19
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_pes",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_pehs"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_private",
+                    "fkDimensionId": "ces_private",
+                    "name": "Total private sector",
+                    "orderBy": 1
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_private",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_nonfarm"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_rerl",
+                    "fkDimensionId": "ces_private",
+                    "name": "Real estate and rental and leasing",
+                    "orderBy": 16
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_rerl",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_finance"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_retail",
+                    "fkDimensionId": "ces_private",
+                    "name": "Retail trade",
+                    "orderBy": 11
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_retail",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_ttu"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_services",
+                    "fkDimensionId": "ces_private",
+                    "name": "Service providing, private sector",
+                    "orderBy": 8
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_services",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_private"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_ttu",
+                    "fkDimensionId": "ces_private",
+                    "name": "Trade, transportation, and utilities",
+                    "orderBy": 9
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_ttu",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_services"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_twu",
+                    "fkDimensionId": "ces_private",
+                    "name": "Transportation, warehousing, and utilities",
+                    "orderBy": 12
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_twu",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_ttu"
+                    }
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ces_wholesale",
+                    "fkDimensionId": "ces_private",
+                    "name": "Wholesale trade",
+                    "orderBy": 10
+                },
+                "dimension_value_meta": [
+                    {
+                        "fkDimensionValueId": "ces_wholesale",
+                        "key": "parent_dimension_value_id",
+                        "value": "ces_ttu"
+                    }
+                ]
+            }
+        ]
     },
-    "dimension_meta": [],
-    "dimension_values": [
-      {
-        "dimension_value": {
-          "id": "age_16_24",
-          "fkDimensionId": "age_group",
-          "name": "16-24 years",
-          "orderBy": 0
+    {
+        "dimension": {
+            "id": "education",
+            "name": "Education",
+            "orderBy": 0,
+            "isVisible": true
         },
-        "dimension_value_meta": []
-      },
-      {
-        "dimension_value": {
-          "id": "age_25_54",
-          "fkDimensionId": "age_group",
-          "name": "25-54 years",
-          "orderBy": 1
+        "dimension_meta": [
+            {
+                "fkDimensionId": "education",
+                "key": "category",
+                "value": "Demographics"
+            }
+        ],
+        "dimension_values": [
+            {
+                "dimension_value": {
+                    "id": "education_college",
+                    "fkDimensionId": "education",
+                    "name": "Bachelor's degree",
+                    "orderBy": 3
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "education_lths",
+                    "fkDimensionId": "education",
+                    "name": "Less than high school",
+                    "orderBy": 0
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "education_hs",
+                    "fkDimensionId": "education",
+                    "name": "High school",
+                    "orderBy": 1
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "education_some_college",
+                    "fkDimensionId": "education",
+                    "name": "Some college",
+                    "orderBy": 2
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "education_advanced",
+                    "fkDimensionId": "education",
+                    "name": "Advanced degree",
+                    "orderBy": 4
+                },
+                "dimension_value_meta": [
+
+                ]
+            }
+        ]
+    },
+    {
+        "dimension": {
+            "id": "gender",
+            "name": "Gender",
+            "orderBy": 0,
+            "isVisible": true
         },
-        "dimension_value_meta": []
-      }
-    ]
-  }
+        "dimension_meta": [
+            {
+                "fkDimensionId": "gender",
+                "key": "category",
+                "value": "Demographics"
+            }
+        ],
+        "dimension_values": [
+            {
+                "dimension_value": {
+                    "id": "gender_female",
+                    "fkDimensionId": "gender",
+                    "name": "Female",
+                    "orderBy": 0
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "gender_male",
+                    "fkDimensionId": "gender",
+                    "name": "Male",
+                    "orderBy": 1
+                },
+                "dimension_value_meta": [
+
+                ]
+            }
+        ]
+    },
+    {
+        "dimension": {
+            "id": "nativity",
+            "name": "Nativity",
+            "orderBy": 0,
+            "isVisible": true
+        },
+        "dimension_meta": [
+            {
+                "fkDimensionId": "nativity",
+                "key": "category",
+                "value": "Demographics"
+            }
+        ],
+        "dimension_values": [
+            {
+                "dimension_value": {
+                    "id": "nativity_native",
+                    "fkDimensionId": "nativity",
+                    "name": "US born",
+                    "orderBy": 1
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "nativity_foreign",
+                    "fkDimensionId": "nativity",
+                    "name": "Foreign born",
+                    "orderBy": 0
+                },
+                "dimension_value_meta": [
+
+                ]
+            }
+        ]
+    },
+    {
+        "dimension": {
+            "id": "poverty_age_group",
+            "name": "Age",
+            "orderBy": 0,
+            "isVisible": true
+        },
+        "dimension_meta": [
+            {
+                "fkDimensionId": "poverty_age_group",
+                "key": "category",
+                "value": "Demographics"
+            }
+        ],
+        "dimension_values": [
+            {
+                "dimension_value": {
+                    "id": "age_18_64",
+                    "fkDimensionId": "poverty_age_group",
+                    "name": "18–64 years",
+                    "orderBy": 1
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "age_65_plus",
+                    "fkDimensionId": "poverty_age_group",
+                    "name": "65+ years",
+                    "orderBy": 2
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "age_0_17",
+                    "fkDimensionId": "poverty_age_group",
+                    "name": "0–17 years",
+                    "orderBy": 0
+                },
+                "dimension_value_meta": [
+
+                ]
+            }
+        ]
+    },
+    {
+        "dimension": {
+            "id": "race",
+            "name": "Race/Ethnicity",
+            "orderBy": 0,
+            "isVisible": true
+        },
+        "dimension_meta": [
+            {
+                "fkDimensionId": "race",
+                "key": "category",
+                "value": "Demographics"
+            }
+        ],
+        "dimension_values": [
+            {
+                "dimension_value": {
+                    "id": "race_aapi",
+                    "fkDimensionId": "race",
+                    "name": "Asian American/Pacific Islander",
+                    "orderBy": 0
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "race_white",
+                    "fkDimensionId": "race",
+                    "name": "White",
+                    "orderBy": 4
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "race_hispanic",
+                    "fkDimensionId": "race",
+                    "name": "Hispanic",
+                    "orderBy": 2
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "race_black",
+                    "fkDimensionId": "race",
+                    "name": "Black",
+                    "orderBy": 1
+                },
+                "dimension_value_meta": [
+
+                ]
+            }
+        ]
+    },
+    {
+        "dimension": {
+            "id": "wage_percentile",
+            "name": "Wage percentile",
+            "orderBy": 0,
+            "isVisible": true
+        },
+        "dimension_meta": [
+
+        ],
+        "dimension_values": [
+            {
+                "dimension_value": {
+                    "id": "wage_p50",
+                    "fkDimensionId": "wage_percentile",
+                    "name": "50th percentile (median)",
+                    "orderBy": 4
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "wage_p10",
+                    "fkDimensionId": "wage_percentile",
+                    "name": "10th percentile",
+                    "orderBy": 0
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "wage_p20",
+                    "fkDimensionId": "wage_percentile",
+                    "name": "20th percentile",
+                    "orderBy": 1
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "wage_p30",
+                    "fkDimensionId": "wage_percentile",
+                    "name": "30th percentile",
+                    "orderBy": 2
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "wage_p60",
+                    "fkDimensionId": "wage_percentile",
+                    "name": "60th percentile",
+                    "orderBy": 5
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "wage_p70",
+                    "fkDimensionId": "wage_percentile",
+                    "name": "70th percentile",
+                    "orderBy": 6
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "wage_p80",
+                    "fkDimensionId": "wage_percentile",
+                    "name": "80th percentile",
+                    "orderBy": 7
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "wage_p40",
+                    "fkDimensionId": "wage_percentile",
+                    "name": "40th percentile",
+                    "orderBy": 3
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "wage_p90",
+                    "fkDimensionId": "wage_percentile",
+                    "name": "90th percentile",
+                    "orderBy": 8
+                },
+                "dimension_value_meta": [
+
+                ]
+            }
+        ]
+    },
+    {
+        "dimension": {
+            "id": "union_covered",
+            "name": "Union coverage",
+            "orderBy": 0,
+            "isVisible": true
+        },
+        "dimension_meta": [
+
+        ],
+        "dimension_values": [
+            {
+                "dimension_value": {
+                    "id": "union_covered_nonunion",
+                    "fkDimensionId": "union_covered",
+                    "name": "Nonunion",
+                    "orderBy": 0
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "union_covered_union",
+                    "fkDimensionId": "union_covered",
+                    "name": "Union",
+                    "orderBy": 1
+                },
+                "dimension_value_meta": [
+
+                ]
+            }
+        ]
+    },
+    {
+        "dimension": {
+            "id": "productivity_pay",
+            "name": "Outcome",
+            "orderBy": 0,
+            "isVisible": true
+        },
+        "dimension_meta": [
+
+        ],
+        "dimension_values": [
+            {
+                "dimension_value": {
+                    "id": "compensation_productivity_pay",
+                    "fkDimensionId": "productivity_pay",
+                    "name": "Total compensation per hour",
+                    "orderBy": 1
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "productivity_productivity_pay",
+                    "fkDimensionId": "productivity_pay",
+                    "name": "Net productivity (output per hour)",
+                    "orderBy": 0
+                },
+                "dimension_value_meta": [
+
+                ]
+            }
+        ]
+    },
+    {
+        "dimension": {
+            "id": "fpl200",
+            "name": "Twice poverty",
+            "orderBy": 0,
+            "isVisible": true
+        },
+        "dimension_meta": [
+
+        ],
+        "dimension_values": [
+            {
+                "dimension_value": {
+                    "id": "fpl200_below",
+                    "fkDimensionId": "fpl200",
+                    "name": "Below 200% FPL",
+                    "orderBy": 0
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "fpl200_above",
+                    "fkDimensionId": "fpl200",
+                    "name": "Above 200% FPL",
+                    "orderBy": 1
+                },
+                "dimension_value_meta": [
+
+                ]
+            }
+        ]
+    },
+    {
+        "dimension": {
+            "id": "ssa_wage",
+            "name": "Wage group",
+            "orderBy": 0,
+            "isVisible": true
+        },
+        "dimension_meta": [
+
+        ],
+        "dimension_values": [
+            {
+                "dimension_value": {
+                    "id": "ssa_wage_p95_99",
+                    "fkDimensionId": "ssa_wage",
+                    "name": "95–99th percentiles",
+                    "orderBy": 6
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ssa_wage_p99_999",
+                    "fkDimensionId": "ssa_wage",
+                    "name": "99.0–99.9th percentiles",
+                    "orderBy": 8
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ssa_wage_p90_100",
+                    "fkDimensionId": "ssa_wage",
+                    "name": "Top 10%",
+                    "orderBy": 1
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ssa_wage_p90_99",
+                    "fkDimensionId": "ssa_wage",
+                    "name": "90–99th percentiles",
+                    "orderBy": 7
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ssa_wage_p90_95",
+                    "fkDimensionId": "ssa_wage",
+                    "name": "90–95th percentiles",
+                    "orderBy": 5
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ssa_wage_p999_100",
+                    "fkDimensionId": "ssa_wage",
+                    "name": "Top 0.1%",
+                    "orderBy": 4
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ssa_wage_p95_100",
+                    "fkDimensionId": "ssa_wage",
+                    "name": "Top 5%",
+                    "orderBy": 2
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ssa_wage_p0_90",
+                    "fkDimensionId": "ssa_wage",
+                    "name": "Bottom 90%",
+                    "orderBy": 0
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "ssa_wage_p99_100",
+                    "fkDimensionId": "ssa_wage",
+                    "name": "Top 1%",
+                    "orderBy": 3
+                },
+                "dimension_value_meta": [
+
+                ]
+            }
+        ]
+    },
+    {
+        "dimension": {
+            "id": "public_sector",
+            "name": "Private/public sector",
+            "orderBy": 0,
+            "isVisible": true
+        },
+        "dimension_meta": [
+
+        ],
+        "dimension_values": [
+            {
+                "dimension_value": {
+                    "id": "sector_public",
+                    "fkDimensionId": "public_sector",
+                    "name": "Public sector",
+                    "orderBy": 1
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "sector_private",
+                    "fkDimensionId": "public_sector",
+                    "name": "Private sector",
+                    "orderBy": 0
+                },
+                "dimension_value_meta": [
+
+                ]
+            }
+        ]
+    },
+    {
+        "dimension": {
+            "id": "wage_percentile_ratios",
+            "name": "Wage percentile ratios",
+            "orderBy": 0,
+            "isVisible": true
+        },
+        "dimension_meta": [
+
+        ],
+        "dimension_values": [
+            {
+                "dimension_value": {
+                    "id": "wage_ratio_90_10",
+                    "fkDimensionId": "wage_percentile_ratios",
+                    "name": "90–10 ratio",
+                    "orderBy": 1
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "wage_ratio_90_50",
+                    "fkDimensionId": "wage_percentile_ratios",
+                    "name": "90–50 ratio",
+                    "orderBy": 2
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "wage_ratio_50_10",
+                    "fkDimensionId": "wage_percentile_ratios",
+                    "name": "50–10 ratio",
+                    "orderBy": 0
+                },
+                "dimension_value_meta": [
+
+                ]
+            }
+        ]
+    },
+    {
+        "dimension": {
+            "id": "lfstat",
+            "name": "Labor force status",
+            "orderBy": 0,
+            "isVisible": true
+        },
+        "dimension_meta": [
+
+        ],
+        "dimension_values": [
+            {
+                "dimension_value": {
+                    "id": "lfstat_nilf",
+                    "fkDimensionId": "lfstat",
+                    "name": "Not in labor force",
+                    "orderBy": 2
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "lfstat_unemp",
+                    "fkDimensionId": "lfstat",
+                    "name": "Unemployed",
+                    "orderBy": 1
+                },
+                "dimension_value_meta": [
+
+                ]
+            },
+            {
+                "dimension_value": {
+                    "id": "lfstat_emp",
+                    "fkDimensionId": "lfstat",
+                    "name": "Employed",
+                    "orderBy": 0
+                },
+                "dimension_value_meta": [
+
+                ]
+            }
+        ]
+    }
 ]

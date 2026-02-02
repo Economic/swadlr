@@ -29,7 +29,7 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
     cache_clear_all()
     expect_invisible(validate_measure(
       "hourly_wage_percentiles",
-      "real_wage_2024"
+      "nominal_wage"
     ))
     cache_clear_all()
   })
@@ -55,7 +55,7 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
     expect_invisible(
       validate_date_interval(
         "hourly_wage_percentiles",
-        "real_wage_2024",
+        "nominal_wage",
         "year"
       )
     )
@@ -67,7 +67,7 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
     expect_error(
       validate_date_interval(
         "hourly_wage_percentiles",
-        "real_wage_2024",
+        "nominal_wage",
         "month"
       ),
       "monthly data is not available for indicator"
@@ -79,7 +79,7 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
     expect_error(
       validate_date_interval(
         "hourly_wage_percentiles",
-        "real_wage_2024",
+        "nominal_wage",
         "daily"
       ),
       'must be either "year" or "month"'
@@ -90,7 +90,7 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
     cache_clear_all()
     result <- validate_geography(
       "hourly_wage_percentiles",
-      "real_wage_2024",
+      "nominal_wage",
       "year",
       "national"
     )
@@ -125,13 +125,13 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
     cache_clear_all()
     vals <- get_available_dimension_values(
       "hourly_wage_percentiles",
-      "real_wage_2024",
+      "nominal_wage",
       "year",
       "national"
     )
     expect_true("wage_p10" %in% vals)
     expect_true("wage_p50" %in% vals)
-    expect_true("overall" %in% vals)
+    expect_true("gender_female" %in% vals)
     cache_clear_all()
   })
 
@@ -139,7 +139,7 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
     cache_clear_all()
     ids <- get_available_dimension_ids(
       "hourly_wage_percentiles",
-      "real_wage_2024",
+      "nominal_wage",
       "year",
       "national"
     )

@@ -1,4 +1,4 @@
-# Validation helpers for get_swadl_series()
+# Validation helpers for get_swadl()
 
 # Validate indicator exists
 validate_indicator <- function(indicator) {
@@ -14,7 +14,7 @@ validate_indicator <- function(indicator) {
       "Unknown indicator: \"",
       indicator,
       "\"\n",
-      "Use swadlr_indicators() to see available indicators.",
+      'Use swadl_id_names("indicators") to see available indicators.',
       call. = FALSE
     )
   }

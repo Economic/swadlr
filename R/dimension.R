@@ -72,8 +72,10 @@ parse_dimension_overall <- function(geo_id, avail_dim_values) {
   }
 
   list(
-    endpoint = "list",
-    params = list(dimensionValueIds = "overall"),
+    endpoint = "custom",
+    params = list(
+      datumns = list(list(geoId = geo_id, dimensionValues = list("overall")))
+    ),
     dim_ids = "overall",
     dim_value_filter = list(overall = "overall")
   )
@@ -97,9 +99,18 @@ parse_dimension_single <- function(
     )
   }
 
+  # Get all values for this dimension that are available for the indicator
+  all_vals <- get_dim_value_ids_for_dim(dimension)
+  available_vals <- intersect(all_vals, avail_dim_values)
+
+  # Build datumns array with one entry per dimension value
+  datumns <- lapply(available_vals, function(val) {
+    list(geoId = geo_id, dimensionValues = list(val))
+  })
+
   list(
-    endpoint = "list",
-    params = list(dimensionId = dimension),
+    endpoint = "custom",
+    params = list(datumns = datumns),
     dim_ids = dimension,
     dim_value_filter = NULL
   )
@@ -149,7 +160,7 @@ parse_dimension_list <- function(
         )
       }
       dim_ids <- c(dim_ids, elem)
-      dim_value_filter[[elem]] <- NULL
+      dim_value_filter[elem] <- list(NULL)
     } else {
       # Named element: filter to specific value(s)
       if (!(name %in% avail_dim_ids)) {
@@ -190,59 +201,43 @@ parse_dimension_list <- function(
 
   dim_ids <- unique(dim_ids)
 
-  # Determine endpoint
-  if (length(dim_ids) > 1) {
-    needs_custom <- TRUE
-  }
+  # Count dimensions requesting all values (NULL in filter)
+  all_values_dims <- names(which(vapply(
+    dim_value_filter,
+    is.null,
+    logical(1)
+  )))
 
-  if (needs_custom) {
-    # Cross-dimensional: use custom endpoint
-    datumns <- build_datumns(
-      dim_ids,
-      dim_value_filter,
-      geo_id,
-      avail_dim_values
+  if (length(all_values_dims) > 1) {
+    stop(
+      "Only one dimension can request all values. ",
+      "The following dimensions are requesting all values: ",
+      paste(all_values_dims, collapse = ", "),
+      "\n",
+      "Specify values for all but one dimension, e.g.:\n",
+      "  dimension = list(\"",
+      all_values_dims[1],
+      "\" = \"value\", \"",
+      all_values_dims[2],
+      "\")",
+      call. = FALSE
     )
-    return(list(
-      endpoint = "custom",
-      params = list(datumns = datumns),
-      dim_ids = dim_ids,
-      dim_value_filter = dim_value_filter
-    ))
   }
 
-  # Single dimension
-  dim_id <- dim_ids[1]
-  filter <- dim_value_filter[[dim_id]]
+  # Build datumns array for custom endpoint (used for all queries now)
+  datumns <- build_datumns(
+    dim_ids,
+    dim_value_filter,
+    geo_id,
+    avail_dim_values
+  )
 
-  if (is.null(filter)) {
-    # All values for single dimension
-    return(list(
-      endpoint = "list",
-      params = list(dimensionId = dim_id),
-      dim_ids = dim_id,
-      dim_value_filter = NULL
-    ))
-  }
-
-  if (length(filter) == 1) {
-    # Single value
-    return(list(
-      endpoint = "list",
-      params = list(dimensionValueIds = filter),
-      dim_ids = dim_id,
-      dim_value_filter = dim_value_filter
-    ))
-  }
-
-  # Multiple values for single dimension: query all, filter client-side
-  # Or we can use custom endpoint with explicit values
-  return(list(
-    endpoint = "list",
-    params = list(dimensionId = dim_id),
-    dim_ids = dim_id,
+  list(
+    endpoint = "custom",
+    params = list(datumns = datumns),
+    dim_ids = dim_ids,
     dim_value_filter = dim_value_filter
-  ))
+  )
 }
 
 # Build datumns array for custom endpoint
@@ -277,9 +272,10 @@ build_datumns <- function(dim_ids, dim_value_filter, geo_id, avail_dim_values) {
   # Build datumns array
   datumns <- lapply(seq_len(nrow(combinations)), function(i) {
     row <- combinations[i, ]
+    # dimensionValues must be a list so it serializes as a JSON array
     list(
       geoId = geo_id,
-      dimensionValues = unname(as.character(row))
+      dimensionValues = as.list(unname(as.character(row)))
     )
   })
 

@@ -1,6 +1,6 @@
 Package: swadlr
 Title: Access the EPI State of Working America Data Library API
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R:
     c(person(given = "Ben",
              family = "Zipperer",
@@ -19,7 +19,8 @@ Depends:
     R (>= 4.1)
 Imports:
     httr2,
-    jsonlite
+    jsonlite,
+    tibble
 Suggests:
     httptest2,
     knitr,

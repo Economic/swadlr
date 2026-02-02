@@ -1,10 +1,450 @@
 [
-  {
-    "id": "hourly_wage_percentiles-real_wage_2024-source",
-    "fkIndicatorId": "hourly_wage_percentiles",
-    "fkMeasureId": "real_wage_2024",
-    "viewBy": null,
-    "source": "EPI analysis of CPS data",
-    "url": "https://www.epi.org"
-  }
+    {
+        "id": "hourly_wage_mean-real_wage_2025-deflated-using-the-extended-chained-cpi-u",
+        "fkIndicatorId": "hourly_wage_mean",
+        "fkMeasureId": "real_wage_2025",
+        "viewBy": null,
+        "source": "Deflated using the extended Chained CPI-U",
+        "url": "https://economic.github.io/realtalk/reference/c_cpi_u_extended.html"
+    },
+    {
+        "id": "hourly_wage_median-real_wage_2025-deflated-using-the-extended-chained-cpi-u",
+        "fkIndicatorId": "hourly_wage_median",
+        "fkMeasureId": "real_wage_2025",
+        "viewBy": null,
+        "source": "Deflated using the extended Chained CPI-U",
+        "url": "https://economic.github.io/realtalk/reference/c_cpi_u_extended.html"
+    },
+    {
+        "id": "hourly_wage_payroll-real_wage_payroll_all_employees_2025-deflated-using-the-extended-chained-cpi-u",
+        "fkIndicatorId": "hourly_wage_payroll",
+        "fkMeasureId": "real_wage_payroll_all_employees_2025",
+        "viewBy": null,
+        "source": "Deflated using the extended Chained CPI-U",
+        "url": "https://economic.github.io/realtalk/reference/c_cpi_u_extended.html"
+    },
+    {
+        "id": "hourly_wage_payroll-real_wage_payroll_all_employees_2025m12-deflated-using-the-extended-chained-cpi-u",
+        "fkIndicatorId": "hourly_wage_payroll",
+        "fkMeasureId": "real_wage_payroll_all_employees_2025m12",
+        "viewBy": null,
+        "source": "Deflated using the extended Chained CPI-U",
+        "url": "https://economic.github.io/realtalk/reference/c_cpi_u_extended.html"
+    },
+    {
+        "id": "hourly_wage_payroll-real_wage_payroll_prod_employees_2025-deflated-using-the-extended-chained-cpi-u",
+        "fkIndicatorId": "hourly_wage_payroll",
+        "fkMeasureId": "real_wage_payroll_prod_employees_2025",
+        "viewBy": null,
+        "source": "Deflated using the extended Chained CPI-U",
+        "url": "https://economic.github.io/realtalk/reference/c_cpi_u_extended.html"
+    },
+    {
+        "id": "hourly_wage_payroll-real_wage_payroll_prod_employees_2025m12-deflated-using-the-extended-chained-cpi-u",
+        "fkIndicatorId": "hourly_wage_payroll",
+        "fkMeasureId": "real_wage_payroll_prod_employees_2025m12",
+        "viewBy": null,
+        "source": "Deflated using the extended Chained CPI-U",
+        "url": "https://economic.github.io/realtalk/reference/c_cpi_u_extended.html"
+    },
+    {
+        "id": "hourly_wage_percentiles-real_wage_2025-deflated-using-the-extended-chained-cpi-u",
+        "fkIndicatorId": "hourly_wage_percentiles",
+        "fkMeasureId": "real_wage_2025",
+        "viewBy": null,
+        "source": "Deflated using the extended Chained CPI-U",
+        "url": "https://economic.github.io/realtalk/reference/c_cpi_u_extended.html"
+    },
+    {
+        "id": "minimum_wage_levels-real_minimum_wage_2025-deflated-using-the-extended-chained-cpi-u",
+        "fkIndicatorId": "minimum_wage_levels",
+        "fkMeasureId": "real_minimum_wage_2025",
+        "viewBy": null,
+        "source": "Deflated using the extended Chained CPI-U",
+        "url": "https://economic.github.io/realtalk/reference/c_cpi_u_extended.html"
+    },
+    {
+        "id": "minimum_wage_levels-real_minimum_wage_2025m12-deflated-using-the-extended-chained-cpi-u",
+        "fkIndicatorId": "minimum_wage_levels",
+        "fkMeasureId": "real_minimum_wage_2025m12",
+        "viewBy": null,
+        "source": "Deflated using the extended Chained CPI-U",
+        "url": "https://economic.github.io/realtalk/reference/c_cpi_u_extended.html"
+    },
+    {
+        "id": "productivity_levels-real_dollars_per_hour_2025Q3-deflated-using-the-extended-chained-cpi-u",
+        "fkIndicatorId": "productivity_levels",
+        "fkMeasureId": "real_dollars_per_hour_2025Q3",
+        "viewBy": null,
+        "source": "Deflated using the extended Chained CPI-U",
+        "url": "#indicatordocumentation-prices"
+    },
+    {
+        "id": "annual_wage_ssa-gould-and-kandra-2024-",
+        "fkIndicatorId": "annual_wage_ssa",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Gould and Kandra (2024)",
+        "url": "https://www.epi.org/blog/wage-inequality-fell-in-2023-amid-a-strong-labor-market-bucking-long-term-trends-but-top-1-wages-have-skyrocketed-182-since-1979-while-bottom-90-wages-have-seen-just-44-growth/"
+    },
+    {
+        "id": "hourly_wage_median-current-population-survey-epi-extracts",
+        "fkIndicatorId": "hourly_wage_median",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Current Population Survey, EPI extracts",
+        "url": "#indicatordocumentation-wages"
+    },
+    {
+        "id": "hourly_wage_percentile_ratios-current-population-survey-epi-extracts",
+        "fkIndicatorId": "hourly_wage_percentile_ratios",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Current Population Survey, EPI extracts",
+        "url": "#indicatordocumentation-wages"
+    },
+    {
+        "id": "hourly_wage_payroll-bureau-of-labor-statistics-ces",
+        "fkIndicatorId": "hourly_wage_payroll",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Bureau of Labor Statistics CES",
+        "url": "https://www.bls.gov/ces/"
+    },
+    {
+        "id": "hourly_wage_mean-current-population-survey-epi-extracts",
+        "fkIndicatorId": "hourly_wage_mean",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Current Population Survey, EPI extracts",
+        "url": "#indicatordocumentation-wages"
+    },
+    {
+        "id": "hourly_wage_gap_black_white-current-population-survey-epi-extracts",
+        "fkIndicatorId": "hourly_wage_gap_black_white",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Current Population Survey, EPI extracts",
+        "url": "#indicatordocumentation-wage-disparities"
+    },
+    {
+        "id": "hourly_wage_gap_hispanic_white-current-population-survey-epi-extracts",
+        "fkIndicatorId": "hourly_wage_gap_hispanic_white",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Current Population Survey, EPI extracts",
+        "url": "#indicatordocumentation-wage-disparities"
+    },
+    {
+        "id": "labor_force_annual_hours-annual-social-and-economic-supplement-ipums-extracts",
+        "fkIndicatorId": "labor_force_annual_hours",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Annual Social and Economic Supplement, IPUMS extracts",
+        "url": "https://cps.ipums.org/cps/"
+    },
+    {
+        "id": "labor_force_emp-current-population-survey-epi-extracts",
+        "fkIndicatorId": "labor_force_emp",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Current Population Survey, EPI extracts",
+        "url": "#indicatordocumentation-employment"
+    },
+    {
+        "id": "labor_force_multjobs-current-population-survey-epi-extracts",
+        "fkIndicatorId": "labor_force_multjobs",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Current Population Survey, EPI extracts",
+        "url": "#indicatordocumentation-employment"
+    },
+    {
+        "id": "hourly_wage_premium_college-current-population-survey-epi-extracts",
+        "fkIndicatorId": "hourly_wage_premium_college",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Current Population Survey, EPI extracts",
+        "url": "#indicatordocumentation-wage-disparities"
+    },
+    {
+        "id": "labor_force_payroll-bureau-of-labor-statistics-ces",
+        "fkIndicatorId": "labor_force_payroll",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Bureau of Labor Statistics CES",
+        "url": "https://www.bls.gov/ces/"
+    },
+    {
+        "id": "labor_force_pt-current-population-survey-epi-extracts",
+        "fkIndicatorId": "labor_force_pt",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Current Population Survey, EPI extracts",
+        "url": "#indicatordocumentation-employment"
+    },
+    {
+        "id": "labor_force_pt_econ-current-population-survey-epi-extracts",
+        "fkIndicatorId": "labor_force_pt_econ",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Current Population Survey, EPI extracts",
+        "url": "#indicatordocumentation-employment"
+    },
+    {
+        "id": "labor_force_under_emp-current-population-survey-epi-extracts",
+        "fkIndicatorId": "labor_force_under_emp",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Current Population Survey, EPI extracts",
+        "url": "#indicatordocumentation-employment"
+    },
+    {
+        "id": "minimum_wage_levels-vaghul-and-zipperer-2023-",
+        "fkIndicatorId": "minimum_wage_levels",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Vaghul and Zipperer (2023)",
+        "url": "https://github.com/benzipperer/historicalminwage"
+    },
+    {
+        "id": "labor_force_unemp-current-population-survey-epi-extracts",
+        "fkIndicatorId": "labor_force_unemp",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Current Population Survey, EPI extracts",
+        "url": "#indicatordocumentation-employment"
+    },
+    {
+        "id": "population_civilian-current-population-survey-epi-extracts",
+        "fkIndicatorId": "population_civilian",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Current Population Survey, EPI extracts",
+        "url": "#indicatordocumentation-population"
+    },
+    {
+        "id": "population_econ_insecure-annual-social-and-economic-supplement-ipums-extracts",
+        "fkIndicatorId": "population_econ_insecure",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Annual Social and Economic Supplement, IPUMS extracts",
+        "url": "https://cps.ipums.org/"
+    },
+    {
+        "id": "population_econ_insecure-current-population-survey-epi-extracts",
+        "fkIndicatorId": "population_econ_insecure",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Current Population Survey, EPI extracts",
+        "url": "#indicatordocumentation-population"
+    },
+    {
+        "id": "population_working_age-current-population-survey-epi-extracts",
+        "fkIndicatorId": "population_working_age",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Current Population Survey, EPI extracts",
+        "url": "#indicatordocumentation-population"
+    },
+    {
+        "id": "poverty_opm_cps-annual-social-and-economic-supplement-ipums-extracts",
+        "fkIndicatorId": "poverty_opm_cps",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Annual Social and Economic Supplement, IPUMS extracts",
+        "url": "https://cps.ipums.org/"
+    },
+    {
+        "id": "poverty_opm_acs-american-community-survey-ipums-extracts",
+        "fkIndicatorId": "poverty_opm_acs",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "American Community Survey, IPUMS extracts",
+        "url": "https://usa.ipums.org/"
+    },
+    {
+        "id": "weekly_wage_gap_teacher-allegretto-2024-",
+        "fkIndicatorId": "weekly_wage_gap_teacher",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Allegretto (2024)",
+        "url": "#indicatordocumentation-wage-disparities"
+    },
+    {
+        "id": "annual_wage_ssa-social-security-administration-wage-statistics",
+        "fkIndicatorId": "annual_wage_ssa",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Social Security Administration wage statistics",
+        "url": "#indicatordocumentation-wages"
+    },
+    {
+        "id": "ceo_pay_ratio-bivens-gould-and-kandra-2023-",
+        "fkIndicatorId": "ceo_pay_ratio",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Bivens, Gould, and Kandra (2023)",
+        "url": "https://www.epi.org/publication/ceo-pay-in-2023/"
+    },
+    {
+        "id": "hourly_wage_percentiles-current-population-survey-epi-extracts",
+        "fkIndicatorId": "hourly_wage_percentiles",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Current Population Survey, EPI extracts",
+        "url": "#indicatordocumentation-wages"
+    },
+    {
+        "id": "annual_wage_ssa-kopczuk-saez-and-song-2007-",
+        "fkIndicatorId": "annual_wage_ssa",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Kopczuk, Saez, and Song (2007)",
+        "url": "#indicatordocumentation-wages"
+    },
+    {
+        "id": "hourly_wage_gap_gender-current-population-survey-epi-extracts",
+        "fkIndicatorId": "hourly_wage_gap_gender",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Current Population Survey, EPI extracts",
+        "url": "#indicatordocumentation-wage-disparities"
+    },
+    {
+        "id": "labor_force_lf-current-population-survey-epi-extracts",
+        "fkIndicatorId": "labor_force_lf",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Current Population Survey, EPI extracts",
+        "url": "#indicatordocumentation-employment"
+    },
+    {
+        "id": "labor_force_lt_unemp-current-population-survey-epi-extracts",
+        "fkIndicatorId": "labor_force_lt_unemp",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Current Population Survey, EPI extracts",
+        "url": "#indicatordocumentation-employment"
+    },
+    {
+        "id": "poverty_spm-annual-social-and-economic-supplement-ipums-extracts",
+        "fkIndicatorId": "poverty_spm",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Annual Social and Economic Supplement, IPUMS extracts",
+        "url": "https://cps.ipums.org/cps/"
+    },
+    {
+        "id": "price_indexes-pce_base-bureau-of-economic-analysis-pce-price-index",
+        "fkIndicatorId": "price_indexes",
+        "fkMeasureId": "pce_base",
+        "viewBy": null,
+        "source": "Bureau of Economic Analysis PCE Price Index",
+        "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
+    },
+    {
+        "id": "price_indexes-c_cpi_u_base-bureau-of-labor-statistics-chained-cpi-u",
+        "fkIndicatorId": "price_indexes",
+        "fkMeasureId": "c_cpi_u_base",
+        "viewBy": null,
+        "source": "Bureau of Labor Statistics Chained CPI-U",
+        "url": "https://www.bls.gov/cpi/data.htm"
+    },
+    {
+        "id": "price_indexes-c_cpi_u_extended_base-chained-cpi-u-extended-with-cpi-u-rs-cpi-u-x1-cpi-u",
+        "fkIndicatorId": "price_indexes",
+        "fkMeasureId": "c_cpi_u_extended_base",
+        "viewBy": null,
+        "source": "Chained CPI-U extended with CPI-U-RS, CPI-U-X1, CPI-U",
+        "url": "#indicatordocumentation-prices"
+    },
+    {
+        "id": "price_inflation-c_cpi_u_no_base-bureau-of-labor-statistics-chained-cpi-u",
+        "fkIndicatorId": "price_inflation",
+        "fkMeasureId": "c_cpi_u_no_base",
+        "viewBy": null,
+        "source": "Bureau of Labor Statistics Chained CPI-U",
+        "url": "https://www.bls.gov/cpi/data.htm"
+    },
+    {
+        "id": "price_inflation-c_cpi_u_extended_no_base-chained-cpi-u-extended-with-cpi-u-rs-cpi-u-x1-cpi-u",
+        "fkIndicatorId": "price_inflation",
+        "fkMeasureId": "c_cpi_u_extended_no_base",
+        "viewBy": null,
+        "source": "Chained CPI-U extended with CPI-U-RS, CPI-U-X1, CPI-U",
+        "url": "#indicatordocumentation-prices"
+    },
+    {
+        "id": "productivity_growth-bureau-of-economic-analysis-nipa-bureau-of-labor-statistics-ces-and-bureau-of-labor-statistics-opt",
+        "fkIndicatorId": "productivity_growth",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Bureau of Economic Analysis NIPA, Bureau of Labor Statistics CES, and Bureau of Labor Statistics OPT",
+        "url": "#indicatordocumentation-productivity"
+    },
+    {
+        "id": "price_inflation-pce_no_base-bureau-of-economic-analysis-pce-price-index",
+        "fkIndicatorId": "price_inflation",
+        "fkMeasureId": "pce_no_base",
+        "viewBy": null,
+        "source": "Bureau of Economic Analysis PCE Price Index",
+        "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
+    },
+    {
+        "id": "productivity_growth-real_index_1948Q1-deflated-using-the-extended-chained-cpi-u",
+        "fkIndicatorId": "productivity_growth",
+        "fkMeasureId": "real_index_1948Q1",
+        "viewBy": null,
+        "source": "Deflated using the extended Chained CPI-U",
+        "url": "#indicatordocumentation-prices"
+    },
+    {
+        "id": "productivity_levels-real_dollars_per_hour_2024-deflated-using-the-extended-chained-cpi-u",
+        "fkIndicatorId": "productivity_levels",
+        "fkMeasureId": "real_dollars_per_hour_2024",
+        "viewBy": null,
+        "source": "Deflated using the extended Chained CPI-U",
+        "url": "#indicatordocumentation-prices"
+    },
+    {
+        "id": "union_members-current-population-survey-epi-extracts",
+        "fkIndicatorId": "union_members",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Current Population Survey, EPI extracts",
+        "url": "#indicatordocumentation-unions"
+    },
+    {
+        "id": "productivity_levels-bureau-of-economic-analysis-nipa-bureau-of-labor-statistics-ces-and-bureau-of-labor-statistics-opt",
+        "fkIndicatorId": "productivity_levels",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Bureau of Economic Analysis NIPA, Bureau of Labor Statistics CES, and Bureau of Labor Statistics OPT",
+        "url": "#indicatordocumentation-productivity"
+    },
+    {
+        "id": "productivity_growth-real_index_1948-deflated-using-the-extended-chained-cpi-u",
+        "fkIndicatorId": "productivity_growth",
+        "fkMeasureId": "real_index_1948",
+        "viewBy": null,
+        "source": "Deflated using the extended Chained CPI-U",
+        "url": "#indicatordocumentation-prices"
+    },
+    {
+        "id": "union_wage_gaps-current-population-survey-epi-extracts",
+        "fkIndicatorId": "union_wage_gaps",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Current Population Survey, EPI extracts",
+        "url": "#indicatordocumentation-unions"
+    },
+    {
+        "id": "union_members_historical-freeman-1997-and-bureau-of-labor-statistics-union-affiliation-data-bls-cps-",
+        "fkIndicatorId": "union_members_historical",
+        "fkMeasureId": null,
+        "viewBy": null,
+        "source": "Freeman (1997) and Bureau of Labor Statistics union affiliation data (BLS CPS)",
+        "url": "#indicatordocumentation-unions"
+    }
 ]

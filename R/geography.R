@@ -82,7 +82,7 @@ suggest_geography_error <- function(geography, lookup) {
       "Unknown geography: \"",
       geography,
       "\"\n",
-      "Use swadlr_geographies() to see available geographies.",
+      'Use swadl_id_names("geographies") to see available geographies.',
       call. = FALSE
     )
   }

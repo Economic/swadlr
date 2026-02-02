@@ -1,0 +1,4295 @@
+[
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1973-01-01",
+        "value": 1.719666662216187
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1973-01-01",
+        "value": 6.507500052452087
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1973-01-01",
+        "value": 5.169999961853027
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1973-01-01",
+        "value": 4.475266666412353
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1973-01-01",
+        "value": 3.874569597244264
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1973-01-01",
+        "value": 3.353685913085938
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1973-01-01",
+        "value": 2.9133621692657465
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1973-01-01",
+        "value": 2.4724363613128664
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1973-01-01",
+        "value": 2.056999988555909
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1974-01-01",
+        "value": 1.949692292213439
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1974-01-01",
+        "value": 2.2357777881622325
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1974-01-01",
+        "value": 2.6518000030517577
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1974-01-01",
+        "value": 3.1170000267028812
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1974-01-01",
+        "value": 3.62422106742859
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1974-01-01",
+        "value": 4.147602272033692
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1974-01-01",
+        "value": 4.8604210853576655
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1974-01-01",
+        "value": 5.611285705566406
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1974-01-01",
+        "value": 7.0625
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1975-01-01",
+        "value": 5.216157474517822
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1975-01-01",
+        "value": 2.043499965667725
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1975-01-01",
+        "value": 2.438800001144409
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1975-01-01",
+        "value": 2.900818195343017
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1975-01-01",
+        "value": 3.371010255813599
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1975-01-01",
+        "value": 3.9408888530731194
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1975-01-01",
+        "value": 4.568446788787842
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1975-01-01",
+        "value": 6.166311073303222
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1975-01-01",
+        "value": 7.704999923706055
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1976-01-01",
+        "value": 2.5667673206329344
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1976-01-01",
+        "value": 2.2439999771118155
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1976-01-01",
+        "value": 3.5613333225250248
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1976-01-01",
+        "value": 4.121999988555908
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1976-01-01",
+        "value": 4.860000019073486
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1976-01-01",
+        "value": 5.566116180419922
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1976-01-01",
+        "value": 3.0527894592285163
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1976-01-01",
+        "value": 6.51999713897705
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1976-01-01",
+        "value": 8.215000152587892
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1977-01-01",
+        "value": 8.75
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1977-01-01",
+        "value": 7.06076192855835
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1977-01-01",
+        "value": 6.0216286087036135
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1977-01-01",
+        "value": 5.1
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1977-01-01",
+        "value": 4.40587366104126
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1977-01-01",
+        "value": 3.7861333274841313
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1977-01-01",
+        "value": 3.2188000011444085
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1977-01-01",
+        "value": 2.748494110107423
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1977-01-01",
+        "value": 2.3614666557311987
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1978-01-01",
+        "value": 7.509090118408205
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1978-01-01",
+        "value": 9.375
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1978-01-01",
+        "value": 6.348562774658203
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1978-01-01",
+        "value": 5.424526176452637
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1978-01-01",
+        "value": 4.730430812835695
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1978-01-01",
+        "value": 4.0027999973297135
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1978-01-01",
+        "value": 3.4496000003814693
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1978-01-01",
+        "value": 2.9543999862670898
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1978-01-01",
+        "value": 2.6331429386138905
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1979-01-01",
+        "value": 10.170000076293976
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1979-01-01",
+        "value": 2.9284000587463375
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1979-01-01",
+        "value": 3.2483428382873547
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1979-01-01",
+        "value": 3.8281052780151357
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1979-01-01",
+        "value": 4.458800048828125
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1979-01-01",
+        "value": 5.107200012207032
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1979-01-01",
+        "value": 6.028599987030029
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1979-01-01",
+        "value": 7.065857181549071
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1979-01-01",
+        "value": 8.32716369628906
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1980-01-01",
+        "value": 3.113599948883058
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1980-01-01",
+        "value": 3.5410285854339594
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1980-01-01",
+        "value": 4.127777729034425
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1980-01-01",
+        "value": 4.895999984741211
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1980-01-01",
+        "value": 5.62768569946289
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1980-01-01",
+        "value": 6.535266666412354
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1980-01-01",
+        "value": 7.672285709381103
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1980-01-01",
+        "value": 9.136800079345702
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1980-01-01",
+        "value": 11.275000095367425
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1981-01-01",
+        "value": 12.375
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1981-01-01",
+        "value": 9.96019996643066
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1981-01-01",
+        "value": 8.389174404144287
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1981-01-01",
+        "value": 3.3659999465942394
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1981-01-01",
+        "value": 7.152133293151856
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1981-01-01",
+        "value": 6.101600017547606
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1981-01-01",
+        "value": 5.168711681365968
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1981-01-01",
+        "value": 4.4909777832031255
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1981-01-01",
+        "value": 3.8276666641235333
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1982-01-01",
+        "value": 13.1875
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1982-01-01",
+        "value": 3.404857091903688
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1982-01-01",
+        "value": 3.9739999961853028
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1982-01-01",
+        "value": 4.778671226501466
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1982-01-01",
+        "value": 5.5192000007629405
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1982-01-01",
+        "value": 6.461199970245361
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1982-01-01",
+        "value": 7.602986583709717
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1982-01-01",
+        "value": 9.008345489501954
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1982-01-01",
+        "value": 10.598121223449708
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1983-01-01",
+        "value": 13.981250047683725
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1983-01-01",
+        "value": 3.429999980926514
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1983-01-01",
+        "value": 4.0592000389099105
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1983-01-01",
+        "value": 4.913999977111817
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1983-01-01",
+        "value": 5.7384000015258785
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1983-01-01",
+        "value": 6.7048000144958495
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1983-01-01",
+        "value": 7.888999977111816
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1983-01-01",
+        "value": 9.423199882507324
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1983-01-01",
+        "value": 11.105190467834472
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1984-01-01",
+        "value": 14.790277957916249
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1984-01-01",
+        "value": 3.4905714035034197
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1984-01-01",
+        "value": 4.21304765701294
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1984-01-01",
+        "value": 5.045
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1984-01-01",
+        "value": 5.995542869567871
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1984-01-01",
+        "value": 7.051327304840088
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1984-01-01",
+        "value": 8.237701568603518
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1984-01-01",
+        "value": 9.808812713623048
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1984-01-01",
+        "value": 11.652718162536617
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1985-01-01",
+        "value": 8.64199996948242
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1985-01-01",
+        "value": 3.5539999866485603
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1985-01-01",
+        "value": 4.3629999923706055
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1985-01-01",
+        "value": 5.200391025543213
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1985-01-01",
+        "value": 6.2153333663940415
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1985-01-01",
+        "value": 7.357094688415527
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1985-01-01",
+        "value": 10.166263198852535
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1985-01-01",
+        "value": 12.184999923706059
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1985-01-01",
+        "value": 15.1973683834076
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1986-01-01",
+        "value": 15.967857122421275
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1986-01-01",
+        "value": 12.614666671752936
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1986-01-01",
+        "value": 10.51124435424804
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1986-01-01",
+        "value": 8.979279060363769
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1986-01-01",
+        "value": 7.6191999626159665
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1986-01-01",
+        "value": 6.443999977111818
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1986-01-01",
+        "value": 5.413000011444092
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1986-01-01",
+        "value": 4.552000045776366
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1986-01-01",
+        "value": 3.6359999847412108
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1987-01-01",
+        "value": 13.041887130737301
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1987-01-01",
+        "value": 3.735999965667725
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1987-01-01",
+        "value": 4.740800018310546
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1987-01-01",
+        "value": 5.652476940155029
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1987-01-01",
+        "value": 6.709476165771484
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1987-01-01",
+        "value": 7.88244441986084
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1987-01-01",
+        "value": 9.352311172485352
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1987-01-01",
+        "value": 10.912152442932124
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1987-01-01",
+        "value": 16.75
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1988-01-01",
+        "value": 3.878000001907349
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1988-01-01",
+        "value": 17.5
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1988-01-01",
+        "value": 13.61599998474122
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1988-01-01",
+        "value": 11.335600051879887
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1988-01-01",
+        "value": 9.687167472839356
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1988-01-01",
+        "value": 8.142695484161377
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1988-01-01",
+        "value": 6.9883635711669925
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1988-01-01",
+        "value": 5.888000049591064
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1988-01-01",
+        "value": 4.9157142829895015
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1989-01-01",
+        "value": 18.0625
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1989-01-01",
+        "value": 4.0680000114440915
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1989-01-01",
+        "value": 5.043400001525879
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1989-01-01",
+        "value": 6.083073673248291
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1989-01-01",
+        "value": 7.221599979400635
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1989-01-01",
+        "value": 8.439428520202636
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1989-01-01",
+        "value": 9.950400009155274
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1989-01-01",
+        "value": 11.770670623779314
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1989-01-01",
+        "value": 14.13431114196777
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1990-01-01",
+        "value": 19.01416635513305
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1990-01-01",
+        "value": 5.249600028991699
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1990-01-01",
+        "value": 6.328000030517578
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1990-01-01",
+        "value": 7.5107272911071785
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1990-01-01",
+        "value": 8.800209503173829
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1990-01-01",
+        "value": 10.2459998703003
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1990-01-01",
+        "value": 12.233530197143548
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1990-01-01",
+        "value": 14.764777717590336
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1990-01-01",
+        "value": 4.283999977111817
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1991-01-01",
+        "value": 5.4848888397216795
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1991-01-01",
+        "value": 6.5920000076293945
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1991-01-01",
+        "value": 7.768400039672851
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1991-01-01",
+        "value": 9.140266723632813
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1991-01-01",
+        "value": 10.636511116027831
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1991-01-01",
+        "value": 4.542285652160646
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1991-01-01",
+        "value": 12.647866706848145
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1991-01-01",
+        "value": 15.2994666671753
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1991-01-01",
+        "value": 19.762499809265126
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1992-01-01",
+        "value": 20.20833349227905
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1992-01-01",
+        "value": 15.731428756713871
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1992-01-01",
+        "value": 12.953000106811517
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1992-01-01",
+        "value": 10.919400024414065
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1992-01-01",
+        "value": 9.39727279663086
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1992-01-01",
+        "value": 7.955199890136721
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1992-01-01",
+        "value": 6.745599975585938
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1992-01-01",
+        "value": 5.619111080169677
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1992-01-01",
+        "value": 4.668000011444092
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1993-01-01",
+        "value": 11.296399993896479
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1993-01-01",
+        "value": 4.784400043487548
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1993-01-01",
+        "value": 5.793199996948243
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1993-01-01",
+        "value": 6.919999980926514
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1993-01-01",
+        "value": 8.138000030517578
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1993-01-01",
+        "value": 9.684412727355955
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1993-01-01",
+        "value": 13.39786659240723
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1993-01-01",
+        "value": 16.294444351196287
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1993-01-01",
+        "value": 20.743749618530252
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1994-01-01",
+        "value": 21.692250251769998
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1994-01-01",
+        "value": 16.744006309509295
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1994-01-01",
+        "value": 13.722660598754883
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1994-01-01",
+        "value": 11.480413398742677
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1994-01-01",
+        "value": 4.850904750823974
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1994-01-01",
+        "value": 9.777249908447265
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1994-01-01",
+        "value": 8.220862312316896
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1994-01-01",
+        "value": 7.019999980926514
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1994-01-01",
+        "value": 5.878520011901855
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1995-01-01",
+        "value": 9.970830001831054
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1995-01-01",
+        "value": 4.957999973297119
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1995-01-01",
+        "value": 6.0376799774169925
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1995-01-01",
+        "value": 7.176474399566651
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1995-01-01",
+        "value": 8.450105247497559
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1995-01-01",
+        "value": 11.76565780639648
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1995-01-01",
+        "value": 14.055359878540038
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1995-01-01",
+        "value": 17.114480285644547
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1995-01-01",
+        "value": 22.14558362960815
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1996-01-01",
+        "value": 5.064000015258789
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1996-01-01",
+        "value": 22.9650001525879
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1996-01-01",
+        "value": 17.603496246337905
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1996-01-01",
+        "value": 14.412976608276367
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1996-01-01",
+        "value": 12.049072837829588
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1996-01-01",
+        "value": 10.178400001525876
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1996-01-01",
+        "value": 8.71759994506836
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1996-01-01",
+        "value": 7.411600017547608
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1996-01-01",
+        "value": 6.1823999786376955
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1997-01-01",
+        "value": 5.315599975585937
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1997-01-01",
+        "value": 6.448000011444091
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1997-01-01",
+        "value": 7.703700008392334
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1997-01-01",
+        "value": 9.047200164794925
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1997-01-01",
+        "value": 10.51
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1997-01-01",
+        "value": 12.449973258972168
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1997-01-01",
+        "value": 14.890596656799307
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1997-01-01",
+        "value": 18.19012214660644
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1997-01-01",
+        "value": 23.74318170547485
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1998-01-01",
+        "value": 5.699066658020019
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1998-01-01",
+        "value": 24.849999427795424
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1998-01-01",
+        "value": 18.91586608886718
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1998-01-01",
+        "value": 15.48724994659423
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1998-01-01",
+        "value": 13.018830986022945
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1998-01-01",
+        "value": 11.069737281799307
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1998-01-01",
+        "value": 9.52540050506592
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1998-01-01",
+        "value": 8.052599983215332
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1998-01-01",
+        "value": 6.84
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1999-01-01",
+        "value": 5.928000011444092
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1999-01-01",
+        "value": 25.778838157653826
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1999-01-01",
+        "value": 19.72824974060057
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1999-01-01",
+        "value": 16.150862350463857
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1999-01-01",
+        "value": 13.594293136596676
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1999-01-01",
+        "value": 11.574291229248029
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1999-01-01",
+        "value": 9.921490898132326
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1999-01-01",
+        "value": 8.421999969482421
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1999-01-01",
+        "value": 7.130761890411377
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2000-01-01",
+        "value": 6.140091438293457
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2000-01-01",
+        "value": 27.004750251770048
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2000-01-01",
+        "value": 20.60900009155273
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2000-01-01",
+        "value": 16.91086524963378
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2000-01-01",
+        "value": 14.175899353027349
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2000-01-01",
+        "value": 12.023857841491708
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2000-01-01",
+        "value": 10.21440002441406
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2000-01-01",
+        "value": 8.85460926055908
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2000-01-01",
+        "value": 7.4639999961853025
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2001-01-01",
+        "value": 6.4926666641235355
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2001-01-01",
+        "value": 7.854000015258789
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2001-01-01",
+        "value": 9.31383991241455
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2001-01-01",
+        "value": 10.709840087890628
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2001-01-01",
+        "value": 12.5609000015259
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2001-01-01",
+        "value": 14.79337791442871
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2001-01-01",
+        "value": 17.64056991577149
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2001-01-01",
+        "value": 21.50547805786134
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2001-01-01",
+        "value": 28.727976799011252
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2002-01-01",
+        "value": 6.70439998626709
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2002-01-01",
+        "value": 29.639806270599376
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2002-01-01",
+        "value": 22.218207855224595
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2002-01-01",
+        "value": 18.202844696044934
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2002-01-01",
+        "value": 15.193497200012205
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2002-01-01",
+        "value": 12.923709144592276
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2002-01-01",
+        "value": 11.091200027465824
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2002-01-01",
+        "value": 9.620799903869628
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2002-01-01",
+        "value": 8.057061996459959
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2003-01-01",
+        "value": 6.836919975280762
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2003-01-01",
+        "value": 30.08900022506715
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2003-01-01",
+        "value": 23.02734863281249
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2003-01-01",
+        "value": 18.75265663146972
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2003-01-01",
+        "value": 15.610136833190916
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2003-01-01",
+        "value": 13.307210006713861
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2003-01-01",
+        "value": 11.408135681152332
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2003-01-01",
+        "value": 9.811000022888182
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2003-01-01",
+        "value": 8.243999900817872
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2004-01-01",
+        "value": 8.369999923706054
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2004-01-01",
+        "value": 31.298041343688976
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2004-01-01",
+        "value": 23.55347999572753
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2004-01-01",
+        "value": 19.18315757751465
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2004-01-01",
+        "value": 16.029740142822263
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2004-01-01",
+        "value": 13.686585502624512
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2004-01-01",
+        "value": 11.681520004272464
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2004-01-01",
+        "value": 9.937013320922851
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2004-01-01",
+        "value": 6.964799957275391
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2005-01-01",
+        "value": 10.081589050292964
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2005-01-01",
+        "value": 7.031821308135985
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2005-01-01",
+        "value": 8.549609985351562
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2005-01-01",
+        "value": 11.88927989959718
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2005-01-01",
+        "value": 14.003430137634274
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2005-01-01",
+        "value": 16.419199943542477
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2005-01-01",
+        "value": 19.58779106140137
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2005-01-01",
+        "value": 24.207753982543935
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2005-01-01",
+        "value": 32.19915628433225
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2006-01-01",
+        "value": 7.2620000076293945
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2006-01-01",
+        "value": 8.862400016784669
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2006-01-01",
+        "value": 10.330816307067881
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2006-01-01",
+        "value": 12.2755299758911
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2006-01-01",
+        "value": 14.479362640380849
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2006-01-01",
+        "value": 16.978596725463877
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2006-01-01",
+        "value": 20.203647308349595
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2006-01-01",
+        "value": 24.928263092041014
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2006-01-01",
+        "value": 33.62975025177
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2007-01-01",
+        "value": 7.57
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2007-01-01",
+        "value": 9.173333282470702
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2007-01-01",
+        "value": 10.700729942321779
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2007-01-01",
+        "value": 12.626285781860352
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2007-01-01",
+        "value": 14.893559989929203
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2007-01-01",
+        "value": 17.6068000793457
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2007-01-01",
+        "value": 21.001377792358408
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2007-01-01",
+        "value": 25.97268684387206
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2007-01-01",
+        "value": 34.92781352996825
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2008-01-01",
+        "value": 36.517332077026374
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2008-01-01",
+        "value": 27.110098114013667
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2008-01-01",
+        "value": 7.8466666793823245
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2008-01-01",
+        "value": 21.91371292114258
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2008-01-01",
+        "value": 18.255053253173834
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2008-01-01",
+        "value": 15.432746696472163
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2008-01-01",
+        "value": 13.185440025329592
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2008-01-01",
+        "value": 11.205200080871569
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2008-01-01",
+        "value": 9.5
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2009-01-01",
+        "value": 7.939708042144774
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2009-01-01",
+        "value": 9.619189987182617
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2009-01-01",
+        "value": 11.326911468505864
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2009-01-01",
+        "value": 13.40739028930664
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2009-01-01",
+        "value": 15.712604408264177
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2009-01-01",
+        "value": 18.708356170654298
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2009-01-01",
+        "value": 22.403581390380854
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2009-01-01",
+        "value": 27.69679290771484
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2009-01-01",
+        "value": 37.255639076232896
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2010-01-01",
+        "value": 8.032000007629394
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2010-01-01",
+        "value": 9.656799926757811
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2010-01-01",
+        "value": 11.337635192871096
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2010-01-01",
+        "value": 13.46731990814208
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2010-01-01",
+        "value": 15.774450073242209
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2010-01-01",
+        "value": 18.83958335876464
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2010-01-01",
+        "value": 22.557528762817384
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2010-01-01",
+        "value": 27.899488677978525
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2010-01-01",
+        "value": 37.7800006866455
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2011-01-01",
+        "value": 8.13
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2011-01-01",
+        "value": 9.71600009918213
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2011-01-01",
+        "value": 11.46076000213624
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2011-01-01",
+        "value": 13.64086952209473
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2011-01-01",
+        "value": 15.922023773193352
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2011-01-01",
+        "value": 18.97748954772949
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2011-01-01",
+        "value": 22.889859924316415
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2011-01-01",
+        "value": 28.42588668823243
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2011-01-01",
+        "value": 38.48069953918455
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2012-01-01",
+        "value": 8.15
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2012-01-01",
+        "value": 9.774853210449217
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2012-01-01",
+        "value": 11.5587839126587
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2012-01-01",
+        "value": 13.7705910873413
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2012-01-01",
+        "value": 16.13924331665039
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2012-01-01",
+        "value": 19.26978507995606
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2012-01-01",
+        "value": 23.319667358398437
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2012-01-01",
+        "value": 29.055852279663085
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2012-01-01",
+        "value": 39.587500572204625
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2013-01-01",
+        "value": 40.384523391723626
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2013-01-01",
+        "value": 8.312000045776367
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2013-01-01",
+        "value": 9.901379966735838
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2013-01-01",
+        "value": 11.750475540161128
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2013-01-01",
+        "value": 14.00066539764404
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2013-01-01",
+        "value": 16.420444679260246
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2013-01-01",
+        "value": 19.505679931640632
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2013-01-01",
+        "value": 23.680790100097646
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2013-01-01",
+        "value": 29.63756866455079
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2014-01-01",
+        "value": 8.5
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2014-01-01",
+        "value": 40.85872077941895
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2014-01-01",
+        "value": 29.967340698242186
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2014-01-01",
+        "value": 23.95064994812013
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2014-01-01",
+        "value": 19.812888565063478
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2014-01-01",
+        "value": 16.657384109497073
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2014-01-01",
+        "value": 14.247799987792968
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2014-01-01",
+        "value": 11.943399963378909
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2014-01-01",
+        "value": 10.01383003234863
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2015-01-01",
+        "value": 10.19439994812012
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2015-01-01",
+        "value": 42.44114971160887
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2015-01-01",
+        "value": 30.90052612304687
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2015-01-01",
+        "value": 24.568750000000005
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2015-01-01",
+        "value": 20.232853240966804
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2015-01-01",
+        "value": 17.02839988708495
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2015-01-01",
+        "value": 14.54639999389649
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2015-01-01",
+        "value": 12.219199981689455
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2015-01-01",
+        "value": 8.83479995727539
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2016-01-01",
+        "value": 9.195111198425293
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2016-01-01",
+        "value": 43.984999656677225
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2016-01-01",
+        "value": 31.87683372497559
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2016-01-01",
+        "value": 25.21074699401855
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2016-01-01",
+        "value": 20.79180999755858
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2016-01-01",
+        "value": 17.57635223388672
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2016-01-01",
+        "value": 14.927200012207031
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2016-01-01",
+        "value": 12.627854537963866
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2016-01-01",
+        "value": 10.576000061035161
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2017-01-01",
+        "value": 45.66100120544435
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2017-01-01",
+        "value": 9.610444450378418
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2017-01-01",
+        "value": 11.18860790252686
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2017-01-01",
+        "value": 13.179840011596685
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2017-01-01",
+        "value": 15.369960098266608
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2017-01-01",
+        "value": 18.154963378906267
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2017-01-01",
+        "value": 21.429913177490235
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2017-01-01",
+        "value": 25.974565658569333
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2017-01-01",
+        "value": 32.8541626739502
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2018-01-01",
+        "value": 22.086697463989253
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2018-01-01",
+        "value": 47.1875
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2018-01-01",
+        "value": 33.82949462890625
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2018-01-01",
+        "value": 26.77012367248536
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2018-01-01",
+        "value": 18.707689743041975
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2018-01-01",
+        "value": 15.880000076293948
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2018-01-01",
+        "value": 13.812799987792964
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2018-01-01",
+        "value": 11.748080062866205
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2018-01-01",
+        "value": 9.888842086791994
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2019-01-01",
+        "value": 48.40923404693603
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2019-01-01",
+        "value": 10.199380111694332
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2019-01-01",
+        "value": 12.356799964904775
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2019-01-01",
+        "value": 14.58439987182618
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2019-01-01",
+        "value": 16.647470092773446
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2019-01-01",
+        "value": 19.392238769531254
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2019-01-01",
+        "value": 22.921020050048813
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2019-01-01",
+        "value": 27.840920104980484
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2019-01-01",
+        "value": 35.16660827636718
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2020-01-01",
+        "value": 10.982000045776365
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2020-01-01",
+        "value": 52.75625038146973
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2020-01-01",
+        "value": 37.883193054199204
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2020-01-01",
+        "value": 30.168588638305668
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2020-01-01",
+        "value": 24.885300216674803
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2020-01-01",
+        "value": 20.878173599243155
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2020-01-01",
+        "value": 17.96638671875
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2020-01-01",
+        "value": 15.411599998474122
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2020-01-01",
+        "value": 13.428300018310551
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2021-01-01",
+        "value": 52.95076942443848
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2021-01-01",
+        "value": 14.218679924011228
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2021-01-01",
+        "value": 15.986139984130855
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2021-01-01",
+        "value": 18.45070785522462
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2021-01-01",
+        "value": 21.331727676391598
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2021-01-01",
+        "value": 25.222399978637696
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2021-01-01",
+        "value": 11.537156372070312
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2021-01-01",
+        "value": 30.631194381713875
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2021-01-01",
+        "value": 38.46830368041993
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2022-01-01",
+        "value": 12.553999938964848
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2022-01-01",
+        "value": 57.608750343322775
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2022-01-01",
+        "value": 41.028579406738274
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2022-01-01",
+        "value": 32.31966629028321
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2022-01-01",
+        "value": 26.631106491088868
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2022-01-01",
+        "value": 22.75434516906739
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2022-01-01",
+        "value": 19.653333358764645
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2022-01-01",
+        "value": 17.208000106811532
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2022-01-01",
+        "value": 15.1
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2023-01-01",
+        "value": 13.547157249450693
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2023-01-01",
+        "value": 60.167267799377456
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2023-01-01",
+        "value": 42.77655532836914
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2023-01-01",
+        "value": 33.89176513671875
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2023-01-01",
+        "value": 28.059533462524413
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2023-01-01",
+        "value": 23.94900009155274
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2023-01-01",
+        "value": 20.515649948120128
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2023-01-01",
+        "value": 18.13057144165039
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2023-01-01",
+        "value": 15.876399955749516
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2024-01-01",
+        "value": 62.75
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2024-01-01",
+        "value": 16.69200000762938
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2024-01-01",
+        "value": 18.99092330932618
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2024-01-01",
+        "value": 21.481999816894522
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2024-01-01",
+        "value": 24.869689712524405
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2024-01-01",
+        "value": 29.26466659545898
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2024-01-01",
+        "value": 35.32111145019531
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2024-01-01",
+        "value": 44.70690460205077
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2024-01-01",
+        "value": 14.260000038146979
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p10"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2025-01-01",
+        "value": 14.557111091613772
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p90"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2025-01-01",
+        "value": 64.52499961853027
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p80"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2025-01-01",
+        "value": 46.17095260620117
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p70"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2025-01-01",
+        "value": 36.69600006103516
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p60"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2025-01-01",
+        "value": 30.358666763305656
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p50"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2025-01-01",
+        "value": 25.665047683715827
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p40"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2025-01-01",
+        "value": 22.420666656494145
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p30"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2025-01-01",
+        "value": 19.690000076293945
+    },
+    {
+        "fkDimensionValueIds": [
+            "wage_p20"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2025-01-01",
+        "value": 17.222000045776365
+    }
+]

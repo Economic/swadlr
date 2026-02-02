@@ -33,10 +33,10 @@ cache_clear_all <- function() {
 #'
 #' @export
 #' @examples
-#' \dontrun{
-#' swadlr_clear_cache()
+#' \donttest{
+#' clear_swadlr_cache()
 #' }
-swadlr_clear_cache <- function() {
+clear_swadlr_cache <- function() {
   cache_clear_all()
   invisible()
 }

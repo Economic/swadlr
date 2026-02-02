@@ -13,33 +13,28 @@ and to fetch time series data at national, regional, and state levels.
 }
 \section{Data retrieval}{
 
-The main function for fetching data is \code{\link[=get_swadl_series]{get_swadl_series()}}, which returns
+The main function for fetching data is \code{\link[=get_swadl]{get_swadl()}}, which returns
 time series data for a specified indicator, measure, geography, and
 dimension combination.
 }
 
 \section{Indicator information}{
 
-Use \code{\link[=get_swadl_info]{get_swadl_info()}} to get detailed information about an indicator,
+Use \code{\link[=swadl_indicator]{swadl_indicator()}} to get detailed information about an indicator,
 including available measures, dimensions, date ranges, and geographic
 availability.
 }
 
 \section{Exploring available data}{
 
-Several functions help you explore what data is available:
-\itemize{
-\item \code{\link[=swadlr_topics]{swadlr_topics()}}: List available topics
-\item \code{\link[=swadlr_indicators]{swadlr_indicators()}}: List available indicators
-\item \code{\link[=swadlr_measures]{swadlr_measures()}}: List available measures
-\item \code{\link[=swadlr_dimensions]{swadlr_dimensions()}}: List available dimensions
-\item \code{\link[=swadlr_geographies]{swadlr_geographies()}}: List available geographies
-}
+Use \code{\link[=swadl_id_names]{swadl_id_names()}} to list available topics, indicators, measures,
+dimensions, and geographies. Use \code{\link[=swadl_availability]{swadl_availability()}} to search for data
+matching specific criteria.
 }
 
 \section{Cache management}{
 
-Metadata is cached within your R session. Use \code{\link[=swadlr_clear_cache]{swadlr_clear_cache()}} to
+Metadata is cached within your R session. Use \code{\link[=clear_swadlr_cache]{clear_swadlr_cache()}} to
 refresh the cache if needed.
 }
 
