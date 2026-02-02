@@ -46,14 +46,19 @@ refresh the cache if needed.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://economic.github.com/swadlr/}
-  \item \url{https://github.com/benzipperer/swadlr}
-  \item Report bugs at \url{https://github.com/benzipperer/swadlr/issues}
+  \item \url{https://economic.github.io/swadlr/}
+  \item \url{https://github.com/Economic/swadlr}
+  \item Report bugs at \url{https://github.com/economic/swadlr/issues}
 }
 
 }
 \author{
 \strong{Maintainer}: Ben Zipperer \email{benzipperer@gmail.com}
+
+Other contributors:
+\itemize{
+  \item Economic Policy Institute [copyright holder, funder]
+}
 
 }
 \keyword{internal}
