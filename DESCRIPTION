@@ -18,6 +18,7 @@ BugReports: https://github.com/economic/swadlr/issues
 Depends:
     R (>= 4.1)
 Imports:
+    cli,
     httr2,
     jsonlite,
     tibble

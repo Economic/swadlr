@@ -1,5 +1,17 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
 
 # swadlr
 
@@ -11,10 +23,9 @@ Library](https://data.epi.org) (SWADL) API.
 
 ## Examples
 
-Use swadlr if you need to programmatically retrieve a time series from
-SWADL:
+Use swadlr if you need to programmatically retrieve a time series from SWADL:
 
-``` r
+```r
 get_swadl(
   indicator = "hourly_wage_percentiles",
   measure = "nominal_wage",
@@ -24,19 +35,17 @@ get_swadl(
 
 For a summary of what is available for a given indicator
 
-``` r
+```r
 swadl_indicator("hourly_wage_percentiles")
 ```
 
-If you have the need to retrieve multiple, don’t use the API and instead
-simply [download all the data](https://economic.github.io/data/).
+If you have the need to retrieve multiple, don't use the API and instead simply [download all the data](https://economic.github.io/data/).
 
 ## Installation
 
-You can install swadlr from
-[r-universe](https://economic.r-universe.dev/swadlr):
+You can install swadlr from [r-universe](https://economic.r-universe.dev/swadlr):
 
-``` r
+```r
 install.packages(
   "swadlr",
   repos = c("https://economic.r-universe.dev", "https://cloud.r-project.org")
@@ -47,5 +56,5 @@ install.packages(
 
 See the [package website](https://economic.github.io/swadlr/) for full
 documentation and the [Getting started
-vignette](https://economic.github.io/swadlr/articles/swadlr.html) for
-more examples.
+vignette](https://economic.github.io/swadlr/articles/swadlr.html) for more
+examples.

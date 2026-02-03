@@ -56,9 +56,11 @@ validate_indicator <- function(indicator) {
 }
 
 # Validate measure is available for indicator
-validate_measure <- function(indicator, measure) {
-  ind_data <- get_indicator_availability(indicator)
-  available_measures <- unique(ind_data$availability$measure_id)
+validate_measure <- function(indicator, measure, availability = NULL) {
+  if (is.null(availability)) {
+    availability <- get_indicator_availability(indicator)
+  }
+  available_measures <- unique(availability$availability$measure_id)
 
   validate_single_string(
     measure,
@@ -75,7 +77,12 @@ validate_measure <- function(indicator, measure) {
 }
 
 # Validate date_interval is available for indicator/measure
-validate_date_interval <- function(indicator, measure, date_interval) {
+validate_date_interval <- function(
+  indicator,
+  measure,
+  date_interval,
+  availability = NULL
+) {
   # First check it's a valid date_interval value
   validate_single_string(
     date_interval,
@@ -85,12 +92,13 @@ validate_date_interval <- function(indicator, measure, date_interval) {
   )
 
   # Then check it's available for this indicator/measure
-
-  ind_data <- get_indicator_availability(indicator)
-  availability <- ind_data$availability
+  if (is.null(availability)) {
+    availability <- get_indicator_availability(indicator)
+  }
+  avail_data <- availability$availability
 
   # Filter to this measure
-  measure_rows <- filter_availability(availability, measure = measure)
+  measure_rows <- filter_availability(avail_data, measure = measure)
   available_intervals <- unique(measure_rows$date_interval)
 
   if (!(date_interval %in% available_intervals)) {
@@ -111,19 +119,27 @@ validate_date_interval <- function(indicator, measure, date_interval) {
 }
 
 # Validate geography is available for indicator/measure/interval
-validate_geography <- function(indicator, measure, date_interval, geography) {
+validate_geography <- function(
+  indicator,
+  measure,
+  date_interval,
+  geography,
+  availability = NULL
+) {
   # First resolve geography to API ID
   geo_id <- resolve_geography(geography)
 
   # Get geo level from the ID
   geo_level <- get_geo_level(geo_id)
 
-  ind_data <- get_indicator_availability(indicator)
-  availability <- ind_data$availability
+  if (is.null(availability)) {
+    availability <- get_indicator_availability(indicator)
+  }
+  avail_data <- availability$availability
 
   # Filter to this measure and interval
   filtered <- filter_availability(
-    availability,
+    avail_data,
     measure = measure,
     date_interval = date_interval
   )
@@ -209,44 +225,44 @@ get_available_dimension_ids <- function(
     geo_level
   )
 
-  dims_raw <- fetch_dimensions()
-  dim_ids <- character(0)
+  get_dim_ids_from_values(dim_values)
+}
 
-  n_dims <- length(dims_raw$dimension$id)
-  for (i in seq_len(n_dims)) {
-    dim_vals <- dims_raw$dimension_values[[i]]
-    if (any(dim_vals$dimension_value$id %in% dim_values)) {
-      dim_ids <- c(dim_ids, dims_raw$dimension$id[i])
-    }
+# Get or build cached lookup table mapping dim_value_id -> dim_id
+get_dim_value_lookup <- function() {
+  if (cache_has("dim_value_lookup")) {
+    return(cache_get("dim_value_lookup"))
   }
 
-  unique(dim_ids)
+  dims_raw <- fetch_dimensions()
+  lookup <- list()
+
+  iterate_dimension_values(
+    dims_raw,
+    function(dim_id, dim_name, val_id, val_name) {
+      lookup[[val_id]] <<- dim_id
+    }
+  )
+
+  cache_set("dim_value_lookup", lookup)
+  lookup
 }
 
 # Map dimension value IDs to their dimension IDs
 map_dim_values_to_dim_ids <- function(dim_value_ids) {
-  dims_raw <- fetch_dimensions()
-  result <- character(length(dim_value_ids))
+  lookup <- get_dim_value_lookup()
 
-  for (i in seq_along(dim_value_ids)) {
-    val_id <- dim_value_ids[i]
-    found <- FALSE
-
-    for (j in seq_len(length(dims_raw$dimension$id))) {
-      dim_vals <- dims_raw$dimension_values[[j]]
-      if (val_id %in% dim_vals$dimension_value$id) {
-        result[i] <- dims_raw$dimension$id[j]
-        found <- TRUE
-        break
+  unname(vapply(
+    dim_value_ids,
+    function(val_id) {
+      if (val_id %in% names(lookup)) {
+        lookup[[val_id]]
+      } else {
+        NA_character_
       }
-    }
-
-    if (!found) {
-      result[i] <- NA_character_
-    }
-  }
-
-  result
+    },
+    character(1)
+  ))
 }
 
 # Get all dimension value IDs for a dimension ID

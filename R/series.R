@@ -85,9 +85,16 @@ get_swadl <- function(
 
   # Validate inputs
   validate_indicator(indicator)
-  validate_measure(indicator, measure)
-  validate_date_interval(indicator, measure, date_interval)
-  geo_id <- validate_geography(indicator, measure, date_interval, geography)
+  availability <- get_indicator_availability(indicator)
+  validate_measure(indicator, measure, availability)
+  validate_date_interval(indicator, measure, date_interval, availability)
+  geo_id <- validate_geography(
+    indicator,
+    measure,
+    date_interval,
+    geography,
+    availability
+  )
   geo_level <- get_geo_level(geo_id)
   validate_date(date)
 

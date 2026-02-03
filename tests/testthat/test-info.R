@@ -117,12 +117,13 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
     cache_clear_all()
     info <- swadl_indicator("hourly_wage_percentiles")
 
-    output <- capture.output(print(info))
-    expect_true(any(grepl("hourly_wage_percentiles", output)))
+    # cli output needs special capture - use cli's built-in capture
+    output <- cli::cli_fmt(print(info))
     expect_true(any(grepl("Hourly wage percentiles", output)))
-    expect_true(any(grepl("Available measures", output)))
-    expect_true(any(grepl("Dimension combinations by geography", output)))
-    expect_true(any(grepl("Date range", output)))
+    expect_true(any(grepl("Indicator", output)))
+    expect_true(any(grepl("Measures", output)))
+    expect_true(any(grepl("Dimensions by geography", output)))
+    expect_true(any(grepl("Dates", output)))
     expect_true(any(grepl("Sources", output)))
 
     cache_clear_all()

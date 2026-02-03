@@ -158,23 +158,14 @@ list_dimensions <- function(indicator = NULL) {
 
   # Build a tibble with all dimension values
   rows <- list()
-  n_dims <- length(raw$dimension$id)
-
-  for (i in seq_len(n_dims)) {
-    dim_id <- raw$dimension$id[i]
-    dim_name <- raw$dimension$name[i]
-    dim_values <- raw$dimension_values[[i]]
-
-    n_vals <- length(dim_values$dimension_value$id)
-    for (j in seq_len(n_vals)) {
-      rows[[length(rows) + 1]] <- tibble::tibble(
-        dimension_id = dim_id,
-        dimension_name = dim_name,
-        value_id = dim_values$dimension_value$id[j],
-        value_name = dim_values$dimension_value$name[j]
-      )
-    }
-  }
+  iterate_dimension_values(raw, function(dim_id, dim_name, val_id, val_name) {
+    rows[[length(rows) + 1]] <<- tibble::tibble(
+      dimension_id = dim_id,
+      dimension_name = dim_name,
+      value_id = val_id,
+      value_name = val_name
+    )
+  })
 
   result <- do.call(rbind, rows)
 

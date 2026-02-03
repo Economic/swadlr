@@ -23,6 +23,9 @@ Rscript -e "devtools::test_active_file('R/{name}.R', desc = 'blah')"
 # To redocument the package
 Rscript -e "devtools::document()"
 
+# To rebuild README.md from README.Rmd
+Rscript -e "devtools::build_readme()"
+
 # To check pkgdown documentation
 Rscript -e "pkgdown::check_pkgdown()"
 
@@ -45,10 +48,52 @@ air format .
 
 ### Testing
 
-- Tests for `R/{name}.R` go in `tests/testthat/test-{name}.R`. 
+- Tests for `R/{name}.R` go in `tests/testthat/test-{name}.R`.
 - All new code should have an accompanying test.
 - If there are existing tests, place new tests next to similar existing tests.
 - Strive to keep your tests minimal with few comments.
+
+### Test conventions
+
+#### httptest2 fixtures
+
+Tests use httptest2 to mock API responses. Fixtures live in `tests/testthat/fixtures/` organized by URL path (e.g., `fixtures/data.epi.org/api/topic/list.json`).
+
+To update fixtures when the live API changes:
+
+```r
+httptest2::start_capturing("tests/testthat/fixtures")
+devtools::test()
+httptest2::stop_capturing()
+```
+
+#### When to use `with_mock_dir()` vs direct unit tests
+
+- Use `with_mock_dir()` for tests that call functions making HTTP requests (`fetch_*` functions, `get_swadl()`, etc.):
+  ```r
+  httptest2::with_mock_dir(testthat::test_path("fixtures"), {
+    test_that("...", { ... })
+  })
+  ```
+- Use direct unit tests (no mocking) for pure functions that transform data in memory, like `apply_date_filter()`, `transform_response()`, or cache functions.
+
+#### Cache clearing
+
+Call `cache_clear_all()` at the start and end of each test that interacts with cached data. This ensures test isolation:
+
+```r
+test_that("...", {
+  cache_clear_all()
+  # test code
+  cache_clear_all()
+})
+```
+
+#### Test naming
+
+- Use descriptive test names that state what is being tested and the expected outcome.
+- Group related tests together within a file.
+- Validation tests should verify both the success case and the error message for invalid input.
 
 ### Documentation
 

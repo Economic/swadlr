@@ -231,4 +231,39 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
     result <- apply_date_filter(df, NULL)
     expect_equal(nrow(result), 2)
   })
+
+  test_that("apply_dim_filter returns empty when filter matches nothing", {
+    df <- data.frame(
+      date = as.Date(c("2024-01-01", "2024-01-01")),
+      value = c(10, 20),
+      geography = c("national", "national"),
+      wage_percentile = c("wage_p10", "wage_p50"),
+      stringsAsFactors = FALSE
+    )
+
+    result <- apply_dim_filter(df, list(wage_percentile = "wage_p99"))
+    expect_equal(nrow(result), 0)
+  })
+
+  test_that("apply_date_filter returns empty when date matches nothing", {
+    df <- data.frame(
+      date = as.Date(c("2023-01-01", "2024-01-01")),
+      value = c(10, 20),
+      stringsAsFactors = FALSE
+    )
+
+    result <- apply_date_filter(df, "1900-01-01")
+    expect_equal(nrow(result), 0)
+  })
+
+  test_that("apply_date_filter returns empty when range matches nothing", {
+    df <- data.frame(
+      date = as.Date(c("2023-01-01", "2024-01-01")),
+      value = c(10, 20),
+      stringsAsFactors = FALSE
+    )
+
+    result <- apply_date_filter(df, c("1900-01-01", "1901-01-01"))
+    expect_equal(nrow(result), 0)
+  })
 })

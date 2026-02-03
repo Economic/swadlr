@@ -105,6 +105,11 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
     expect_equal(get_geo_level("state06"), "state")
   })
 
+  test_that("get_geo_level errors on unknown format", {
+    expect_error(get_geo_level("invalid_geo"), "Unknown geographic ID format")
+    expect_error(get_geo_level("country01"), "Unknown geographic ID format")
+  })
+
   test_that("validate_date accepts NULL", {
     expect_invisible(validate_date(NULL))
   })
@@ -152,6 +157,23 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
     cache_clear_all()
     result <- map_dim_values_to_dim_ids(c("wage_p10", "gender_female"))
     expect_equal(result, c("wage_percentile", "gender"))
+    cache_clear_all()
+  })
+
+  test_that("get_dim_value_lookup builds and caches lookup table", {
+    cache_clear_all()
+    lookup <- get_dim_value_lookup()
+    expect_type(lookup, "list")
+    expect_equal(lookup[["wage_p10"]], "wage_percentile")
+    expect_equal(lookup[["gender_female"]], "gender")
+    expect_true(cache_has("dim_value_lookup"))
+    cache_clear_all()
+  })
+
+  test_that("map_dim_values_to_dim_ids returns NA for unknown values", {
+    cache_clear_all()
+    result <- map_dim_values_to_dim_ids(c("wage_p10", "unknown_value"))
+    expect_equal(result, c("wage_percentile", NA_character_))
     cache_clear_all()
   })
 

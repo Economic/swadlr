@@ -14,12 +14,32 @@ test_that("resolve_geography handles regions", {
   expect_equal(resolve_geography("West"), "regionWest")
 })
 
+test_that("resolve_geography handles all regions by API ID", {
+  expect_equal(resolve_geography("regionNortheast"), "regionNortheast")
+  expect_equal(resolve_geography("regionMidwest"), "regionMidwest")
+  expect_equal(resolve_geography("regionSouth"), "regionSouth")
+  expect_equal(resolve_geography("regionWest"), "regionWest")
+})
+
 test_that("resolve_geography handles divisions", {
   expect_equal(resolve_geography("division09"), "division09")
   expect_equal(resolve_geography("Pacific"), "division09")
   expect_equal(resolve_geography("New England"), "division01")
   expect_equal(resolve_geography("Mountain"), "division08")
 })
+
+test_that("resolve_geography handles all divisions by API ID", {
+  expect_equal(resolve_geography("division01"), "division01")
+  expect_equal(resolve_geography("division02"), "division02")
+  expect_equal(resolve_geography("division03"), "division03")
+  expect_equal(resolve_geography("division04"), "division04")
+  expect_equal(resolve_geography("division05"), "division05")
+  expect_equal(resolve_geography("division06"), "division06")
+  expect_equal(resolve_geography("division07"), "division07")
+  expect_equal(resolve_geography("division08"), "division08")
+  expect_equal(resolve_geography("division09"), "division09")
+})
+
 test_that("resolve_geography handles states by name", {
   expect_equal(resolve_geography("California"), "state06")
   expect_equal(resolve_geography("california"), "state06")

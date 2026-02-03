@@ -71,3 +71,14 @@ test_that("swadlr_request handles connection errors gracefully", {
   assignInNamespace("swadlr_base_url", old_fn, "swadlr")
   cache_clear_all()
 })
+
+httptest2::with_mock_dir(testthat::test_path("fixtures"), {
+  test_that("swadlr_request handles API error responses", {
+    cache_clear_all()
+    expect_error(
+      swadlr_request("/api/test/error"),
+      "HTTP 500"
+    )
+    cache_clear_all()
+  })
+})
