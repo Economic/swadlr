@@ -7,11 +7,10 @@ data at national, regional, and state levels.
 
 ## Installation
 
-You can install the development version of swadlr from GitHub:
+You can install swadlr from r-universe:
 
 ``` r
-# install.packages("pak")
-pak::pak("benzipperer/swadlr")
+install.packages("swadlr", repos = c("https://economic.r-universe.dev", "https://cloud.r-project.org"))
 ```
 
 ## Example
@@ -22,16 +21,16 @@ Fetch median hourly wages over time:
 library(swadlr)
 
 # Explore what's available
-swadlr_topics()
-swadlr_indicators(topic = "wages")
+swadl_id_names("topics")
+swadl_id_names("indicators", topic = "wages")
 
 # Get detailed information about an indicator
-get_swadl_info("hourly_wage_percentiles")
+swadl_indicator("hourly_wage_percentiles")
 
 # Fetch the median hourly wage
-get_swadl_series(
+get_swadl(
   indicator = "hourly_wage_percentiles",
-  measure = "real_wage_2024",
+  measure = "nominal_wage",
   dimension = list("wage_percentile" = "wage_p50")
 )
 ```
@@ -39,9 +38,9 @@ get_swadl_series(
 Fetch all wage percentiles:
 
 ``` r
-get_swadl_series(
+get_swadl(
   indicator = "hourly_wage_percentiles",
-  measure = "real_wage_2024",
+  measure = "nominal_wage",
   dimension = "wage_percentile"
 )
 ```
@@ -49,9 +48,9 @@ get_swadl_series(
 Fetch state-level data:
 
 ``` r
-get_swadl_series(
+get_swadl(
   indicator = "hourly_wage_percentiles",
-  measure = "real_wage_2024",
+  measure = "nominal_wage",
   geography = "California",
   dimension = list("wage_percentile" = "wage_p50")
 )
@@ -59,7 +58,7 @@ get_swadl_series(
 
 ## Documentation
 
-See the [package website](https://economic.github.com/swadlr/) for full
+See the [package website](https://economic.github.io/swadlr/) for full
 documentation and the [Getting started
-vignette](https://economic.github.com/swadlr/articles/swadlr.html) for
+vignette](https://economic.github.io/swadlr/articles/swadlr.html) for
 more examples.

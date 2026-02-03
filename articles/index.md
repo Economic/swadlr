@@ -3,4 +3,4 @@
 ### Getting started
 
 - [Getting started with
-  swadlr](https://economic.github.com/swadlr/articles/swadlr.md):
+  swadlr](https://economic.github.io/swadlr/articles/swadlr.md):

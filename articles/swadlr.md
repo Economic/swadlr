@@ -11,14 +11,16 @@ library(swadlr)
 
 ## Exploring available data
 
-Before fetching data, you can explore what’s available in the SWADL API.
+Before fetching data, you can explore what’s available in the SWADL API
+using
+[`swadl_id_names()`](https://economic.github.io/swadlr/reference/swadl_id_names.md).
 
 ### Topics
 
 Topics are broad categories that group related indicators:
 
 ``` r
-swadlr_topics()
+swadl_id_names("topics")
 ```
 
 ### Indicators
@@ -28,10 +30,10 @@ filter by topic:
 
 ``` r
 # List all indicators
-swadlr_indicators()
+swadl_id_names("indicators")
 
 # List indicators for a specific topic
-swadlr_indicators(topic = "wages")
+swadl_id_names("indicators", topic = "wages")
 ```
 
 ### Measures
@@ -42,10 +44,10 @@ wage data might be available in nominal dollars, real
 
 ``` r
 # List all measures
-swadlr_measures()
+swadl_id_names("measures")
 
 # List measures for a specific indicator
-swadlr_measures(indicator = "hourly_wage_percentiles")
+swadl_id_names("measures", indicator = "hourly_wage_percentiles")
 ```
 
 ### Dimensions
@@ -55,10 +57,10 @@ Dimensions allow subsetting data by demographic or other categories
 
 ``` r
 # List all dimensions and their values
-swadlr_dimensions()
+swadl_id_names("dimensions")
 
 # List dimensions for a specific indicator
-swadlr_dimensions(indicator = "hourly_wage_percentiles")
+swadl_id_names("dimensions", indicator = "hourly_wage_percentiles")
 ```
 
 ### Geographies
@@ -68,22 +70,22 @@ data:
 
 ``` r
 # List all geographies
-swadlr_geographies()
+swadl_id_names("geographies")
 
 # Filter to just states
-geographies <- swadlr_geographies()
+geographies <- swadl_id_names("geographies")
 geographies[geographies$level == "state", ]
 ```
 
 ## Getting indicator information
 
 Before fetching data, use
-[`get_swadl_info()`](https://economic.github.com/swadlr/reference/get_swadl_info.md)
+[`swadl_indicator()`](https://economic.github.io/swadlr/reference/swadl_indicator.md)
 to get detailed information about an indicator, including available
 measures, dimensions, date ranges, and geographic availability:
 
 ``` r
-info <- get_swadl_info("hourly_wage_percentiles")
+info <- swadl_indicator("hourly_wage_percentiles")
 print(info)
 ```
 
@@ -93,18 +95,15 @@ You can also access specific components of the info object:
 # Available measures
 info$measures
 
-# Date range
-info$availability$date_range
-
-# Geographic availability
-info$availability$geo_availability
+# Availability by date interval, measure, and geography
+info$availability
 ```
 
 ## Fetching time series data
 
 The main function for fetching data is
-[`get_swadl_series()`](https://economic.github.com/swadlr/reference/get_swadl_series.md).
-It returns a data frame with columns for date, value, geography, and any
+[`get_swadl()`](https://economic.github.io/swadlr/reference/get_swadl.md).
+It returns a tibble with columns for date, value, geography, and any
 dimensions you request.
 
 ### Basic usage
@@ -112,9 +111,9 @@ dimensions you request.
 Fetch the median hourly wage over time:
 
 ``` r
-wages <- get_swadl_series(
+wages <- get_swadl(
   indicator = "hourly_wage_percentiles",
-  measure = "real_wage_2024",
+  measure = "nominal_wage",
   dimension = list("wage_percentile" = "wage_p50")
 )
 wages
@@ -129,9 +128,10 @@ The `dimension` argument supports several formats:
 Use `"overall"` to get aggregate data without demographic breakdown:
 
 ``` r
-get_swadl_series(
+get_swadl(
   indicator = "labor_force_emp",
   measure = "percent_emp",
+
   dimension = "overall"
 )
 ```
@@ -142,9 +142,9 @@ Pass a dimension ID to get all values for that dimension:
 
 ``` r
 # All wage percentiles
-get_swadl_series(
+get_swadl(
   indicator = "hourly_wage_percentiles",
-  measure = "real_wage_2024",
+  measure = "nominal_wage",
   dimension = "wage_percentile"
 )
 ```
@@ -155,9 +155,9 @@ Use a named list to filter to specific dimension values:
 
 ``` r
 # Only the 90th percentile
-get_swadl_series(
+get_swadl(
   indicator = "hourly_wage_percentiles",
-  measure = "real_wage_2024",
+  measure = "nominal_wage",
   dimension = list("wage_percentile" = "wage_p90")
 )
 ```
@@ -169,7 +169,7 @@ values, while unnamed elements include all values:
 
 ``` r
 # Employment rate for males, by all age groups
-get_swadl_series(
+get_swadl(
   indicator = "labor_force_emp",
   measure = "percent_emp",
   date_interval = "month",
@@ -184,15 +184,15 @@ Most indicators support both annual and monthly data. Use the
 
 ``` r
 # Annual data (default)
-get_swadl_series(
+get_swadl(
   indicator = "hourly_wage_percentiles",
-  measure = "real_wage_2024",
+  measure = "nominal_wage",
   date_interval = "year",
   dimension = list("wage_percentile" = "wage_p50")
 )
 
 # Monthly data
-get_swadl_series(
+get_swadl(
   indicator = "labor_force_emp",
   measure = "percent_emp",
   date_interval = "month",
@@ -206,33 +206,33 @@ Fetch data for different geographic levels:
 
 ``` r
 # National data (default)
-get_swadl_series(
+get_swadl(
   indicator = "hourly_wage_percentiles",
-  measure = "real_wage_2024",
+  measure = "nominal_wage",
   geography = "national",
   dimension = list("wage_percentile" = "wage_p50")
 )
 
 # State data (by name)
-get_swadl_series(
+get_swadl(
   indicator = "hourly_wage_percentiles",
-  measure = "real_wage_2024",
+  measure = "nominal_wage",
   geography = "California",
   dimension = list("wage_percentile" = "wage_p50")
 )
 
 # State data (by abbreviation)
-get_swadl_series(
+get_swadl(
   indicator = "hourly_wage_percentiles",
-  measure = "real_wage_2024",
+  measure = "nominal_wage",
   geography = "NY",
   dimension = list("wage_percentile" = "wage_p50")
 )
 
 # Census region
-get_swadl_series(
+get_swadl(
   indicator = "hourly_wage_percentiles",
-  measure = "real_wage_2024",
+  measure = "nominal_wage",
   geography = "Midwest",
   dimension = list("wage_percentile" = "wage_p50")
 )
@@ -244,17 +244,17 @@ Filter to specific dates or date ranges:
 
 ``` r
 # Single date
-get_swadl_series(
+get_swadl(
   indicator = "hourly_wage_percentiles",
-  measure = "real_wage_2024",
+  measure = "nominal_wage",
   dimension = list("wage_percentile" = "wage_p50"),
   date = "2023-01-01"
 )
 
 # Date range
-get_swadl_series(
+get_swadl(
   indicator = "hourly_wage_percentiles",
-  measure = "real_wage_2024",
+  measure = "nominal_wage",
   dimension = list("wage_percentile" = "wage_p50"),
   date = c("2010-01-01", "2023-01-01")
 )
@@ -267,9 +267,9 @@ a summary:
 
 ``` r
 # Fetch all wage percentiles
-wages <- get_swadl_series(
+wages <- get_swadl(
   indicator = "hourly_wage_percentiles",
-  measure = "real_wage_2024",
+  measure = "nominal_wage",
   dimension = "wage_percentile",
   date = c("2000-01-01", "2023-01-01")
 )
@@ -288,12 +288,12 @@ aggregate(value ~ wage_percentile, data = wages, FUN = function(x) {
 Fetch employment rates for all states with available data:
 
 ``` r
-# Get info to see which states have data
-info <- get_swadl_info("labor_force_emp")
-info$availability$geo_availability
+# Get info to see which geographic levels have data
+info <- swadl_indicator("labor_force_emp")
+info$availability
 
 # Fetch data for California
-ca_emp <- get_swadl_series(
+ca_emp <- get_swadl(
   indicator = "labor_force_emp",
   measure = "percent_emp",
   date_interval = "year",
@@ -310,5 +310,5 @@ sources) within your R session to minimize API calls. If you need to
 refresh this cache:
 
 ``` r
-swadlr_clear_cache()
+clear_swadlr_cache()
 ```

@@ -4,38 +4,32 @@
 
 Fetch time series data from the SWADL API
 
-- [`get_swadl_series()`](https://economic.github.com/swadlr/reference/get_swadl_series.md)
+- [`get_swadl()`](https://economic.github.io/swadlr/reference/get_swadl.md)
   : Get time series data from SWADL
 
 ## Indicator information
 
 Get detailed information about a specific indicator
 
-- [`get_swadl_info()`](https://economic.github.com/swadlr/reference/get_swadl_info.md)
+- [`swadl_indicator()`](https://economic.github.io/swadlr/reference/swadl_indicator.md)
   : Get detailed information about an indicator
 
 ## Explore available data
 
 Functions to explore what data is available in the SWADL API
 
-- [`swadlr_topics()`](https://economic.github.com/swadlr/reference/swadlr_topics.md)
-  : List available topics
-- [`swadlr_indicators()`](https://economic.github.com/swadlr/reference/swadlr_indicators.md)
-  : List available indicators
-- [`swadlr_measures()`](https://economic.github.com/swadlr/reference/swadlr_measures.md)
-  : List available measures
-- [`swadlr_dimensions()`](https://economic.github.com/swadlr/reference/swadlr_dimensions.md)
-  : List available dimensions
-- [`swadlr_geographies()`](https://economic.github.com/swadlr/reference/swadlr_geographies.md)
-  : List available geographies
+- [`swadl_id_names()`](https://economic.github.io/swadlr/reference/swadl_id_names.md)
+  : List ID-name mappings for SWADL metadata
+- [`swadl_availability()`](https://economic.github.io/swadlr/reference/swadl_availability.md)
+  : Find available data across all indicators
 
 ## Cache management
 
-- [`swadlr_clear_cache()`](https://economic.github.com/swadlr/reference/swadlr_clear_cache.md)
+- [`clear_swadlr_cache()`](https://economic.github.io/swadlr/reference/clear_swadlr_cache.md)
   : Clear the swadlr cache
 
 ## Package
 
-- [`swadlr`](https://economic.github.com/swadlr/reference/swadlr-package.md)
-  [`swadlr-package`](https://economic.github.com/swadlr/reference/swadlr-package.md)
+- [`swadlr`](https://economic.github.io/swadlr/reference/swadlr-package.md)
+  [`swadlr-package`](https://economic.github.io/swadlr/reference/swadlr-package.md)
   : swadlr: Access the EPI State of Working America Data Library API
