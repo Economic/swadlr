@@ -100,37 +100,40 @@ dimensions.</p></div>
 <span class="r-in"><span><span class="co"># Get information about hourly wage percentiles</span></span></span>
 <span class="r-in"><span><span class="va">info</span> <span class="op">&lt;-</span> <span class="fu">swadl_indicator</span><span class="op">(</span><span class="st">"hourly_wage_percentiles"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">info</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> ## hourly_wage_percentiles </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Hourly wage percentiles </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> **Topic:** wages </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> **Last updated:** 2026-01-23 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> ### Available measures</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> | ID | Name | Format |</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> |----|------|--------|</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> | real_wage_2025 | Real hourly wage (2025$) | dollar |</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> | nominal_wage | Nominal hourly wage | dollar |</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> ### Dimension combinations by geography</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> - **division** (up to 2-way): education × wage_percentile, gender × wage_percentile, race × wage_percentile, wage_percentile</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> - **national** (up to 3-way): age_group × wage_percentile, education × wage_percentile, gender × wage_percentile, nativity × wage_percentile, public_sector × wage_percentile, race × wage_percentile, ... (12 combinations)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> - **region** (up to 2-way): education × wage_percentile, gender × wage_percentile, race × wage_percentile, wage_percentile</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> - **state** (up to 2-way): education × wage_percentile, gender × wage_percentile, race × wage_percentile, wage_percentile</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> ### Date range</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> - **Year:** 1973 - 2025 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> - **Quarter:** Not available</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> - **Month:** Not available</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> ### Sources</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> - real_wage_2025 : Deflated using the extended Chained CPI-U (https://economic.github.io/realtalk/reference/c_cpi_u_extended.html)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> - NA : Current Population Survey, EPI extracts (https://economic.github.io/realtalk/reference/c_cpi_u_extended.html)</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ── <span style="font-weight: bold;">Indicator</span> ──</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">•</span> Name: Hourly wage percentiles</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">•</span> Topic: wages</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">•</span> Last updated: 2026-01-23</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ── <span style="font-weight: bold;">Measures</span> ──</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">ID              Name                      Format</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> real_wage_2025  Real hourly wage (2025$)  dollar</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> nominal_wage    Nominal hourly wage       dollar</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ── <span style="font-weight: bold;">Dimensions by geography</span> ──</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">division</span> (up to 2-way)</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   education × wage_percentile, gender × wage_percentile, race × wage_percentile, wage_percentile</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">national</span> (up to 3-way)</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   age_group × wage_percentile, education × wage_percentile, gender × wage_percentile, nativity × wage_percentile, public_sector × wage_percentile, race × wage_percentile, ... (12 total)</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">region</span> (up to 2-way)</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   education × wage_percentile, gender × wage_percentile, race × wage_percentile, wage_percentile</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">state</span> (up to 2-way)</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   education × wage_percentile, gender × wage_percentile, race × wage_percentile, wage_percentile</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ── <span style="font-weight: bold;">Dates</span> ──</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">•</span> Annual: 1973 — 2025</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">•</span> Quarterly: <span style="font-style: italic;">Not available</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">•</span> Monthly: <span style="font-style: italic;">Not available</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ── <span style="font-weight: bold;">Sources</span> ──</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">•</span> real_wage_2025: Deflated using the extended Chained CPI-U</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">•</span> (all): Current Population Survey, EPI extracts</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Access specific components</span></span></span>
 <span class="r-in"><span><span class="va">info</span><span class="op">$</span><span class="va">measures</span></span></span>

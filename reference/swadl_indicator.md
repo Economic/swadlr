@@ -66,37 +66,40 @@ to list available indicators, measures, and dimensions.
 # Get information about hourly wage percentiles
 info <- swadl_indicator("hourly_wage_percentiles")
 print(info)
-#> ## hourly_wage_percentiles 
 #> 
-#> Hourly wage percentiles 
+#> ── Indicator ──
 #> 
-#> **Topic:** wages 
-#> **Last updated:** 2026-01-23 
+#> • Name: Hourly wage percentiles
+#> • Topic: wages
+#> • Last updated: 2026-01-23
 #> 
-#> ### Available measures
+#> ── Measures ──
 #> 
-#> | ID | Name | Format |
-#> |----|------|--------|
-#> | real_wage_2025 | Real hourly wage (2025$) | dollar |
-#> | nominal_wage | Nominal hourly wage | dollar |
+#> ID              Name                      Format
+#> real_wage_2025  Real hourly wage (2025$)  dollar
+#> nominal_wage    Nominal hourly wage       dollar
 #> 
-#> ### Dimension combinations by geography
+#> ── Dimensions by geography ──
 #> 
-#> - **division** (up to 2-way): education × wage_percentile, gender × wage_percentile, race × wage_percentile, wage_percentile
-#> - **national** (up to 3-way): age_group × wage_percentile, education × wage_percentile, gender × wage_percentile, nativity × wage_percentile, public_sector × wage_percentile, race × wage_percentile, ... (12 combinations)
-#> - **region** (up to 2-way): education × wage_percentile, gender × wage_percentile, race × wage_percentile, wage_percentile
-#> - **state** (up to 2-way): education × wage_percentile, gender × wage_percentile, race × wage_percentile, wage_percentile
+#> division (up to 2-way)
+#>   education × wage_percentile, gender × wage_percentile, race × wage_percentile, wage_percentile
+#> national (up to 3-way)
+#>   age_group × wage_percentile, education × wage_percentile, gender × wage_percentile, nativity × wage_percentile, public_sector × wage_percentile, race × wage_percentile, ... (12 total)
+#> region (up to 2-way)
+#>   education × wage_percentile, gender × wage_percentile, race × wage_percentile, wage_percentile
+#> state (up to 2-way)
+#>   education × wage_percentile, gender × wage_percentile, race × wage_percentile, wage_percentile
 #> 
-#> ### Date range
+#> ── Dates ──
 #> 
-#> - **Year:** 1973 - 2025 
-#> - **Quarter:** Not available
-#> - **Month:** Not available
+#> • Annual: 1973 — 2025
+#> • Quarterly: Not available
+#> • Monthly: Not available
 #> 
-#> ### Sources
+#> ── Sources ──
 #> 
-#> - real_wage_2025 : Deflated using the extended Chained CPI-U (https://economic.github.io/realtalk/reference/c_cpi_u_extended.html)
-#> - NA : Current Population Survey, EPI extracts (https://economic.github.io/realtalk/reference/c_cpi_u_extended.html)
+#> • real_wage_2025: Deflated using the extended Chained CPI-U
+#> • (all): Current Population Survey, EPI extracts
 
 # Access specific components
 info$measures

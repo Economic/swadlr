@@ -1,58 +1,39 @@
 # swadlr
 
 swadlr provides access to the [EPI State of Working America Data
-Library](https://data.epi.org) (SWADL) API. It enables users to explore
-available indicators, measures, and dimensions, and to fetch time series
-data at national, regional, and state levels.
+Library](https://data.epi.org) (SWADL) API.
+
+## Examples
+
+Use swadlr if you need to programmatically retrieve a time series from
+SWADL:
+
+``` r
+get_swadl(
+  indicator = "hourly_wage_percentiles",
+  measure = "nominal_wage",
+  dimension = list("wage_percentile" = "wage_p50")
+)
+```
+
+For a summary of what is available for a given indicator
+
+``` r
+swadl_indicator("hourly_wage_percentiles")
+```
+
+If you have the need to retrieve multiple, don’t use the API and instead
+simply [download all the data](https://economic.github.io/data/).
 
 ## Installation
 
-You can install swadlr from r-universe:
+You can install swadlr from
+[r-universe](https://economic.r-universe.dev/swadlr):
 
 ``` r
-install.packages("swadlr", repos = c("https://economic.r-universe.dev", "https://cloud.r-project.org"))
-```
-
-## Example
-
-Fetch median hourly wages over time:
-
-``` r
-library(swadlr)
-
-# Explore what's available
-swadl_id_names("topics")
-swadl_id_names("indicators", topic = "wages")
-
-# Get detailed information about an indicator
-swadl_indicator("hourly_wage_percentiles")
-
-# Fetch the median hourly wage
-get_swadl(
-  indicator = "hourly_wage_percentiles",
-  measure = "nominal_wage",
-  dimension = list("wage_percentile" = "wage_p50")
-)
-```
-
-Fetch all wage percentiles:
-
-``` r
-get_swadl(
-  indicator = "hourly_wage_percentiles",
-  measure = "nominal_wage",
-  dimension = "wage_percentile"
-)
-```
-
-Fetch state-level data:
-
-``` r
-get_swadl(
-  indicator = "hourly_wage_percentiles",
-  measure = "nominal_wage",
-  geography = "California",
-  dimension = list("wage_percentile" = "wage_p50")
+install.packages(
+  "swadlr",
+  repos = c("https://economic.r-universe.dev", "https://cloud.r-project.org")
 )
 ```
 

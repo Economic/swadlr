@@ -60,48 +60,30 @@
 </div>
 <!-- badges: start -->
 <!-- badges: end -->
-<p>swadlr provides access to the <a href="https://data.epi.org" class="external-link">EPI State of Working America Data Library</a> (SWADL) API. It enables users to explore available indicators, measures, and dimensions, and to fetch time series data at national, regional, and state levels.</p>
+<p>swadlr provides access to the <a href="https://data.epi.org" class="external-link">EPI State of Working America Data Library</a> (SWADL) API.</p>
+<div class="section level2">
+<h2 id="examples">Examples<a class="anchor" aria-label="anchor" href="#examples"></a>
+</h2>
+<p>Use swadlr if you need to programmatically retrieve a time series from SWADL:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/get_swadl.html">get_swadl</a></span><span class="op">(</span></span>
+<span>  indicator <span class="op">=</span> <span class="st">"hourly_wage_percentiles"</span>,</span>
+<span>  measure <span class="op">=</span> <span class="st">"nominal_wage"</span>,</span>
+<span>  dimension <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="st">"wage_percentile"</span> <span class="op">=</span> <span class="st">"wage_p50"</span><span class="op">)</span></span>
+<span><span class="op">)</span></span></code></pre></div>
+<p>For a summary of what is available for a given indicator</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/swadl_indicator.html">swadl_indicator</a></span><span class="op">(</span><span class="st">"hourly_wage_percentiles"</span><span class="op">)</span></span></code></pre></div>
+<p>If you have the need to retrieve multiple, don’t use the API and instead simply <a href="https://economic.github.io/data/" class="external-link">download all the data</a>.</p>
+</div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>You can install swadlr from r-universe:</p>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"swadlr"</span>, repos <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"https://economic.r-universe.dev"</span>, <span class="st">"https://cloud.r-project.org"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
-</div>
-<div class="section level2">
-<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
-</h2>
-<p>Fetch median hourly wages over time:</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://economic.github.io/swadlr/">swadlr</a></span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Explore what's available</span></span>
-<span><span class="fu"><a href="reference/swadl_id_names.html">swadl_id_names</a></span><span class="op">(</span><span class="st">"topics"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="reference/swadl_id_names.html">swadl_id_names</a></span><span class="op">(</span><span class="st">"indicators"</span>, topic <span class="op">=</span> <span class="st">"wages"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Get detailed information about an indicator</span></span>
-<span><span class="fu"><a href="reference/swadl_indicator.html">swadl_indicator</a></span><span class="op">(</span><span class="st">"hourly_wage_percentiles"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Fetch the median hourly wage</span></span>
-<span><span class="fu"><a href="reference/get_swadl.html">get_swadl</a></span><span class="op">(</span></span>
-<span>  indicator <span class="op">=</span> <span class="st">"hourly_wage_percentiles"</span>,</span>
-<span>  measure <span class="op">=</span> <span class="st">"nominal_wage"</span>,</span>
-<span>  dimension <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="st">"wage_percentile"</span> <span class="op">=</span> <span class="st">"wage_p50"</span><span class="op">)</span></span>
-<span><span class="op">)</span></span></code></pre></div>
-<p>Fetch all wage percentiles:</p>
+<p>You can install swadlr from <a href="https://economic.r-universe.dev/swadlr" class="external-link">r-universe</a>:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/get_swadl.html">get_swadl</a></span><span class="op">(</span></span>
-<span>  indicator <span class="op">=</span> <span class="st">"hourly_wage_percentiles"</span>,</span>
-<span>  measure <span class="op">=</span> <span class="st">"nominal_wage"</span>,</span>
-<span>  dimension <span class="op">=</span> <span class="st">"wage_percentile"</span></span>
-<span><span class="op">)</span></span></code></pre></div>
-<p>Fetch state-level data:</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/get_swadl.html">get_swadl</a></span><span class="op">(</span></span>
-<span>  indicator <span class="op">=</span> <span class="st">"hourly_wage_percentiles"</span>,</span>
-<span>  measure <span class="op">=</span> <span class="st">"nominal_wage"</span>,</span>
-<span>  geography <span class="op">=</span> <span class="st">"California"</span>,</span>
-<span>  dimension <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="st">"wage_percentile"</span> <span class="op">=</span> <span class="st">"wage_p50"</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span></span>
+<span>  <span class="st">"swadlr"</span>,</span>
+<span>  repos <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"https://economic.r-universe.dev"</span>, <span class="st">"https://cloud.r-project.org"</span><span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
