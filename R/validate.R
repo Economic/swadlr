@@ -1,73 +1,96 @@
 # Validation helpers for get_swadl()
 
-# Validate indicator exists
-validate_indicator <- function(indicator) {
-  if (!is.character(indicator) || length(indicator) != 1) {
-    stop("`indicator` must be a single character string.", call. = FALSE)
+# Filter availability by measure, date_interval, geo_level
+filter_availability <- function(
+  availability,
+  measure = NULL,
+  date_interval = NULL,
+  geo_level = NULL
+) {
+  result <- availability
+  if (!is.null(measure)) {
+    result <- result[result$measure_id == measure, ]
+  }
+  if (!is.null(date_interval)) {
+    result <- result[result$date_interval == date_interval, ]
+  }
+  if (!is.null(geo_level)) {
+    result <- result[result$geo_level == geo_level, ]
+  }
+  result
+}
+
+# Validate a single string value against available options
+validate_single_string <- function(
+  value,
+  param_name,
+  available,
+  error_suffix = NULL
+) {
+  if (!is.character(value) || length(value) != 1) {
+    stop("`", param_name, "` must be a single character string.", call. = FALSE)
   }
 
-  indicators_raw <- fetch_indicators()
-  available_ids <- indicators_raw$indicator$id
-
-  if (!(indicator %in% available_ids)) {
-    stop(
-      "Unknown indicator: \"",
-      indicator,
-      "\"\n",
-      'Use swadl_id_names("indicators") to see available indicators.',
-      call. = FALSE
-    )
+  if (!(value %in% available)) {
+    msg <- paste0("Unknown ", param_name, ": \"", value, "\"")
+    if (!is.null(error_suffix)) {
+      msg <- paste0(msg, "\n", error_suffix)
+    }
+    stop(msg, call. = FALSE)
   }
 
   invisible(TRUE)
+}
+
+# Validate indicator exists
+validate_indicator <- function(indicator) {
+  indicators_raw <- fetch_indicators()
+  available_ids <- indicators_raw$indicator$id
+
+  validate_single_string(
+    indicator,
+    "indicator",
+    available_ids,
+    'Use swadl_id_names("indicators") to see available indicators.'
+  )
 }
 
 # Validate measure is available for indicator
 validate_measure <- function(indicator, measure) {
-  if (!is.character(measure) || length(measure) != 1) {
-    stop("`measure` must be a single character string.", call. = FALSE)
-  }
+  ind_data <- get_indicator_availability(indicator)
+  available_measures <- unique(ind_data$availability$measure_id)
 
-  indicators_raw <- fetch_indicators()
-  indicator_idx <- which(indicators_raw$indicator$id == indicator)
-  availability <- indicators_raw$availability[[indicator_idx]]
-  available_measures <- unique(availability$measure_id)
-
-  if (!(measure %in% available_measures)) {
-    stop(
-      "Measure \"",
-      measure,
-      "\" is not available for indicator \"",
+  validate_single_string(
+    measure,
+    "measure",
+    available_measures,
+    paste0(
+      "Measure is not available for indicator \"",
       indicator,
       "\".\n",
       "Available measures: ",
-      paste(available_measures, collapse = ", "),
-      call. = FALSE
+      paste(available_measures, collapse = ", ")
     )
-  }
-
-  invisible(TRUE)
+  )
 }
 
 # Validate date_interval is available for indicator/measure
 validate_date_interval <- function(indicator, measure, date_interval) {
-  if (
-    !is.character(date_interval) ||
-      length(date_interval) != 1 ||
-      !(date_interval %in% c("year", "month"))
-  ) {
-    stop(
-      "`date_interval` must be either \"year\" or \"month\".",
-      call. = FALSE
-    )
-  }
+  # First check it's a valid date_interval value
+  validate_single_string(
+    date_interval,
+    "date_interval",
+    c("year", "month"),
+    '`date_interval` must be either "year" or "month".'
+  )
 
-  indicators_raw <- fetch_indicators()
-  indicator_idx <- which(indicators_raw$indicator$id == indicator)
-  availability <- indicators_raw$availability[[indicator_idx]]
+  # Then check it's available for this indicator/measure
+
+  ind_data <- get_indicator_availability(indicator)
+  availability <- ind_data$availability
 
   # Filter to this measure
-  measure_rows <- availability[availability$measure_id == measure, ]
+  measure_rows <- filter_availability(availability, measure = measure)
   available_intervals <- unique(measure_rows$date_interval)
 
   if (!(date_interval %in% available_intervals)) {
@@ -95,15 +118,15 @@ validate_geography <- function(indicator, measure, date_interval, geography) {
   # Get geo level from the ID
   geo_level <- get_geo_level(geo_id)
 
-  indicators_raw <- fetch_indicators()
-  indicator_idx <- which(indicators_raw$indicator$id == indicator)
-  availability <- indicators_raw$availability[[indicator_idx]]
+  ind_data <- get_indicator_availability(indicator)
+  availability <- ind_data$availability
 
   # Filter to this measure and interval
-  filtered <- availability[
-    availability$measure_id == measure &
-      availability$date_interval == date_interval,
-  ]
+  filtered <- filter_availability(
+    availability,
+    measure = measure,
+    date_interval = date_interval
+  )
   available_geo_levels <- unique(filtered$geo_level)
 
   if (!(geo_level %in% available_geo_levels)) {
@@ -150,15 +173,15 @@ get_availability_rows <- function(
   date_interval,
   geo_level
 ) {
-  indicators_raw <- fetch_indicators()
-  indicator_idx <- which(indicators_raw$indicator$id == indicator)
-  availability <- indicators_raw$availability[[indicator_idx]]
+  ind_data <- get_indicator_availability(indicator)
+  availability <- ind_data$availability
 
-  availability[
-    availability$measure_id == measure &
-      availability$date_interval == date_interval &
-      availability$geo_level == geo_level,
-  ]
+  filter_availability(
+    availability,
+    measure = measure,
+    date_interval = date_interval,
+    geo_level = geo_level
+  )
 }
 
 # Get available dimension values for an indicator/measure/interval/geo_level

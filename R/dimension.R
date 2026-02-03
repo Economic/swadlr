@@ -116,92 +116,71 @@ parse_dimension_single <- function(
   )
 }
 
-# Parse dimension = list(...)
-parse_dimension_list <- function(
-  dimension,
-  geo_id,
+# Validate and process an unnamed list element
+# Returns the dimension ID if valid
+validate_unnamed_dimension_element <- function(elem, avail_dim_ids) {
+  if (!is.character(elem) || length(elem) != 1) {
+    stop(
+      "Unnamed list elements must be single dimension ID strings.",
+      call. = FALSE
+    )
+  }
+  if (!(elem %in% avail_dim_ids)) {
+    stop(
+      "Dimension \"",
+      elem,
+      "\" is not available for this indicator.\n",
+      "Available dimensions: ",
+      paste(avail_dim_ids, collapse = ", "),
+      call. = FALSE
+    )
+  }
+  elem
+}
+
+# Validate and process a named list element
+# Returns the validated dimension values
+validate_named_dimension_element <- function(
+  name,
+  values,
   avail_dim_ids,
   avail_dim_values
 ) {
-  if (length(dimension) == 0) {
-    stop("`dimension` list cannot be empty.", call. = FALSE)
+  if (!(name %in% avail_dim_ids)) {
+    stop(
+      "Dimension \"",
+      name,
+      "\" is not available for this indicator.\n",
+      "Available dimensions: ",
+      paste(avail_dim_ids, collapse = ", "),
+      call. = FALSE
+    )
+  }
+  if (!is.character(values)) {
+    stop("Dimension values must be character strings.", call. = FALSE)
   }
 
-  dim_names <- names(dimension)
-  if (is.null(dim_names)) {
-    dim_names <- rep("", length(dimension))
+  dim_vals_available <- get_dim_value_ids_for_dim(name)
+  dim_vals_in_indicator <- intersect(dim_vals_available, avail_dim_values)
+  invalid <- setdiff(values, dim_vals_in_indicator)
+
+  if (length(invalid) > 0) {
+    stop(
+      "Dimension value(s) not available: ",
+      paste(invalid, collapse = ", "),
+      "\n",
+      "Available values for \"",
+      name,
+      "\": ",
+      paste(dim_vals_in_indicator, collapse = ", "),
+      call. = FALSE
+    )
   }
+  values
+}
 
-  # Collect dimension IDs and values
-  dim_ids <- character(0)
-  dim_value_filter <- list()
-  needs_custom <- FALSE
-
-  for (i in seq_along(dimension)) {
-    elem <- dimension[[i]]
-    name <- dim_names[i]
-
-    if (name == "" || is.null(name)) {
-      # Unnamed element: dimension ID, all values
-      if (!is.character(elem) || length(elem) != 1) {
-        stop(
-          "Unnamed list elements must be single dimension ID strings.",
-          call. = FALSE
-        )
-      }
-      if (!(elem %in% avail_dim_ids)) {
-        stop(
-          "Dimension \"",
-          elem,
-          "\" is not available for this indicator.\n",
-          "Available dimensions: ",
-          paste(avail_dim_ids, collapse = ", "),
-          call. = FALSE
-        )
-      }
-      dim_ids <- c(dim_ids, elem)
-      dim_value_filter[elem] <- list(NULL)
-    } else {
-      # Named element: filter to specific value(s)
-      if (!(name %in% avail_dim_ids)) {
-        stop(
-          "Dimension \"",
-          name,
-          "\" is not available for this indicator.\n",
-          "Available dimensions: ",
-          paste(avail_dim_ids, collapse = ", "),
-          call. = FALSE
-        )
-      }
-      if (!is.character(elem)) {
-        stop("Dimension values must be character strings.", call. = FALSE)
-      }
-
-      # Validate dimension values
-      dim_vals_available <- get_dim_value_ids_for_dim(name)
-      dim_vals_in_indicator <- intersect(dim_vals_available, avail_dim_values)
-      invalid <- setdiff(elem, dim_vals_in_indicator)
-      if (length(invalid) > 0) {
-        stop(
-          "Dimension value(s) not available: ",
-          paste(invalid, collapse = ", "),
-          "\n",
-          "Available values for \"",
-          name,
-          "\": ",
-          paste(dim_vals_in_indicator, collapse = ", "),
-          call. = FALSE
-        )
-      }
-
-      dim_ids <- c(dim_ids, name)
-      dim_value_filter[[name]] <- elem
-    }
-  }
-
-  dim_ids <- unique(dim_ids)
-
-  # Count dimensions requesting all values (NULL in filter)
+# Validate that at most one dimension requests all values
+validate_all_values_constraint <- function(dim_value_filter) {
   all_values_dims <- names(which(vapply(
     dim_value_filter,
     is.null,
@@ -223,8 +202,51 @@ parse_dimension_list <- function(
       call. = FALSE
     )
   }
+}
 
-  # Build datumns array for custom endpoint (used for all queries now)
+# Parse dimension = list(...)
+parse_dimension_list <- function(
+  dimension,
+  geo_id,
+  avail_dim_ids,
+  avail_dim_values
+) {
+  if (length(dimension) == 0) {
+    stop("`dimension` list cannot be empty.", call. = FALSE)
+  }
+
+  dim_names <- names(dimension)
+  if (is.null(dim_names)) {
+    dim_names <- rep("", length(dimension))
+  }
+
+  # Collect dimension IDs and values
+  dim_ids <- character(0)
+  dim_value_filter <- list()
+
+  for (i in seq_along(dimension)) {
+    elem <- dimension[[i]]
+    name <- dim_names[i]
+
+    if (name == "" || is.null(name)) {
+      dim_id <- validate_unnamed_dimension_element(elem, avail_dim_ids)
+      dim_ids <- c(dim_ids, dim_id)
+      dim_value_filter[dim_id] <- list(NULL)
+    } else {
+      values <- validate_named_dimension_element(
+        name,
+        elem,
+        avail_dim_ids,
+        avail_dim_values
+      )
+      dim_ids <- c(dim_ids, name)
+      dim_value_filter[[name]] <- values
+    }
+  }
+
+  dim_ids <- unique(dim_ids)
+  validate_all_values_constraint(dim_value_filter)
+
   datumns <- build_datumns(
     dim_ids,
     dim_value_filter,

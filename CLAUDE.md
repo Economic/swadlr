@@ -79,6 +79,13 @@ devtools::test()
 httptest2::stop_capturing()
 ```
 
-## Implementation
+### Internal function naming conventions
 
-See [plans/2026-01-24-implementation-plan.md](plans/2026-01-24-implementation-plan.md) for the full implementation plan.
+The codebase follows these naming conventions for internal functions:
+
+- `fetch_*` - Functions that make HTTP requests (e.g., `fetch_indicators()`, `fetch_data()`)
+- `get_*` - Functions that extract or compute from cached data (e.g., `get_indicator_availability()`, `get_geo_level()`)
+- `resolve_*` - Lookup and translation functions (e.g., `resolve_geography()`, `resolve_dimension()`)
+- `build_*` - Constructor functions that create data structures (e.g., `build_indicator_info()`, `build_availability_summary()`)
+- `validate_*` - Functions that check inputs and throw errors on invalid values (e.g., `validate_indicator()`, `validate_measure()`)
+- `filter_*` - Functions that filter data frames by criteria (e.g., `filter_availability()`, `filter_by_dimensions()`)

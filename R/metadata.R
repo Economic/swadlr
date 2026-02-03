@@ -54,3 +54,26 @@ fetch_sources <- function() {
   cache_set("sources", result)
   result
 }
+
+# Get availability data for a specific indicator
+# Returns list(indicator = data.frame row, availability = list)
+# Stops with error if indicator not found
+get_indicator_availability <- function(indicator) {
+  indicators_raw <- fetch_indicators()
+  indicator_idx <- which(indicators_raw$indicator$id == indicator)
+
+  if (length(indicator_idx) == 0) {
+    stop(
+      "Unknown indicator: \"",
+      indicator,
+      "\"\n",
+      'Use swadl_id_names("indicators") to see available indicators.',
+      call. = FALSE
+    )
+  }
+
+  list(
+    indicator = indicators_raw$indicator[indicator_idx, ],
+    availability = indicators_raw$availability[[indicator_idx]]
+  )
+}
