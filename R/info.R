@@ -265,7 +265,7 @@ build_source_bullets <- function(sources) {
     character(1)
   )
 
-  setNames(bullets, rep("*", length(bullets)))
+  stats::setNames(bullets, rep("*", length(bullets)))
 }
 
 
