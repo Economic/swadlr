@@ -61,7 +61,6 @@
 #' get_swadl(
 #'   "labor_force_emp",
 #'   "percent_emp",
-#'   date_interval = "month",
 #'   dimension = list("gender" = "gender_male", "age_group")
 #' )
 #'
