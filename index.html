@@ -66,15 +66,65 @@
 </h2>
 <p>Use swadlr if you need to programmatically retrieve a time series from SWADL:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/get_swadl.html">get_swadl</a></span><span class="op">(</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://economic.github.io/swadlr/">swadlr</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="reference/get_swadl.html">get_swadl</a></span><span class="op">(</span></span>
 <span>  indicator <span class="op">=</span> <span class="st">"hourly_wage_percentiles"</span>,</span>
 <span>  measure <span class="op">=</span> <span class="st">"nominal_wage"</span>,</span>
 <span>  dimension <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="st">"wage_percentile"</span> <span class="op">=</span> <span class="st">"wage_p50"</span><span class="op">)</span></span>
-<span><span class="op">)</span></span></code></pre></div>
+<span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 53 × 4</span></span>
+<span><span class="co">#&gt;    date       value geography wage_percentile</span></span>
+<span><span class="co">#&gt;    &lt;date&gt;     &lt;dbl&gt; &lt;chr&gt;     &lt;chr&gt;          </span></span>
+<span><span class="co">#&gt;  1 1973-01-01  3.35 national  wage_p50       </span></span>
+<span><span class="co">#&gt;  2 1974-01-01  3.62 national  wage_p50       </span></span>
+<span><span class="co">#&gt;  3 1975-01-01  3.94 national  wage_p50       </span></span>
+<span><span class="co">#&gt;  4 1976-01-01  4.12 national  wage_p50       </span></span>
+<span><span class="co">#&gt;  5 1977-01-01  4.41 national  wage_p50       </span></span>
+<span><span class="co">#&gt;  6 1978-01-01  4.73 national  wage_p50       </span></span>
+<span><span class="co">#&gt;  7 1979-01-01  5.11 national  wage_p50       </span></span>
+<span><span class="co">#&gt;  8 1980-01-01  5.63 national  wage_p50       </span></span>
+<span><span class="co">#&gt;  9 1981-01-01  6.10 national  wage_p50       </span></span>
+<span><span class="co">#&gt; 10 1982-01-01  6.46 national  wage_p50       </span></span>
+<span><span class="co">#&gt; # ℹ 43 more rows</span></span></code></pre></div>
 <p>For a summary of what is available for a given indicator</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/swadl_indicator.html">swadl_indicator</a></span><span class="op">(</span><span class="st">"hourly_wage_percentiles"</span><span class="op">)</span></span></code></pre></div>
-<p>If you have the need to retrieve multiple, don’t use the API and instead simply <a href="https://economic.github.io/data/" class="external-link">download all the data</a>.</p>
+<code class="sourceCode R"><span><span class="fu"><a href="reference/swadl_indicator.html">swadl_indicator</a></span><span class="op">(</span><span class="st">"hourly_wage_percentiles"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ── Indicator ──</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; • Name: Hourly wage percentiles</span></span>
+<span><span class="co">#&gt; • Topic: wages</span></span>
+<span><span class="co">#&gt; • Last updated: 2026-01-23</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ── Measures ──</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ID              Name                      Format</span></span>
+<span><span class="co">#&gt; real_wage_2025  Real hourly wage (2025$)  dollar</span></span>
+<span><span class="co">#&gt; nominal_wage    Nominal hourly wage       dollar</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ── Dimensions by geography ──</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; division (up to 2-way)</span></span>
+<span><span class="co">#&gt;   education × wage_percentile, gender × wage_percentile, race × wage_percentile, wage_percentile</span></span>
+<span><span class="co">#&gt; national (up to 3-way)</span></span>
+<span><span class="co">#&gt;   age_group × wage_percentile, education × wage_percentile, gender × wage_percentile, nativity × wage_percentile, public_sector × wage_percentile, race × wage_percentile, ... (12 total)</span></span>
+<span><span class="co">#&gt; region (up to 2-way)</span></span>
+<span><span class="co">#&gt;   education × wage_percentile, gender × wage_percentile, race × wage_percentile, wage_percentile</span></span>
+<span><span class="co">#&gt; state (up to 2-way)</span></span>
+<span><span class="co">#&gt;   education × wage_percentile, gender × wage_percentile, race × wage_percentile, wage_percentile</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ── Dates ──</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; • Annual: 1973 — 2025</span></span>
+<span><span class="co">#&gt; • Quarterly: Not available</span></span>
+<span><span class="co">#&gt; • Monthly: Not available</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ── Sources ──</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; • real_wage_2025: Deflated using the extended Chained CPI-U</span></span>
+<span><span class="co">#&gt; • (all): Current Population Survey, EPI extracts</span></span></code></pre></div>
+<p>If you have the need to retrieve many time series, don’t use the API. Instead, simply <a href="https://economic.github.io/data/" class="external-link">download all the data</a>.</p>
 </div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
