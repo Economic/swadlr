@@ -69,28 +69,6 @@ Clear the cached metadata.
 clear_swadlr_cache()
 ```
 
-## Testing
-
-Tests use httptest2 to mock API responses with fixtures in
-`tests/testthat/fixtures/`. This avoids hitting the live API during
-tests.
-
-Key points: - httptest2 intercepts httr2 requests at `req_perform()` and
-returns fixture data - The throttle (`throttle_if_needed()`) runs before
-the request, so it would still delay even with mocked responses -
-`tests/testthat/setup.R` sets `options(swadlr.throttle_interval = 0)` to
-disable throttling during tests - Use `testthat::test_path("fixtures")`
-in `with_mock_dir()` calls to ensure correct path resolution with
-`devtools::test()`
-
-To update fixtures when the live API changes:
-
-``` r
-httptest2::start_capturing("tests/testthat/fixtures")
-devtools::test()
-httptest2::stop_capturing()
-```
-
 ### Internal function naming conventions
 
 The codebase follows these naming conventions for internal functions:

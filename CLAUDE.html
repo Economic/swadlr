@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="index.html">swadlr</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,16 +84,6 @@
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/clear_swadlr_cache.html">clear_swadlr_cache</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 </div>
-</div>
-<div class="section level2">
-<h2 id="testing">Testing<a class="anchor" aria-label="anchor" href="#testing"></a></h2>
-<p>Tests use httptest2 to mock API responses with fixtures in <code>tests/testthat/fixtures/</code>. This avoids hitting the live API during tests.</p>
-<p>Key points: - httptest2 intercepts httr2 requests at <code>req_perform()</code> and returns fixture data - The throttle (<code>throttle_if_needed()</code>) runs before the request, so it would still delay even with mocked responses - <code>tests/testthat/setup.R</code> sets <code>options(swadlr.throttle_interval = 0)</code> to disable throttling during tests - Use <code>testthat::test_path("fixtures")</code> in <code>with_mock_dir()</code> calls to ensure correct path resolution with <code>devtools::test()</code></p>
-<p>To update fixtures when the live API changes:</p>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">httptest2</span><span class="fu">::</span><span class="fu"><a href="https://enpiar.com/httptest2/reference/capture_requests.html" class="external-link">start_capturing</a></span><span class="op">(</span><span class="st">"tests/testthat/fixtures"</span><span class="op">)</span></span>
-<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">test</span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="fu">httptest2</span><span class="fu">::</span><span class="fu"><a href="https://enpiar.com/httptest2/reference/capture_requests.html" class="external-link">stop_capturing</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <div class="section level3">
 <h3 id="internal-function-naming-conventions">Internal function naming conventions<a class="anchor" aria-label="anchor" href="#internal-function-naming-conventions"></a></h3>
 <p>The codebase follows these naming conventions for internal functions:</p>
