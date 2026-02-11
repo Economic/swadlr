@@ -1,0 +1,479 @@
+[
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1973-01-01",
+        "value": 20.30401030769995
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1974-01-01",
+        "value": 19.9779593408255
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1975-01-01",
+        "value": 20.05249997603587
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1976-01-01",
+        "value": 19.84337460798073
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1977-01-01",
+        "value": 19.92124141422706
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1978-01-01",
+        "value": 20.020259316882818
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1979-01-01",
+        "value": 19.743418229008135
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1980-01-01",
+        "value": 19.59268354627821
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1981-01-01",
+        "value": 19.390494005943104
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1982-01-01",
+        "value": 19.3619180316413
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1983-01-01",
+        "value": 19.283048028807706
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1984-01-01",
+        "value": 19.464714940408648
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1985-01-01",
+        "value": 19.64091347310931
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1986-01-01",
+        "value": 20.011604607694288
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1987-01-01",
+        "value": 20.025669607214024
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1988-01-01",
+        "value": 19.949045452280135
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1989-01-01",
+        "value": 19.806595712328395
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1990-01-01",
+        "value": 19.695706983293807
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1991-01-01",
+        "value": 19.739439381388394
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1992-01-01",
+        "value": 19.79189765894188
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1993-01-01",
+        "value": 19.903752739997394
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1994-01-01",
+        "value": 19.6646039825302
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1995-01-01",
+        "value": 19.590651686765963
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1996-01-01",
+        "value": 19.48405402221352
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1997-01-01",
+        "value": 19.69660020986359
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1998-01-01",
+        "value": 20.46640868042812
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "1999-01-01",
+        "value": 20.965196891923917
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2000-01-01",
+        "value": 21.05353931853352
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2001-01-01",
+        "value": 21.508885333389507
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2002-01-01",
+        "value": 21.857712625228984
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2003-01-01",
+        "value": 22.047010270863595
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2004-01-01",
+        "value": 22.12148570831437
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2005-01-01",
+        "value": 21.99659298664451
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2006-01-01",
+        "value": 22.102685192923246
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2007-01-01",
+        "value": 22.1665817850113
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2008-01-01",
+        "value": 22.15666045007981
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2009-01-01",
+        "value": 22.649484643389684
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2010-01-01",
+        "value": 22.43086610733327
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2011-01-01",
+        "value": 21.9588683080489
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2012-01-01",
+        "value": 21.83688527540727
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2013-01-01",
+        "value": 21.95128308170569
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2014-01-01",
+        "value": 21.95578451628175
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2015-01-01",
+        "value": 22.461390102166707
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2016-01-01",
+        "value": 22.980501529810894
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2017-01-01",
+        "value": 23.327168773184596
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2018-01-01",
+        "value": 23.56271782868333
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2019-01-01",
+        "value": 24.068477027368186
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2020-01-01",
+        "value": 25.64540443483375
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2021-01-01",
+        "value": 25.08128086243278
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2022-01-01",
+        "value": 24.840623760363297
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2023-01-01",
+        "value": 25.160537743243058
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2024-01-01",
+        "value": 25.468615726243453
+    },
+    {
+        "fkDimensionValueIds": [
+            "overall"
+        ],
+        "geoLevel": "national",
+        "geoId": "national",
+        "date": "2025-01-01",
+        "value": 25.665047683715827
+    }
+]

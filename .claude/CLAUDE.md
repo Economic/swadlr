@@ -57,15 +57,24 @@ air format .
 
 #### httptest2 fixtures
 
-Tests use httptest2 to mock API responses. Fixtures live in `tests/testthat/fixtures/` organized by URL path (e.g., `fixtures/data.epi.org/api/topic/list.json`).
+Tests use httptest2 to mock API responses with fixtures in `tests/testthat/fixtures/`, organized by URL path (e.g., `fixtures/data.epi.org/api/topic/list.json`). This avoids hitting the live API during tests.
+
+Key points:
+- httptest2 intercepts httr2 requests at `req_perform()` and returns fixture data
+- The throttle (`throttle_if_needed()`) runs before the request, so it would still delay even with mocked responses
+- `tests/testthat/setup.R` sets `options(swadlr.throttle_interval = 0)` to disable throttling during tests
+- Use `testthat::test_path("fixtures")` in `with_mock_dir()` calls to ensure correct path resolution with `devtools::test()`
 
 To update fixtures when the live API changes:
 
 ```r
-httptest2::start_capturing("tests/testthat/fixtures")
+httptest2::.mockPaths("tests/testthat/fixtures")
+httptest2::start_capturing()
 devtools::test()
 httptest2::stop_capturing()
 ```
+
+**Warning:** httptest2's `with_mock_dir()` auto-prepends `tests/testthat/` to relative paths when `tests/testthat/` exists in the working directory. Never call `with_mock_dir("tests/testthat/fixtures", ...)` from the package root — it will resolve to `tests/testthat/tests/testthat/fixtures/`. In test files, always use `testthat::test_path("fixtures")` which returns just `"fixtures"` (relative to the test directory where `devtools::test()` sets the working directory), bypassing the prepend logic. Outside of test files, use `.mockPaths()` directly as shown above.
 
 #### When to use `with_mock_dir()` vs direct unit tests
 

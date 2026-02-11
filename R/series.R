@@ -108,13 +108,23 @@ get_swadl <- function(
     geo_id
   )
 
-  # Fetch data from custom endpoint
-  data <- fetch_data_custom(
-    indicator,
-    date_interval,
-    measure,
-    dim_parsed$params$datumns
-  )
+  # Fetch data from appropriate endpoint
+  if (dim_parsed$endpoint == "list") {
+    data <- fetch_data_list(
+      indicator,
+      date_interval,
+      measure,
+      geo_level,
+      dim_parsed$params
+    )
+  } else {
+    data <- fetch_data_custom(
+      indicator,
+      date_interval,
+      measure,
+      dim_parsed$params$datumns
+    )
+  }
 
   # Handle empty response
   if (length(data) == 0 || (is.data.frame(data) && nrow(data) == 0)) {
@@ -125,6 +135,9 @@ get_swadl <- function(
   # Transform to long-format data frame
   result <- transform_response(data, dim_parsed$dim_ids)
 
+  # Filter to requested geography (/list endpoint returns all geos at level)
+  result <- result[result$geography == geo_id, ]
+
   # Apply dimension value filter (if needed)
   result <- apply_dim_filter(result, dim_parsed$dim_value_filter)
 
@@ -132,6 +145,27 @@ get_swadl <- function(
   result <- apply_date_filter(result, date)
 
   result
+}
+
+# Fetch data from /api/indicator/data/list endpoint
+fetch_data_list <- function(
+  indicator,
+  date_interval,
+  measure,
+  geo_level,
+  dim_params
+) {
+  query <- list(
+    indicatorId = indicator,
+    dateInterval = date_interval,
+    measureId = measure,
+    geoLevel = geo_level
+  )
+
+  # Add dimension parameters (e.g., dimensionId = "overall")
+  query <- c(query, dim_params)
+
+  swadlr_request("/api/indicator/data/list", query)
 }
 
 # Fetch data from /api/indicator/data/custom endpoint
@@ -179,6 +213,10 @@ transform_response <- function(data, dim_ids) {
     for (j in seq_along(dim_vals)) {
       val <- dim_vals[j]
       val_dim_id <- val_dim_ids[j]
+      # Fall back to the value itself as the dim ID (handles "overall")
+      if (is.na(val_dim_id) && val %in% names(dim_cols)) {
+        val_dim_id <- val
+      }
       if (!is.na(val_dim_id) && val_dim_id %in% names(dim_cols)) {
         dim_cols[[val_dim_id]][i] <- val
       }

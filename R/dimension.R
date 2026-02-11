@@ -32,7 +32,7 @@ parse_dimension <- function(
   # Case 1: dimension = "overall"
   if (is.character(dimension) && length(dimension) == 1) {
     if (dimension == "overall") {
-      return(parse_dimension_overall(geo_id, avail_dim_values))
+      return(parse_dimension_overall(avail_dim_values))
     }
 
     # Case 2: dimension = "dimension_id" (single dimension, all values)
@@ -61,7 +61,7 @@ parse_dimension <- function(
 }
 
 # Parse dimension = "overall"
-parse_dimension_overall <- function(geo_id, avail_dim_values) {
+parse_dimension_overall <- function(avail_dim_values) {
   # Check if "overall" is available
   if (!("overall" %in% avail_dim_values)) {
     stop(
@@ -72,10 +72,8 @@ parse_dimension_overall <- function(geo_id, avail_dim_values) {
   }
 
   list(
-    endpoint = "custom",
-    params = list(
-      datumns = list(list(geoId = geo_id, dimensionValues = list("overall")))
-    ),
+    endpoint = "list",
+    params = list(dimensionId = "overall"),
     dim_ids = "overall",
     dim_value_filter = list(overall = "overall")
   )

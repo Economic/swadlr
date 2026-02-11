@@ -266,4 +266,29 @@ httptest2::with_mock_dir(testthat::test_path("fixtures"), {
     result <- apply_date_filter(df, c("1900-01-01", "1901-01-01"))
     expect_equal(nrow(result), 0)
   })
+
+  test_that("get_swadl with default overall dimension", {
+    cache_clear_all()
+    df <- get_swadl("hourly_wage_median", "real_wage_median_2025")
+
+    expect_true(nrow(df) > 0)
+    expect_true(all(c("date", "value", "geography", "overall") %in% names(df)))
+    expect_s3_class(df$date, "Date")
+    expect_type(df$value, "double")
+    expect_equal(unique(df$geography), "national")
+    expect_true("overall" %in% df$overall)
+    cache_clear_all()
+  })
+
+  test_that("parse_dimension_overall uses list endpoint", {
+    cache_clear_all()
+    result <- parse_dimension_overall(
+      c("overall", "gender_male", "gender_female")
+    )
+
+    expect_equal(result$endpoint, "list")
+    expect_equal(result$params, list(dimensionId = "overall"))
+    expect_equal(result$dim_ids, "overall")
+    cache_clear_all()
+  })
 })
