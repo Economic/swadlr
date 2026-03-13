@@ -1,7 +1,7 @@
 url: https://economic.github.io/swadlr/
 
 template:
-  bootstrap: 5
+  package: epitemplate
 
 articles:
   - title: Getting started
