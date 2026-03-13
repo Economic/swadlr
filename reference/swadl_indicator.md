@@ -71,7 +71,7 @@ print(info)
 #> 
 #> • Name: Hourly wage percentiles
 #> • Topic: wages
-#> • Last updated: 2026-01-23
+#> • Last updated: 2026-02-27
 #> 
 #> ── Measures ──
 #> 

@@ -127,15 +127,15 @@ get_swadl(
 #> # A tibble: 477 × 4
 #>    date       value geography wage_percentile
 #>    <date>     <dbl> <chr>     <chr>          
-#>  1 1973-01-01  1.72 national  wage_p10       
-#>  2 1973-01-01  6.51 national  wage_p90       
-#>  3 1973-01-01  5.17 national  wage_p80       
-#>  4 1973-01-01  4.48 national  wage_p70       
-#>  5 1973-01-01  3.87 national  wage_p60       
+#>  1 1973-01-01  6.51 national  wage_p90       
+#>  2 1973-01-01  1.72 national  wage_p10       
+#>  3 1973-01-01  2.06 national  wage_p20       
+#>  4 1973-01-01  2.47 national  wage_p30       
+#>  5 1973-01-01  2.91 national  wage_p40       
 #>  6 1973-01-01  3.35 national  wage_p50       
-#>  7 1973-01-01  2.91 national  wage_p40       
-#>  8 1973-01-01  2.47 national  wage_p30       
-#>  9 1973-01-01  2.06 national  wage_p20       
+#>  7 1973-01-01  3.87 national  wage_p60       
+#>  8 1973-01-01  4.48 national  wage_p70       
+#>  9 1973-01-01  5.17 national  wage_p80       
 #> 10 1974-01-01  1.95 national  wage_p10       
 #> # ℹ 467 more rows
 
@@ -151,13 +151,13 @@ get_swadl(
 #>  1 1976-01-01 0.624 national  gender_male age_16_24  
 #>  2 1976-01-01 0.460 national  gender_male age_55_plus
 #>  3 1976-01-01 0.895 national  gender_male age_25_54  
-#>  4 1977-01-01 0.644 national  gender_male age_16_24  
-#>  5 1977-01-01 0.457 national  gender_male age_55_plus
-#>  6 1977-01-01 0.902 national  gender_male age_25_54  
-#>  7 1978-01-01 0.460 national  gender_male age_55_plus
-#>  8 1978-01-01 0.911 national  gender_male age_25_54  
-#>  9 1978-01-01 0.663 national  gender_male age_16_24  
-#> 10 1979-01-01 0.456 national  gender_male age_55_plus
+#>  4 1977-01-01 0.457 national  gender_male age_55_plus
+#>  5 1977-01-01 0.902 national  gender_male age_25_54  
+#>  6 1977-01-01 0.644 national  gender_male age_16_24  
+#>  7 1978-01-01 0.663 national  gender_male age_16_24  
+#>  8 1978-01-01 0.460 national  gender_male age_55_plus
+#>  9 1978-01-01 0.911 national  gender_male age_25_54  
+#> 10 1979-01-01 0.912 national  gender_male age_25_54  
 #> # ℹ 140 more rows
 
 # Filter to specific date range
@@ -170,16 +170,16 @@ get_swadl(
 #> # A tibble: 225 × 4
 #>    date       value geography wage_percentile
 #>    <date>     <dbl> <chr>     <chr>          
-#>  1 2000-01-01  6.14 national  wage_p10       
-#>  2 2000-01-01 27.0  national  wage_p90       
-#>  3 2000-01-01 20.6  national  wage_p80       
-#>  4 2000-01-01 16.9  national  wage_p70       
-#>  5 2000-01-01 14.2  national  wage_p60       
-#>  6 2000-01-01 12.0  national  wage_p50       
-#>  7 2000-01-01 10.2  national  wage_p40       
-#>  8 2000-01-01  8.85 national  wage_p30       
-#>  9 2000-01-01  7.46 national  wage_p20       
-#> 10 2001-01-01  6.49 national  wage_p10       
+#>  1 2000-01-01 27.0  national  wage_p90       
+#>  2 2000-01-01 20.6  national  wage_p80       
+#>  3 2000-01-01 16.9  national  wage_p70       
+#>  4 2000-01-01 14.2  national  wage_p60       
+#>  5 2000-01-01 12.0  national  wage_p50       
+#>  6 2000-01-01 10.2  national  wage_p40       
+#>  7 2000-01-01  8.86 national  wage_p30       
+#>  8 2000-01-01  7.46 national  wage_p20       
+#>  9 2000-01-01  6.14 national  wage_p10       
+#> 10 2001-01-01  9.31 national  wage_p30       
 #> # ℹ 215 more rows
 # }
 ```

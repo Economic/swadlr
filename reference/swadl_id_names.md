@@ -89,31 +89,31 @@ swadl_id_names("topics")
 #> # A tibble: 9 × 2
 #>   id           name            
 #>   <chr>        <chr>           
-#> 1 labor_force  Employment      
-#> 2 minimum_wage Minimum wages   
-#> 3 population   Population      
-#> 4 poverty      Poverty         
-#> 5 prices       Prices          
-#> 6 productivity Productivity    
-#> 7 unions       Unions          
-#> 8 wage_gaps    Wage disparities
-#> 9 wages        Wages           
+#> 1 wages        Wages           
+#> 2 wage_gaps    Wage disparities
+#> 3 unions       Unions          
+#> 4 minimum_wage Minimum wages   
+#> 5 labor_force  Employment      
+#> 6 population   Population      
+#> 7 poverty      Poverty         
+#> 8 prices       Prices          
+#> 9 productivity Productivity    
 
 # List all indicators
 swadl_id_names("indicators")
 #> # A tibble: 36 × 4
 #>    id                             name                     topic_id updated_date
 #>    <chr>                          <chr>                    <chr>    <chr>       
-#>  1 annual_wage_ssa                Annual wages for select… wages    2026-01-23  
-#>  2 ceo_pay_ratio                  CEO pay ratio            wage_ga… 2026-01-23  
-#>  3 hourly_wage_mean               Hourly wage, average     wages    2026-01-23  
-#>  4 hourly_wage_median             Hourly wage, median      wages    2026-01-23  
-#>  5 hourly_wage_payroll            Hourly earnings by indu… wages    2026-01-23  
-#>  6 hourly_wage_percentile_ratios  Hourly wage percentile … wages    2026-01-23  
-#>  7 hourly_wage_percentiles        Hourly wage percentiles  wages    2026-01-23  
-#>  8 hourly_wage_gap_black_white    Black-white wage gap     wage_ga… 2026-01-23  
-#>  9 hourly_wage_gap_gender         Gender wage gap          wage_ga… 2026-01-23  
-#> 10 hourly_wage_gap_hispanic_white Hispanic-white wage gap  wage_ga… 2026-01-23  
+#>  1 annual_wage_ssa                Annual wages for select… wages    2026-02-27  
+#>  2 ceo_pay_ratio                  CEO pay ratio            wage_ga… 2026-02-27  
+#>  3 hourly_wage_gap_black_white    Black-white wage gap     wage_ga… 2026-02-27  
+#>  4 hourly_wage_gap_gender         Gender wage gap          wage_ga… 2026-02-27  
+#>  5 hourly_wage_gap_hispanic_white Hispanic-white wage gap  wage_ga… 2026-02-27  
+#>  6 hourly_wage_mean               Hourly wage, average     wages    2026-02-27  
+#>  7 hourly_wage_median             Hourly wage, median      wages    2026-02-27  
+#>  8 hourly_wage_payroll            Hourly earnings by indu… wages    2026-02-27  
+#>  9 hourly_wage_percentile_ratios  Hourly wage percentile … wages    2026-02-27  
+#> 10 hourly_wage_percentiles        Hourly wage percentiles  wages    2026-02-27  
 #> # ℹ 26 more rows
 
 # List indicators for a specific topic
@@ -121,12 +121,12 @@ swadl_id_names("indicators", topic = "wages")
 #> # A tibble: 6 × 4
 #>   id                            name                       topic_id updated_date
 #>   <chr>                         <chr>                      <chr>    <chr>       
-#> 1 annual_wage_ssa               Annual wages for select w… wages    2026-01-23  
-#> 2 hourly_wage_mean              Hourly wage, average       wages    2026-01-23  
-#> 3 hourly_wage_median            Hourly wage, median        wages    2026-01-23  
-#> 4 hourly_wage_payroll           Hourly earnings by indust… wages    2026-01-23  
-#> 5 hourly_wage_percentile_ratios Hourly wage percentile ra… wages    2026-01-23  
-#> 6 hourly_wage_percentiles       Hourly wage percentiles    wages    2026-01-23  
+#> 1 annual_wage_ssa               Annual wages for select w… wages    2026-02-27  
+#> 2 hourly_wage_mean              Hourly wage, average       wages    2026-02-27  
+#> 3 hourly_wage_median            Hourly wage, median        wages    2026-02-27  
+#> 4 hourly_wage_payroll           Hourly earnings by indust… wages    2026-02-27  
+#> 5 hourly_wage_percentile_ratios Hourly wage percentile ra… wages    2026-02-27  
+#> 6 hourly_wage_percentiles       Hourly wage percentiles    wages    2026-02-27  
 
 # List measures for a specific indicator
 swadl_id_names("measures", indicator = "hourly_wage_percentiles")
@@ -138,20 +138,20 @@ swadl_id_names("measures", indicator = "hourly_wage_percentiles")
 
 # List dimensions
 swadl_id_names("dimensions")
-#> # A tibble: 85 × 4
-#>    dimension_id   dimension_name value_id       value_name                      
-#>    <chr>          <chr>          <chr>          <chr>                           
-#>  1 age_group      Age            age_16_24      16–24 years                     
-#>  2 age_group      Age            age_25_54      25–54 years                     
-#>  3 age_group      Age            age_55_64      55–64 years                     
-#>  4 age_group      Age            age_55_plus    55+ years                       
-#>  5 ces_industry   All sectors    ces_nonfarm    Total nonfarm                   
-#>  6 ces_government Government     ces_fed        Federal government              
-#>  7 ces_government Government     ces_government Government                      
-#>  8 ces_government Government     ces_local      Local government                
-#>  9 ces_government Government     ces_local_ed   Local government educational se…
-#> 10 ces_government Government     ces_local_noed Local government, excluding edu…
-#> # ℹ 75 more rows
+#> # A tibble: 87 × 4
+#>    dimension_id          dimension_name value_id       value_name        
+#>    <chr>                 <chr>          <chr>          <chr>             
+#>  1 age_group             Age            age_16_24      16–24 years       
+#>  2 age_group             Age            age_25_54      25–54 years       
+#>  3 age_group             Age            age_55_plus    55+ years         
+#>  4 age_group_working_age Age            age_25_54_wa   25–54 years       
+#>  5 age_group_working_age Age            age_16_24_wa   16–24 years       
+#>  6 age_group_working_age Age            age_55_64_wa   55–64 years       
+#>  7 ces_industry          All sectors    ces_nonfarm    Total nonfarm     
+#>  8 ces_government        Government     ces_fed        Federal government
+#>  9 ces_government        Government     ces_government Government        
+#> 10 ces_government        Government     ces_local      Local government  
+#> # ℹ 77 more rows
 
 # List geographies
 swadl_id_names("geographies")

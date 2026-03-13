@@ -4,7 +4,9 @@
 
 - **Ben Zipperer**. Author, maintainer.
 
-- **Economic Policy Institute**. Copyright holder, funder.
+- **[![Economic Policy
+  Institute](https://files.epi.org/2016/economic-policy-institute-epi-horizontal-logo.png)](https://www.epi.org)**.
+  Copyright holder, funder.
 
 ## Citation
 
