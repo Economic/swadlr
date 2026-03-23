@@ -138,7 +138,7 @@ swadl_availability(geo_level = "state", dimensions = "gender",
 
 # Find indicators with a specific measure
 swadl_availability(measure = "percent_emp")
-#> # A tibble: 33 × 8
+#> # A tibble: 36 × 8
 #>    indicator_id    indicator_name  date_interval measure_id geo_level dimensions
 #>    <chr>           <chr>           <chr>         <chr>      <chr>     <chr>     
 #>  1 labor_force_emp Employment by … year          percent_e… division  age_group 
@@ -151,7 +151,7 @@ swadl_availability(measure = "percent_emp")
 #>  8 labor_force_emp Employment by … year          percent_e… national  age_group…
 #>  9 labor_force_emp Employment by … year          percent_e… national  age_group…
 #> 10 labor_force_emp Employment by … year          percent_e… national  age_group…
-#> # ℹ 23 more rows
+#> # ℹ 26 more rows
 #> # ℹ 2 more variables: date_start <date>, date_end <date>
 
 # Find all availability for a specific indicator

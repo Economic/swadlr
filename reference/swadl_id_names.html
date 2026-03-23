@@ -118,47 +118,48 @@ indicator, <code><a href="get_swadl.html">get_swadl()</a></code> for fetching ti
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># \donttest{</span></span></span>
 <span class="r-in"><span><span class="co"># List all topics</span></span></span>
 <span class="r-in"><span><span class="fu">swadl_id_names</span><span class="op">(</span><span class="st">"topics"</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 9 × 2</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   id           name            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> wages        Wages           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> wage_gaps    Wage disparities</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> unions       Unions          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> minimum_wage Minimum wages   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> labor_force  Employment      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span> population   Population      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">7</span> poverty      Poverty         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">8</span> prices       Prices          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">9</span> productivity Productivity    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 10 × 2</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    id           name            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> wages        Wages           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> wage_gaps    Wage disparities</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> unions       Unions          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> minimum_wage Minimum wages   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> labor_force  Employment      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> population   Population      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> poverty      Poverty         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> prices       Prices          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> productivity Productivity    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> income       Income          </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># List all indicators</span></span></span>
 <span class="r-in"><span><span class="fu">swadl_id_names</span><span class="op">(</span><span class="st">"indicators"</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 36 × 4</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    id                             name                     topic_id updated_date</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> annual_wage_ssa                Annual wages for select… wages    2026-02-27  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> ceo_pay_ratio                  CEO pay ratio            wage_ga… 2026-02-27  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> hourly_wage_gap_black_white    Black-white wage gap     wage_ga… 2026-02-27  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> hourly_wage_gap_gender         Gender wage gap          wage_ga… 2026-02-27  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> hourly_wage_gap_hispanic_white Hispanic-white wage gap  wage_ga… 2026-02-27  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> hourly_wage_mean               Hourly wage, average     wages    2026-02-27  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> hourly_wage_median             Hourly wage, median      wages    2026-02-27  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> hourly_wage_payroll            Hourly earnings by indu… wages    2026-02-27  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> hourly_wage_percentile_ratios  Hourly wage percentile … wages    2026-02-27  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> hourly_wage_percentiles        Hourly wage percentiles  wages    2026-02-27  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 26 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 37 × 4</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    id                            name                      topic_id updated_date</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> acs_hhincome                  Median household income   income   2026-03-19  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> annual_wage_ssa               Annual wages for select … wages    2026-03-19  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> ceo_pay_ratio                 CEO pay ratio             wage_ga… 2026-03-19  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> hourly_wage_mean              Hourly wage, average      wages    2026-03-19  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> hourly_wage_median            Hourly wage, median       wages    2026-03-19  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> hourly_wage_payroll           Hourly earnings by indus… wages    2026-03-19  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> hourly_wage_percentile_ratios Hourly wage percentile r… wages    2026-03-19  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> hourly_wage_percentiles       Hourly wage percentiles   wages    2026-03-19  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> hourly_wage_gap_black_white   Black-white wage gap      wage_ga… 2026-03-19  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> hourly_wage_gap_gender        Gender wage gap           wage_ga… 2026-03-19  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 27 more rows</span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># List indicators for a specific topic</span></span></span>
 <span class="r-in"><span><span class="fu">swadl_id_names</span><span class="op">(</span><span class="st">"indicators"</span>, topic <span class="op">=</span> <span class="st">"wages"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 6 × 4</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   id                            name                       topic_id updated_date</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> annual_wage_ssa               Annual wages for select w… wages    2026-02-27  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> hourly_wage_mean              Hourly wage, average       wages    2026-02-27  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> hourly_wage_median            Hourly wage, median        wages    2026-02-27  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> hourly_wage_payroll           Hourly earnings by indust… wages    2026-02-27  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> hourly_wage_percentile_ratios Hourly wage percentile ra… wages    2026-02-27  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span> hourly_wage_percentiles       Hourly wage percentiles    wages    2026-02-27  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> annual_wage_ssa               Annual wages for select w… wages    2026-03-19  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> hourly_wage_mean              Hourly wage, average       wages    2026-03-19  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> hourly_wage_median            Hourly wage, median        wages    2026-03-19  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> hourly_wage_payroll           Hourly earnings by indust… wages    2026-03-19  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> hourly_wage_percentile_ratios Hourly wage percentile ra… wages    2026-03-19  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span> hourly_wage_percentiles       Hourly wage percentiles    wages    2026-03-19  </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># List measures for a specific indicator</span></span></span>
 <span class="r-in"><span><span class="fu">swadl_id_names</span><span class="op">(</span><span class="st">"measures"</span>, indicator <span class="op">=</span> <span class="st">"hourly_wage_percentiles"</span><span class="op">)</span></span></span>
@@ -215,7 +216,7 @@ indicator, <code><a href="get_swadl.html">get_swadl()</a></code> for fetching ti
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> and <a href="https://economic.github.io/epitemplate/" class="external-link">epitemplate</a>.</p>
 </div>
 
   </div></footer></body></html>

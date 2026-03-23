@@ -86,47 +86,48 @@ for fetching time series data.
 # \donttest{
 # List all topics
 swadl_id_names("topics")
-#> # A tibble: 9 × 2
-#>   id           name            
-#>   <chr>        <chr>           
-#> 1 wages        Wages           
-#> 2 wage_gaps    Wage disparities
-#> 3 unions       Unions          
-#> 4 minimum_wage Minimum wages   
-#> 5 labor_force  Employment      
-#> 6 population   Population      
-#> 7 poverty      Poverty         
-#> 8 prices       Prices          
-#> 9 productivity Productivity    
+#> # A tibble: 10 × 2
+#>    id           name            
+#>    <chr>        <chr>           
+#>  1 wages        Wages           
+#>  2 wage_gaps    Wage disparities
+#>  3 unions       Unions          
+#>  4 minimum_wage Minimum wages   
+#>  5 labor_force  Employment      
+#>  6 population   Population      
+#>  7 poverty      Poverty         
+#>  8 prices       Prices          
+#>  9 productivity Productivity    
+#> 10 income       Income          
 
 # List all indicators
 swadl_id_names("indicators")
-#> # A tibble: 36 × 4
-#>    id                             name                     topic_id updated_date
-#>    <chr>                          <chr>                    <chr>    <chr>       
-#>  1 annual_wage_ssa                Annual wages for select… wages    2026-02-27  
-#>  2 ceo_pay_ratio                  CEO pay ratio            wage_ga… 2026-02-27  
-#>  3 hourly_wage_gap_black_white    Black-white wage gap     wage_ga… 2026-02-27  
-#>  4 hourly_wage_gap_gender         Gender wage gap          wage_ga… 2026-02-27  
-#>  5 hourly_wage_gap_hispanic_white Hispanic-white wage gap  wage_ga… 2026-02-27  
-#>  6 hourly_wage_mean               Hourly wage, average     wages    2026-02-27  
-#>  7 hourly_wage_median             Hourly wage, median      wages    2026-02-27  
-#>  8 hourly_wage_payroll            Hourly earnings by indu… wages    2026-02-27  
-#>  9 hourly_wage_percentile_ratios  Hourly wage percentile … wages    2026-02-27  
-#> 10 hourly_wage_percentiles        Hourly wage percentiles  wages    2026-02-27  
-#> # ℹ 26 more rows
+#> # A tibble: 37 × 4
+#>    id                            name                      topic_id updated_date
+#>    <chr>                         <chr>                     <chr>    <chr>       
+#>  1 acs_hhincome                  Median household income   income   2026-03-19  
+#>  2 annual_wage_ssa               Annual wages for select … wages    2026-03-19  
+#>  3 ceo_pay_ratio                 CEO pay ratio             wage_ga… 2026-03-19  
+#>  4 hourly_wage_mean              Hourly wage, average      wages    2026-03-19  
+#>  5 hourly_wage_median            Hourly wage, median       wages    2026-03-19  
+#>  6 hourly_wage_payroll           Hourly earnings by indus… wages    2026-03-19  
+#>  7 hourly_wage_percentile_ratios Hourly wage percentile r… wages    2026-03-19  
+#>  8 hourly_wage_percentiles       Hourly wage percentiles   wages    2026-03-19  
+#>  9 hourly_wage_gap_black_white   Black-white wage gap      wage_ga… 2026-03-19  
+#> 10 hourly_wage_gap_gender        Gender wage gap           wage_ga… 2026-03-19  
+#> # ℹ 27 more rows
 
 # List indicators for a specific topic
 swadl_id_names("indicators", topic = "wages")
 #> # A tibble: 6 × 4
 #>   id                            name                       topic_id updated_date
 #>   <chr>                         <chr>                      <chr>    <chr>       
-#> 1 annual_wage_ssa               Annual wages for select w… wages    2026-02-27  
-#> 2 hourly_wage_mean              Hourly wage, average       wages    2026-02-27  
-#> 3 hourly_wage_median            Hourly wage, median        wages    2026-02-27  
-#> 4 hourly_wage_payroll           Hourly earnings by indust… wages    2026-02-27  
-#> 5 hourly_wage_percentile_ratios Hourly wage percentile ra… wages    2026-02-27  
-#> 6 hourly_wage_percentiles       Hourly wage percentiles    wages    2026-02-27  
+#> 1 annual_wage_ssa               Annual wages for select w… wages    2026-03-19  
+#> 2 hourly_wage_mean              Hourly wage, average       wages    2026-03-19  
+#> 3 hourly_wage_median            Hourly wage, median        wages    2026-03-19  
+#> 4 hourly_wage_payroll           Hourly earnings by indust… wages    2026-03-19  
+#> 5 hourly_wage_percentile_ratios Hourly wage percentile ra… wages    2026-03-19  
+#> 6 hourly_wage_percentiles       Hourly wage percentiles    wages    2026-03-19  
 
 # List measures for a specific indicator
 swadl_id_names("measures", indicator = "hourly_wage_percentiles")
